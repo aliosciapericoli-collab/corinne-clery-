@@ -1,0 +1,1 @@
+var e=`/assets/format-salotto-C2HWad0v.jpg`;export{e as t};
