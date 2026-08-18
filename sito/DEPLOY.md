@@ -1,46 +1,33 @@
-# Deploy su Hetzner (65.21.237.152)
+# Deploy corinneclery.it — Hetzner (65.21.237.152)
 
-Build statica pre-renderizzata di corinneclery.it, generata dal progetto Lovable
-(repo sorgente: `corinne-clery-tribute`). Per rigenerarla: build TanStack Start
-con preset nitro `node-server`, avvio locale e mirror delle 17 rotte + asset.
+Build statica pre-renderizzata del sito, generata dal progetto Lovable
+(repo sorgente: `corinne-clery-tribute`). Serve **Caddy** (non nginx):
+config in `/etc/caddy/conf.d/corinneclery.caddy`, sito in `/home/work/corinneclery/sito`.
 
-## Setup iniziale sul server (una volta sola)
+Setup iniziale già fatto il 18/08/2026 con `deploy/setup-caddy.sh` (rieseguibile, è idempotente).
 
-```bash
-sudo mkdir -p /var/www/corinneclery.it
-sudo git clone https://github.com/aliosciapericoli-collab/corinne-clery-.git /var/www/corinneclery.it/repo
-sudo ln -s /var/www/corinneclery.it/repo/sito /var/www/corinneclery.it/html
+## Aggiornare il sito online
 
-sudo tee /etc/nginx/sites-available/corinneclery.it <<'NGINX'
-server {
-    listen 80;
-    listen [::]:80;
-    server_name corinneclery.it www.corinneclery.it;
-    root /var/www/corinneclery.it/html;
-    index index.html;
-    error_page 404 /404.html;
-    location / {
-        try_files $uri $uri/index.html $uri/ =404;
-    }
-    location /assets/ {
-        expires 30d;
-        add_header Cache-Control "public, immutable";
-    }
-    location /__l5e/ {
-        expires 30d;
-        add_header Cache-Control "public";
-    }
-}
-NGINX
-sudo ln -s /etc/nginx/sites-available/corinneclery.it /etc/nginx/sites-enabled/
-sudo nginx -t && sudo systemctl reload nginx
+1. Rigenerare la build statica dal progetto Lovable (vedi sotto) e pusharla in `sito/` di questa repo.
+2. Sul server:
+   ```bash
+   git -C /home/work/corinneclery pull
+   ```
+   Niente reload: Caddy serve i file direttamente.
 
-# SSL (dopo che i DNS puntano al server — già fatto)
-sudo certbot --nginx -d corinneclery.it -d www.corinneclery.it --redirect
-```
+## Come si rigenera la build statica
 
-## Aggiornamenti successivi
+Dal repo `corinne-clery-tribute` (clone locale):
+1. In `vite.config.ts` aggiungere temporaneamente (NON committare):
+   `nitro: { preset: "node-server" }` e `vite: { preview: { host: "127.0.0.1" } }`.
+2. `bun install && bun run build`
+3. `PORT=4173 node .output/server/index.mjs` e scaricare le 17 rotte con curl
+   (8 pagine + 9 storie + /404.html) in cartelle `<rotta>/index.html`,
+   sopra una copia di `.output/public/`.
+4. Scaricare gli asset `/__l5e/...` referenziati (immagini caricate su Lovable)
+   dalla preview `https://id-preview--053acdb3-755c-4385-88c1-08a1a43cc1b7.lovable.app`
+   negli stessi percorsi.
+5. Verificare che nessun riferimento `src/href` punti a file mancanti, poi push in `sito/`.
 
-```bash
-cd /var/www/corinneclery.it/repo && sudo git pull
-```
+I DNS (IONOS) puntano a 65.21.237.152 (A per `@` e `www`); il dominio NON deve essere
+configurato come custom domain su Lovable, altrimenti il domain-connect IONOS riscrive i DNS.
