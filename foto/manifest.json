@@ -1,0 +1,758 @@
+{
+ "generato": "2026-08-21",
+ "totale": 81,
+ "escluse_per_diritti": [
+  "20260819_173851.jpg",
+  "IMG-20260819-WA0013.jpg",
+  "IMG-20260819-WA0020.jpg",
+  "IMG-20260819-WA0021.jpg",
+  "IMG-20260819-WA0022.jpg",
+  "IMG-20260819-WA0032.jpg",
+  "IMG-20260819-WA0033.jpg",
+  "IMG-20260819-WA0034.jpg",
+  "IMG-20260819-WA0039.jpg",
+  "IMG-20260819-WA0045.jpg"
+ ],
+ "sezioni": [
+  "infanzia",
+  "esordi",
+  "famiglia",
+  "cinema",
+  "teatro",
+  "charme",
+  "beppe",
+  "eventi",
+  "oggi"
+ ],
+ "foto": [
+  {
+   "file": "archivio/nozze-parigi-municipio.jpg",
+   "slug": "nozze-parigi-municipio",
+   "sezione": "famiglia",
+   "didascalia": "Giorno di nozze, Parigi.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-moonraker-lobby-card.jpg",
+   "slug": "cinema-moonraker-lobby-card",
+   "sezione": "cinema",
+   "didascalia": "Moonraker (1979) — lobby card originale dell'epoca.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-moonraker-locandina.jpg",
+   "slug": "cinema-moonraker-locandina",
+   "sezione": "cinema",
+   "didascalia": "La locandina di Moonraker (1979).",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/nozze-parigi-scambio-anelli.jpg",
+   "slug": "nozze-parigi-scambio-anelli",
+   "sezione": "famiglia",
+   "didascalia": "Lo scambio degli anelli.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/famiglia-con-alexandre-in-braccio.jpg",
+   "slug": "famiglia-con-alexandre-in-braccio",
+   "sezione": "famiglia",
+   "didascalia": "Con il figlio Alexandre.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/famiglia-con-alexandre-smoking.jpg",
+   "slug": "famiglia-con-alexandre-smoking",
+   "sezione": "famiglia",
+   "didascalia": "Con Alexandre, anni Novanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/esordi-parigi-cappotto.jpg",
+   "slug": "esordi-parigi-cappotto",
+   "sezione": "esordi",
+   "didascalia": "Parigi, fine anni Sessanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/moda-servizio-anni-sessanta.jpg",
+   "slug": "moda-servizio-anni-sessanta",
+   "sezione": "esordi",
+   "didascalia": "Servizio di moda, fine anni Sessanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-signora-in-rosso.jpg",
+   "slug": "teatro-signora-in-rosso",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-in-scena-coppia.jpg",
+   "slug": "teatro-in-scena-coppia",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/eventi-con-amiche.jpg",
+   "slug": "eventi-con-amiche",
+   "sezione": "eventi",
+   "didascalia": "Con amiche e colleghi.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-scena-vestaglia.jpg",
+   "slug": "cinema-scena-vestaglia",
+   "sezione": "cinema",
+   "didascalia": "Foto di scena.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-scena-raso.jpg",
+   "slug": "cinema-scena-raso",
+   "sezione": "cinema",
+   "didascalia": "Foto di scena.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-abito-righe.jpg",
+   "slug": "oggi-abito-righe",
+   "sezione": "oggi",
+   "didascalia": "Ritratto recente.",
+   "in_galleria": true,
+   "nota": "foto copertina press kit",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/famiglia-con-alexandre-ragazzo.jpg",
+   "slug": "famiglia-con-alexandre-ragazzo",
+   "sezione": "famiglia",
+   "didascalia": "Con Alexandre, anni Ottanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-moonraker-con-roger-moore.jpg",
+   "slug": "cinema-moonraker-con-roger-moore",
+   "sezione": "cinema",
+   "didascalia": "Moonraker (1979) — con Roger Moore. Foto di scena, archivio personale.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/charme-seduta-bn.jpg",
+   "slug": "charme-seduta-bn",
+   "sezione": "charme",
+   "didascalia": "Servizio di charme, anni Novanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/charme-vestaglia-fiori.jpg",
+   "slug": "charme-vestaglia-fiori",
+   "sezione": "charme",
+   "didascalia": "Servizio di charme, anni Novanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/charme-sottoveste-nera.jpg",
+   "slug": "charme-sottoveste-nera",
+   "sezione": "charme",
+   "didascalia": "Servizio di charme, anni Novanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/charme-sedia-risata.jpg",
+   "slug": "charme-sedia-risata",
+   "sezione": "charme",
+   "didascalia": "Servizio di charme, anni Novanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/charme-top-bianco.jpg",
+   "slug": "charme-top-bianco",
+   "sezione": "charme",
+   "didascalia": "Anni Ottanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-con-richard-kiel.jpg",
+   "slug": "cinema-con-richard-kiel",
+   "sezione": "cinema",
+   "didascalia": "Con Richard Kiel, il gigante \"Squalo\" di Moonraker.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/privata-champs-elysees.jpg",
+   "slug": "privata-champs-elysees",
+   "sezione": "famiglia",
+   "didascalia": "Sugli Champs-Élysées, anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/famiglia-con-alexandre-ritratto.jpg",
+   "slug": "famiglia-con-alexandre-ritratto",
+   "sezione": "famiglia",
+   "didascalia": "Con Alexandre.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-scena-auto.jpg",
+   "slug": "cinema-scena-auto",
+   "sezione": "cinema",
+   "didascalia": "Foto di scena.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-bluff-celentano-quinn.jpg",
+   "slug": "cinema-bluff-celentano-quinn",
+   "sezione": "cinema",
+   "didascalia": "Bluff (1976) — sul set con Adriano Celentano e Anthony Quinn.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/infanzia-prima-comunione.jpg",
+   "slug": "infanzia-prima-comunione",
+   "sezione": "infanzia",
+   "didascalia": "La prima comunione.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/famiglia-anni-settanta.jpg",
+   "slug": "famiglia-anni-settanta",
+   "sezione": "infanzia",
+   "didascalia": "In famiglia, anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/esordi-ritratto-sorriso.jpg",
+   "slug": "esordi-ritratto-sorriso",
+   "sezione": "esordi",
+   "didascalia": "Gli anni dei primi provini.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-histoire-do-scena.jpg",
+   "slug": "cinema-histoire-do-scena",
+   "sezione": "cinema",
+   "didascalia": "Histoire d'O (1975) — foto di scena. Archivio personale.",
+   "in_galleria": true,
+   "nota": "richiesta esplicita: sezione Histoire d'O",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-spiaggia-abito-lungo.jpg",
+   "slug": "cinema-spiaggia-abito-lungo",
+   "sezione": "cinema",
+   "didascalia": "Anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/infanzia-corsa-in-campagna.jpg",
+   "slug": "infanzia-corsa-in-campagna",
+   "sezione": "infanzia",
+   "didascalia": "Giochi d'infanzia, anni Cinquanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-scena-caffe.jpg",
+   "slug": "cinema-scena-caffe",
+   "sezione": "cinema",
+   "didascalia": "Foto di scena.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/nozze-parigi-con-alexandre.jpg",
+   "slug": "nozze-parigi-con-alexandre",
+   "sezione": "famiglia",
+   "didascalia": "Giorno di nozze, con il piccolo Alexandre.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/esordi-ritratto-giovanissima.jpg",
+   "slug": "esordi-ritratto-giovanissima",
+   "sezione": "esordi",
+   "didascalia": "Ritratto degli esordi.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/eventi-camicetta-gialla.jpg",
+   "slug": "eventi-camicetta-gialla",
+   "sezione": "eventi",
+   "didascalia": "A un evento, primi anni Duemila.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-rosso-02.jpg",
+   "slug": "teatro-rosso-02",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": false,
+   "nota": "variante",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/eventi-fiera.jpg",
+   "slug": "eventi-fiera",
+   "sezione": "eventi",
+   "didascalia": "A un evento pubblico.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/eventi-presentazione-libro.jpg",
+   "slug": "eventi-presentazione-libro",
+   "sezione": "eventi",
+   "didascalia": "A una presentazione.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-rosso-03.jpg",
+   "slug": "teatro-rosso-03",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": false,
+   "nota": "variante",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-scena-divano.jpg",
+   "slug": "teatro-scena-divano",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/moda-bikini-argento.jpg",
+   "slug": "moda-bikini-argento",
+   "sezione": "esordi",
+   "didascalia": "Servizio di moda, fine anni Sessanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-applausi-finale.jpg",
+   "slug": "teatro-applausi-finale",
+   "sezione": "teatro",
+   "didascalia": "Gli applausi a fine spettacolo.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-rosso-04.jpg",
+   "slug": "teatro-rosso-04",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": false,
+   "nota": "variante",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-rosso-05.jpg",
+   "slug": "teatro-rosso-05",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": false,
+   "nota": "variante",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-rosso-06.jpg",
+   "slug": "teatro-rosso-06",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": false,
+   "nota": "variante",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-rosso-07.jpg",
+   "slug": "teatro-rosso-07",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": false,
+   "nota": "variante",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-scialle-bianco.jpg",
+   "slug": "teatro-scialle-bianco",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/esordi-divano-fiori.jpg",
+   "slug": "esordi-divano-fiori",
+   "sezione": "esordi",
+   "didascalia": "Alla fine degli anni Sessanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/nozze-parigi-famiglia.jpg",
+   "slug": "nozze-parigi-famiglia",
+   "sezione": "famiglia",
+   "didascalia": "Giorno di nozze, con la famiglia.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/moda-nudo-carta-strappata.jpg",
+   "slug": "moda-nudo-carta-strappata",
+   "sezione": "esordi",
+   "didascalia": "Dietro la carta strappata, anni Settanta.",
+   "in_galleria": false,
+   "nota": "pubblicare solo con ok di Corinne",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/privata-auto-epoca.jpg",
+   "slug": "privata-auto-epoca",
+   "sezione": "esordi",
+   "didascalia": "Anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/privata-trenino-elettrico.jpg",
+   "slug": "privata-trenino-elettrico",
+   "sezione": "esordi",
+   "didascalia": "Il trenino elettrico.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/esordi-scopa-elettrica.jpg",
+   "slug": "esordi-scopa-elettrica",
+   "sezione": "esordi",
+   "didascalia": "Fine anni Sessanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/privata-in-barca.jpg",
+   "slug": "privata-in-barca",
+   "sezione": "esordi",
+   "didascalia": "In barca, anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/privata-evento-famiglia.jpg",
+   "slug": "privata-evento-famiglia",
+   "sezione": "famiglia",
+   "didascalia": "Anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/moda-pelliccia-anni-settanta.jpg",
+   "slug": "moda-pelliccia-anni-settanta",
+   "sezione": "esordi",
+   "didascalia": "Moda, primi anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/moda-nudo-ventaglio.jpg",
+   "slug": "moda-nudo-ventaglio",
+   "sezione": "esordi",
+   "didascalia": "Nudo artistico con ventaglio, anni Settanta.",
+   "in_galleria": false,
+   "nota": "pubblicare solo con ok di Corinne",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/moda-maglia-anni-settanta.jpg",
+   "slug": "moda-maglia-anni-settanta",
+   "sezione": "esordi",
+   "didascalia": "Servizio di moda, anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/moda-palline-da-tennis.jpg",
+   "slug": "moda-palline-da-tennis",
+   "sezione": "esordi",
+   "didascalia": "Un servizio giocoso, anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/ritratto-anni-ottanta-poltrona.jpg",
+   "slug": "ritratto-anni-ottanta-poltrona",
+   "sezione": "cinema",
+   "didascalia": "Ritratto, anni Ottanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/teatro-scena-cena.jpg",
+   "slug": "teatro-scena-cena",
+   "sezione": "teatro",
+   "didascalia": "In scena.",
+   "in_galleria": false,
+   "nota": "variante",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/eventi-tra-la-folla.jpg",
+   "slug": "eventi-tra-la-folla",
+   "sezione": "eventi",
+   "didascalia": "A un evento pubblico.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-perle-camicia-bianca.jpg",
+   "slug": "oggi-perle-camicia-bianca",
+   "sezione": "oggi",
+   "didascalia": "Ritratto recente.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-scena-strada-bn.jpg",
+   "slug": "cinema-scena-strada-bn",
+   "sezione": "cinema",
+   "didascalia": "Foto di scena.",
+   "in_galleria": false,
+   "nota": "provenienza da confermare",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-perle-primo-piano.jpg",
+   "slug": "oggi-perle-primo-piano",
+   "sezione": "oggi",
+   "didascalia": "Ritratto recente.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/beppe-poltrone-dorate.jpg",
+   "slug": "beppe-poltrone-dorate",
+   "sezione": "beppe",
+   "didascalia": "Con Beppe Ercole, il giorno del matrimonio (2004).",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-raso-bordeaux.jpg",
+   "slug": "oggi-raso-bordeaux",
+   "sezione": "oggi",
+   "didascalia": "Ritratto recente.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-poltrona-con-vasco.jpg",
+   "slug": "oggi-poltrona-con-vasco",
+   "sezione": "oggi",
+   "didascalia": "A casa, con il bassotto Vasco.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/beppe-sera-di-gala.jpg",
+   "slug": "beppe-sera-di-gala",
+   "sezione": "beppe",
+   "didascalia": "Con Beppe Ercole.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/cinema-in-acqua-cappello.jpg",
+   "slug": "cinema-in-acqua-cappello",
+   "sezione": "cinema",
+   "didascalia": "In acqua, anni Settanta.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/beppe-sorrisi.jpg",
+   "slug": "beppe-sorrisi",
+   "sezione": "beppe",
+   "didascalia": "Con Beppe Ercole.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/beppe-sera-sul-mare.jpg",
+   "slug": "beppe-sera-sul-mare",
+   "sezione": "beppe",
+   "didascalia": "Beppe, una sera d'estate.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-ricci-abito-nero.jpg",
+   "slug": "oggi-ricci-abito-nero",
+   "sezione": "oggi",
+   "didascalia": "Ritratto.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-pellicola-seta.jpg",
+   "slug": "oggi-pellicola-seta",
+   "sezione": "oggi",
+   "didascalia": "Ritratto in stile pellicola.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-pellicola-spalla.jpg",
+   "slug": "oggi-pellicola-spalla",
+   "sezione": "oggi",
+   "didascalia": "Ritratto in stile pellicola.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-rosa-antico.jpg",
+   "slug": "oggi-rosa-antico",
+   "sezione": "oggi",
+   "didascalia": "Ritratto.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/oggi-abito-verde-ponte.jpg",
+   "slug": "oggi-abito-verde-ponte",
+   "sezione": "oggi",
+   "didascalia": "In verde, sul ponte.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/beppe-abito-rosso.jpg",
+   "slug": "beppe-abito-rosso",
+   "sezione": "beppe",
+   "didascalia": "Con Beppe Ercole.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/archivio-ritratto-belle-epoque.jpg",
+   "slug": "archivio-ritratto-belle-epoque",
+   "sezione": "infanzia",
+   "didascalia": "Dall'album di famiglia.",
+   "in_galleria": false,
+   "nota": "identità da confermare con Corinne",
+   "credito": "Archivio personale Corinne Cléry"
+  },
+  {
+   "file": "archivio/nozze-con-la-madre.jpg",
+   "slug": "nozze-con-la-madre",
+   "sezione": "famiglia",
+   "didascalia": "Con la madre, il giorno delle nozze.",
+   "in_galleria": true,
+   "nota": "",
+   "credito": "Archivio personale Corinne Cléry"
+  }
+ ]
+}
