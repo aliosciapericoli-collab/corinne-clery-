@@ -1,0 +1,1 @@
+import{b as e}from"./Layout-CtJA-6io.js";var t=e(`check`,[[`path`,{d:`M20 6 9 17l-5-5`,key:`1gmf2c`}]]),n=`/assets/texture-pellicola-0xdQ74wC.jpg`;export{t as n,n as t};
