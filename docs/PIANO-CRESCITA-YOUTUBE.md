@@ -37,15 +37,15 @@ Una puntata ogni lunedì alle 18:00, come la Puntata 1, e 3 Shorts tratti da cia
 
 | Data | Contenuto | Shorts |
 | --- | --- | --- |
-| Lun 19 ott | Puntata 2 | Mer 21, Ven 23, Dom 25 |
-| Lun 26 ott | Puntata 3 | Mer 28, Ven 30, Dom 1 nov |
-| Lun 2 nov | Puntata 4 | Mer 4, Ven 6, Dom 8 |
-| Lun 9 nov | Puntata 5 | Mer 11, Ven 13, Dom 15 |
-| Lun 16 nov | Puntata 6, fine Stagione 1 | Mer 18, Ven 20, Dom 22 |
+| Lun 26 ott | Puntata 2 | Mer 28, Ven 30, Dom 1 nov |
+| Lun 2 nov | Puntata 3 | Mer 4, Ven 6, Dom 8 |
+| Lun 9 nov | Puntata 4 | Mer 11, Ven 13, Dom 15 |
+| Lun 16 nov | Puntata 5 | Mer 18, Ven 20, Dom 22 |
+| Lun 23 nov | Puntata 6, fine Stagione 1 | Mer 25, Ven 27, Dom 29 |
 
-Per reggere il ritmo servono almeno 2 puntate già registrate prima del 19 ottobre.
+Calendario spostato di una settimana (12/10/2026): oltre alla Puntata Zero e alla Puntata 1 non ci sono puntate già registrate, quindi lunedì 19 ottobre non esce una nuova puntata. Per reggere il ritmo servono almeno 2 puntate già registrate prima del 26 ottobre.
 
-- [ ] Domanda aperta: quante puntate sono già registrate oltre alla Puntata 1?
+- [x] Domanda aperta: quante puntate sono già registrate oltre alla Puntata 1? → Nessuna.
 - [ ] Prima di pubblicare ogni puntata, controllare che non ci siano nomi o dettagli che rendono riconoscibili terze persone
 
 ## Miniature
