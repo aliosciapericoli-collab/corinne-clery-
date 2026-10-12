@@ -21,7 +21,7 @@ Uno Short al giorno dal 13 al 18 ottobre, alle 18:00, tagliato dalla Puntata 1 s
 | Giorno | Minutaggio | Titolo dello Short | Testo in sovraimpressione |
 | --- | --- | --- | --- |
 | Mar 13 ott | 09:20 – 10:05 | Denunciata per abbandono mentre era in ospedale | «Mi hanno tolto mia figlia mentre ero ricoverata» |
-| Mer 14 ott | 07:47 – 08:39 | «Sta dormendo, è fuori»: per anni non le passavano la figlia | Nemmeno una telefonata |
+| Mer 14 ott | 07:50 – 08:39 | «Sta dormendo, è fuori»: per anni non le passavano la figlia | Nemmeno una telefonata |
 | Gio 15 ott | 10:44 – 11:30 | Cinque tumori, un coma, e nessuno è venuto | Sola in ospedale |
 | Ven 16 ott | 19:10 – 19:36 | Dal 4 giugno non vede più figlia e nipote | Due anni di silenzio |
 | Sab 17 ott | 29:08 – 29:50 | «Vedrà l'intervista quando sarà grande» | Un messaggio al nipote |
@@ -29,7 +29,18 @@ Uno Short al giorno dal 13 al 18 ottobre, alle 18:00, tagliato dalla Puntata 1 s
 
 Come si taglia: app YouTube → Puntata 1 → Crea → Modifica in uno Short → scegli il tratto (massimo 60 secondi). Ogni Short rimanda in automatico alla puntata intera.
 
+Lo Short del 14 ottobre parte da 07:50 e non da 07:47: il nome della figlia si sente intorno a 07:45 (sottotitoli automatici, margine di 1-2 secondi). Il nome ricorre anche a 09:03, fuori dallo Short del 13 ottobre.
+
+Nella settimana senza puntata nuova (19–25 ottobre) escono altri 3 Shorts dalla Puntata 1:
+
+| Giorno | Minutaggio | Titolo dello Short | Testo in sovraimpressione |
+| --- | --- | --- | --- |
+| Mer 21 ott | 03:52 – 04:27 | «Avevamo gli stessi vestiti»: il legame con la figlia | Un cordone mai tagliato |
+| Ven 23 ott | 05:43 – 06:28 | A 19 anni la dialisi, a 24 il trapianto | 3 anni, 8 mesi e 4 giorni |
+| Dom 25 ott | 29:12 – 30:00 | «Se tornasse, la metterei di fronte alle evidenze» | E se bussasse alla porta? |
+
 - [ ] Tagliare e programmare i 6 Shorts entro il 13 ottobre
+- [ ] Tagliare e programmare i 3 Shorts del 21, 23 e 25 ottobre entro il 20 ottobre
 - [ ] In ogni descrizione: «Puntata intera sul canale» + #ParlaneConCorinneClery
 
 ## Calendario delle puntate
