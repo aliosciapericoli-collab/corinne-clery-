@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Storie di famiglia nel buio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+@page{size:A4;margin:16mm 18mm 15mm 20mm}
+@page:first{margin:0}
+:root{--ink:#1b1714;--muted:#6f655b;--ember:#9c4a1c;--paper:#ffffff;--rule:#d9cfc1;--box:#f1ebe0;
+--display:"Cormorant Garamond",Georgia,serif;--body:"Source Serif 4",Georgia,serif;--mono:"IBM Plex Mono",Menlo,monospace}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:10pt;line-height:1.48}
+.cover{height:297mm;width:210mm;position:relative;background:#000 url(fuoco.jpg) center/cover;page-break-after:always;color:#f3ede4}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.1) 35%,rgba(0,0,0,.85) 80%)}
+.cover .in{position:absolute;left:22mm;right:22mm;bottom:30mm;z-index:2}
+.kicker{font-family:var(--mono);font-size:8.5pt;letter-spacing:.32em;text-transform:uppercase;color:#e0a46c}
+.cover h1{font-family:var(--display);font-weight:600;font-size:46pt;line-height:1;margin:6mm 0 4mm}
+.cover p{font-family:var(--display);font-style:italic;font-size:15pt;margin:0;max-width:130mm}
+.cover .meta{font-family:var(--mono);font-size:7.5pt;letter-spacing:.12em;color:#bdb3a6;margin-top:10mm}
+h2{font-family:var(--display);font-weight:600;font-size:28pt;line-height:1.05;margin:0 0 2mm;text-wrap:balance}
+h3{font-family:var(--mono);font-weight:500;font-size:8pt;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);margin:7mm 0 2.5mm}
+.story{page-break-before:always}
+.num{font-family:var(--mono);font-size:8pt;letter-spacing:.3em;color:var(--muted);text-transform:uppercase}
+.where{font-family:var(--display);font-style:italic;font-size:13pt;color:var(--muted);margin-bottom:6mm}
+.scheda{background:var(--box);border-left:2.5pt solid var(--ember);padding:4mm 5mm;font-size:9.2pt;line-height:1.5;break-inside:avoid}
+.scheda dl{display:grid;grid-template-columns:28mm 1fr;gap:1.5mm 4mm;margin:0}
+.scheda dt{font-family:var(--mono);font-size:7.5pt;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:.6mm}
+.scheda dd{margin:0}
+.voce p{margin:0 0 3mm;text-align:left;hyphens:auto}
+.voce p.beat{font-family:var(--display);font-size:13.5pt;font-style:italic;line-height:1.35;margin:4mm 0}
+.regia{font-family:var(--mono);font-size:7.6pt;line-height:1.45;color:var(--muted);margin:2.5mm 0 2mm;padding-left:3mm;border-left:1pt solid var(--rule)}
+.sec{font-family:var(--mono);font-size:7.5pt;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);margin:6mm 0 2mm;border-top:.6pt solid var(--rule);padding-top:2.5mm}
+.warn{font-size:8.8pt;background:#fbefe2;border:.6pt solid #e6c7a6;padding:3mm 4mm;margin-top:5mm;break-inside:avoid}
+.fonti{font-size:8pt;color:var(--muted);margin-top:4mm;line-height:1.45;word-break:break-word}
+.fonti a{color:var(--muted)}
+.intro p{margin:0 0 3mm;max-width:150mm}
+.intro ul{margin:0 0 3mm;padding-left:5mm}
+.intro li{margin-bottom:1.5mm}
+.toc{margin-top:6mm;border-top:.6pt solid var(--rule)}
+.toc div{display:flex;gap:4mm;padding:2.2mm 0;border-bottom:.6pt solid var(--rule);font-size:10pt}
+.toc b{font-family:var(--mono);font-weight:500;font-size:8pt;color:var(--ember);width:8mm;padding-top:.8mm}
+.toc span{flex:1}.toc em{color:var(--muted);font-size:9pt}
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div class="in">
+    <div class="kicker">Parlane con Corinne Cléry</div>
+    <h1>Storie di famiglia<br>nel buio</h1>
+    <p>Cinque casi veri. Cinque case dove l'amore è diventato altro.</p>
+    <div class="meta">Raccolta n. 1 · Bozza di lavoro del 19 ottobre 2026 · Uso interno · Testi da approvare con Corinne</div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="num">Prima di leggere</div>
+  <h2>Come è scritto questo libretto</h2>
+  <p>Ogni storia è scritta per essere <b>detta da Corinne</b>, in prima persona, seduta nel casale con il camino acceso. Il tono è quello del racconto notturno: lento, con le pause, la voce che accompagna lo spettatore dentro una casa e gli fa notare i dettagli prima di dirgli cosa significano.</p>
+  <ul>
+    <li><b>Solo fatti accertati.</b> Ogni affermazione viene dalle schede verificate in <i>CASI-NOIR.md</i>; in fondo a ogni storia ci sono le fonti.</li>
+    <li><b>Solo sentenze definitive.</b> Dove il condannato si dichiara innocente, il testo lo dice.</li>
+    <li><b>Nessun dettaglio cruento.</b> Il buio sta nel movente, nella menzogna, nelle cose di tutti i giorni.</li>
+    <li><b>Le note in grigio</b> sono indicazioni di regia: immagini da ricostruzione (senza volti) e momenti in cui Corinne torna in camera.</li>
+    <li><b>Ogni testo è una bozza.</b> Corinne lo legge, lo cambia, lo fa suo. Le chiusure personali le scrive lei.</li>
+  </ul>
+  <p>Sono stati lasciati fuori, per ora, i casi di figli contro i genitori e gli infanticidi: per aprire il format servono storie forti ma non insostenibili, e che non si prestino a paragoni con la vita privata di Corinne.</p>
+  <div class="toc">
+    <div><b>01</b><span>Il falso dottore</span><em>Francia, 1993</em></div>
+    <div><b>02</b><span>La telefonata da una cabina</span><em>Abruzzo, 2011</em></div>
+    <div><b>03</b><span>La pausa</span><em>Baviera, 2012</em></div>
+    <div><b>04</b><span>Un chilometro da casa</span><em>Piemonte, 2014</em></div>
+    <div><b>05</b><span>La casa degli zii</span><em>Puglia, 2010</em></div>
+  </div>
+</section>
+
+<!-- 01 ROMAND -->
+<section class="story">
+  <div class="num">Storia 01</div>
+  <h2>Il falso dottore</h2>
+  <div class="where">Prévessin-Moëns, Francia · gennaio 1993</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Jean-Claude Romand. Per circa diciotto anni si finge medico e ricercatore dell'OMS di Ginevra.</dd>
+    <dt>Cosa</dt><dd>Tra il 9 e il 10 gennaio 1993 uccide la moglie, i due figli (7 e 5 anni) e i genitori. Poi dà fuoco alla casa e tenta il suicidio; viene salvato.</dd>
+    <dt>Sentenza</dt><dd>Ergastolo, 6 luglio 1996, con 22 anni di periodo di sicurezza.</dd>
+    <dt>Oggi</dt><dd>Libertà condizionale dal 28 giugno 2019; dal 2022 senza braccialetto elettronico.</dd>
+  </dl></div>
+
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · casa nella neve, finestre arancioni. Voce fuori campo.]</div>
+    <p>C'è una casa, a pochi chilometri da Ginevra, dalla parte francese della frontiera. È gennaio, nevica. Dentro, le luci sono accese. Solo che non sono luci.</p>
+    <p class="beat">Quella casa sta bruciando.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Io ho fatto l'attrice tutta la vita. So cosa vuol dire entrare in un personaggio, e so cosa si prova quando il regista dice «stop» e tu torni a essere te stessa. Quest'uomo, quello «stop», non l'ha mai sentito. Ha recitato per diciotto anni, ogni giorno, davanti a tutti. E il pubblico era la sua famiglia.</p>
+    <div class="regia">[Ricostruzione · il lago all'alba, le luci di Ginevra.]</div>
+    <p>Si chiama Jean-Claude Romand. Per chi lo conosce è un medico, un ricercatore dell'Organizzazione Mondiale della Sanità. Ha una moglie, due bambini e i genitori che vivono nel Giura. Ogni mattina prende la macchina e va verso Ginevra. Ogni sera torna e racconta la sua giornata.</p>
+    <p>Ecco, fermiamoci su questo. Su quella giornata raccontata a cena. Perché è lì che sta tutto.</p>
+    <div class="regia">[Ricostruzione · camice appeso in un corridoio buio.]</div>
+    <p class="beat">Jean-Claude Romand non è mai stato medico. E l'OMS non l'ha mai assunto.</p>
+    <p>Quelle giornate non sono mai esistite. Diciotto anni di giornate inventate. E una vita così costa: costa soldi, tanti. Soldi che vengono da persone che si fidano di lui. Finché alcune di quelle persone cominciano a fare domande.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Quando una recita sta per essere scoperta, un attore ha due strade: confessare, o far calare il sipario. Lui sceglie la seconda.</p>
+    <div class="regia">[Nero. Poche immagini: una strada di campagna, una finestra.]</div>
+    <p>Tra il 9 e il 10 gennaio 1993 uccide la moglie e i due bambini, nella casa di Prévessin-Moëns. Poi va dai suoi genitori, nel Giura, e uccide anche loro. La notte dopo torna a casa, sparge benzina, prende dei sonniferi e appicca il fuoco. I vigili del fuoco lo tirano fuori vivo. È l'unico sopravvissuto della sua stessa storia.</p>
+    <div class="regia">[Ricostruzione · un'aula vuota, luce dall'alto.]</div>
+    <p>Il 6 luglio 1996 la corte lo condanna all'ergastolo, con ventidue anni prima di poter chiedere di uscire. Lui li sconta. Nel 2019 la corte d'appello di Bourges gli concede la libertà condizionale: esce il 28 giugno e va a vivere in un'abbazia. Dal 2022 non porta più nemmeno il braccialetto.</p>
+    <div class="regia">[Corinne in camera. Chiusura personale, da scrivere con lei.]</div>
+    <p class="beat">E noi restiamo con una domanda. Non «come ha potuto». Ma: come abbiamo fatto, tutti, a non vedere?</p>
+  </div>
+  <div class="fonti"><b>Fonti:</b> Le Temps; Europe 1; Wikipedia EN «Jean-Claude Romand»; Slate.fr; Tendance Ouest; macommune.info. Dettagli e link in CASI-NOIR.md, scheda 7.</div>
+</section>
+
+<!-- 02 REA -->
+<section class="story">
+  <div class="num">Storia 02</div>
+  <h2>La telefonata da una cabina</h2>
+  <div class="where">Ripe di Civitella, Teramo · aprile 2011</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Melania Rea, uccisa il 18 aprile 2011. Il marito, il caporal maggiore Salvatore Parolisi.</dd>
+    <dt>Cosa</dt><dd>Il corpo viene trovato due giorni dopo nel bosco delle Casermette, dopo una telefonata anonima da una cabina di Teramo. Chi ha chiamato non è mai stato identificato.</dd>
+    <dt>Sentenza</dt><dd>Ergastolo in primo grado (2012), 30 anni in appello. Nel 2015 la Cassazione esclude la crudeltà; 20 anni definitivi il 13 giugno 2016.</dd>
+    <dt>Oggi</dt><dd>Parolisi si è sempre dichiarato innocente.</dd>
+  </dl></div>
+
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · una cabina telefonica in una via del centro, di sera. Nessuno dentro.]</div>
+    <p>Partiamo da un oggetto che oggi quasi non esiste più. Una cabina telefonica. Teramo, aprile 2011. Qualcuno entra, solleva la cornetta, chiama il 113. Dice dove cercare. E se ne va.</p>
+    <p class="beat">Quella persona non è mai stata trovata. Tenete a mente questa cabina. Ci torneremo.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Melania Rea è una giovane donna, sposata. Il marito, Salvatore Parolisi, è un caporal maggiore dell'esercito. Il 18 aprile 2011 Melania sparisce. Due giorni dopo, grazie a quella telefonata, il suo corpo viene trovato nel bosco delle Casermette, a Ripe di Civitella. È stata uccisa a coltellate.</p>
+    <div class="regia">[Ricostruzione · un bosco di primavera, luce fredda tra i tronchi.]</div>
+    <p>Un bosco vicino a un'area militare. Un marito militare. Chi indaga comincia a guardare dentro quella famiglia, e trova quello che spesso si trova quando si apre una porta chiusa: un'altra vita. Una relazione con un'altra donna.</p>
+    <p>Ora, una doppia vita non fa di un uomo un assassino. Questo va detto, e va detto chiaramente. Ma per la giustizia italiana, in questo caso, è il punto da cui tutto parte.</p>
+    <div class="regia">[Ricostruzione · un'aula di tribunale vuota.]</div>
+    <p>Il processo è lungo. Ergastolo in primo grado, nel 2012. Trent'anni in appello. Poi la Cassazione toglie l'aggravante della crudeltà, si rifà l'appello, e la pena scende a vent'anni. Il 13 giugno 2016 diventa definitiva.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Salvatore Parolisi si è sempre dichiarato innocente. È un suo diritto dirlo, ed è giusto che anche noi lo diciamo.</p>
+    <div class="regia">[Ritorno alla cabina, inquadratura fissa.]</div>
+    <p class="beat">E quella cabina? Quella voce al telefono? Una sentenza può chiudere un processo. Non sempre chiude tutte le porte.</p>
+  </div>
+  <div class="fonti"><b>Fonti:</b> ANSA (13/06/2016 e 29/07/2016); Unione Sarda; Fanpage; L'Adige; LaPresse; Il Giornale. Dettagli e link in CASI-NOIR.md, scheda 6.</div>
+</section>
+
+<!-- 03 BAUMER -->
+<section class="story">
+  <div class="num">Storia 03</div>
+  <h2>La pausa</h2>
+  <div class="where">Regensburg, Germania · maggio 2012</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Maria Baumer, 26 anni. Il fidanzato, Christian F.: dovevano sposarsi.</dd>
+    <dt>Cosa</dt><dd>Il 26 maggio 2012 lui ne denuncia la scomparsa. L'8 settembre 2013 dei cercatori di funghi trovano i resti in un bosco vicino a Bernhardswald.</dd>
+    <dt>Sentenza</dt><dd>Ergastolo, 6 ottobre 2020, Landgericht di Regensburg. Definitiva dopo il rigetto della Corte federale, giugno 2021.</dd>
+    <dt>Oggi</dt><dd>Ammette di aver sepolto il corpo e simulato la scomparsa; nega di averla uccisa. Processo indiziario.</dd>
+  </dl></div>
+
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · un appartamento ordinato, due tazze sul tavolo, una sedia vuota.]</div>
+    <p>«Aveva bisogno di una pausa.» È con questa frase che comincia la storia. La dice un ragazzo di Regensburg, in Baviera, il 26 maggio 2012, quando va a denunciare la scomparsa della sua fidanzata. Maria Baumer, ventisei anni. Stavano per sposarsi.</p>
+    <p class="beat">Una pausa. A volte succede, no? Una persona ha bisogno d'aria. Poi torna.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Lui la cerca. O almeno, così sembra. Va perfino in televisione, in un programma che in Germania tutti conoscono, quello dei casi irrisolti. E lì piange. Chiede aiuto per ritrovarla.</p>
+    <p>Io ho visto molte lacrime vere e molte lacrime finte, nella mia vita. E vi dico una cosa: a volte non si riesce a distinguerle. Nemmeno da vicino.</p>
+    <div class="regia">[Ricostruzione · bosco bavarese a fine estate, foglie a terra.]</div>
+    <p>Passa più di un anno. L'8 settembre 2013 alcune persone stanno cercando funghi in un bosco vicino a Bernhardswald. Trovano dei resti. Il DNA dice che è Maria.</p>
+    <p>La pausa, quindi, non c'era mai stata.</p>
+    <div class="regia">[Ricostruzione · un tribunale tedesco, corridoio, luce bianca.]</div>
+    <p>Ci vogliono anni. Il processo comincia solo nel 2020, ed è tutto basato su indizi. Il 6 ottobre 2020 il tribunale di Regensburg condanna il fidanzato all'ergastolo. Secondo i giudici le ha dato un miscuglio di farmaci per liberarsi di lei ed essere libero per un'altra relazione. Nel giugno 2021 la Corte federale respinge il ricorso. La condanna è definitiva.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Lui ammette una parte. Dice di averla sepolta lui, di aver inventato la scomparsa. Ma dice di non averla uccisa.</p>
+    <p class="beat">Pensateci: un uomo che seppellisce la donna che stava per sposare, poi va in televisione a piangerla. Qualunque cosa sia successa quella notte, la recita dopo è certa.</p>
+  </div>
+  <div class="fonti"><b>Fonti:</b> beck-aktuell (07/10/2020); OTV Regensburg; Wikipedia DE «Mordfall Maria Baumer»; news.de. Dettagli e link in CASI-NOIR.md, scheda 16.</div>
+</section>
+
+<!-- 04 CESTE -->
+<section class="story">
+  <div class="num">Storia 04</div>
+  <h2>Un chilometro da casa</h2>
+  <div class="where">Provincia di Asti · gennaio 2014</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Elena Ceste. Il marito, Michele Buoninconti.</dd>
+    <dt>Cosa</dt><dd>Lei scompare nel gennaio 2014. Il corpo viene trovato nove mesi dopo, a circa un chilometro da casa, durante la pulizia del rio Mersa.</dd>
+    <dt>Sentenza</dt><dd>30 anni per omicidio e occultamento di cadavere: GUP di Asti (2015), Assise d'Appello di Torino (2017), definitiva in Cassazione il 17 maggio 2018.</dd>
+    <dt>Oggi</dt><dd>Si dichiara innocente. La difesa sostiene che lei sia morta di freddo dopo essersi allontanata da sola.</dd>
+  </dl></div>
+
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · campagna piemontese d'inverno, nebbia bassa, un fosso.]</div>
+    <p>Un chilometro. Quanto ci vuole a percorrerlo a piedi? Dieci minuti, forse dodici. È la distanza tra una casa di campagna in provincia di Asti e un corso d'acqua, il rio Mersa.</p>
+    <p class="beat">Per nove mesi, quel chilometro è stato il segreto meglio custodito d'Italia.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Gennaio 2014. Elena Ceste sparisce da casa sua, in pieno inverno. Si cerca. Il marito, Michele Buoninconti, sostiene che si sia allontanata da sola.</p>
+    <div class="regia">[Ricostruzione · operai e mezzi che puliscono un canale, autunno.]</div>
+    <p>Poi, nove mesi dopo, durante dei lavori di pulizia del rio Mersa, qualcuno trova il corpo. Non lontano. Non in un altro paese, non in fondo a un lago. A circa un chilometro da casa.</p>
+    <p>E qui vi chiedo di fare una cosa: guardate quel chilometro con gli occhi di chi indaga. Una donna sparisce, ma non va lontano. Chi può portarla così vicino senza che nessuno veda?</p>
+    <div class="regia">[Ricostruzione · un'aula, un banco vuoto.]</div>
+    <p>Per l'accusa, il movente sta dentro la coppia: Elena si stava allontanando da lui, sentimentalmente. Il GUP di Asti, nel novembre 2015, condanna Michele Buoninconti a trent'anni per omicidio e occultamento di cadavere. L'appello di Torino conferma. Il 17 maggio 2018 la Cassazione rende la condanna definitiva.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Lui continua a dirsi innocente. La sua difesa sostiene un'altra storia: che Elena sia uscita da sola, quella notte d'inverno, e sia morta di freddo.</p>
+    <p class="beat">Due racconti. Lo stesso chilometro. Un tribunale ha scelto quale credere.</p>
+  </div>
+  <div class="warn">⚠️ <b>Da controllare prima di registrare:</b> la difesa ha annunciato una possibile richiesta di revisione del processo. Verificare che non sia stata accolta.</div>
+  <div class="fonti"><b>Fonti:</b> Fanpage (appello e richiesta di revisione); Donna Glamour; Blitz Quotidiano. Dettagli e link in CASI-NOIR.md, scheda 11.</div>
+</section>
+
+<!-- 05 AVETRANA -->
+<section class="story">
+  <div class="num">Storia 05</div>
+  <h2>La casa degli zii</h2>
+  <div class="where">Avetrana, Taranto · agosto 2010</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Sarah Scazzi, 15 anni. La cugina Sabrina Misseri, la zia Cosima Serrano, lo zio Michele Misseri.</dd>
+    <dt>Cosa</dt><dd>Sarah scompare il 26 agosto 2010. Viene uccisa in casa degli zii. Il corpo viene ritrovato in un pozzo il 6 ottobre 2010.</dd>
+    <dt>Sentenza</dt><dd>Ergastolo definitivo per Sabrina Misseri e Cosima Serrano, Cassazione 21 febbraio 2017. Michele Misseri: 8 anni per soppressione di cadavere.</dd>
+    <dt>Oggi</dt><dd>Michele Misseri, uscito nel febbraio 2024, continua a dirsi l'unico colpevole. Le due donne si dichiarano innocenti.</dd>
+  </dl></div>
+
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · una strada di paese in pieno sole, agosto, persiane chiuse.]</div>
+    <p>Fine agosto, nel Sud. L'ora in cui il paese dorme e le persiane sono chiuse per il caldo. Una ragazza di quindici anni esce di casa per andare dai parenti. Pochi passi, una strada che conosce a memoria.</p>
+    <p class="beat">Il 26 agosto 2010 Sarah Scazzi non arriva mai. O meglio: arriva, ma non ne esce più.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Questa storia ha una cosa che la rende diversa da tutte le altre. L'Italia l'ha vissuta in diretta. Per settimane le telecamere sono state davanti a quella casa, ad Avetrana, in provincia di Taranto. Abbiamo visto i parenti parlare, piangere, rispondere alle domande. Abbiamo creduto di conoscerli.</p>
+    <div class="regia">[Ricostruzione · campagna pugliese, ulivi, un pozzo di pietra.]</div>
+    <p>Poi arriva la svolta. Lo zio, Michele Misseri, consegna agli investigatori il cellulare della ragazza, mezzo bruciato. E il 6 ottobre 2010 il corpo di Sarah viene trovato in un pozzo, in campagna. Lui confessa.</p>
+    <p>Sembra finita. Invece è solo l'inizio. Perché quella confessione cambia, si sposta, si contraddice. E l'inchiesta entra nella casa, stanza per stanza.</p>
+    <div class="regia">[Ricostruzione · un corridoio di casa, una porta socchiusa.]</div>
+    <p>La giustizia arriva a una conclusione diversa da quella che lo zio racconta. Il 21 febbraio 2017 la Cassazione rende definitivo l'ergastolo per la cugina, Sabrina Misseri, e per la zia, Cosima Serrano. Allo zio, otto anni: per aver fatto sparire il corpo.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Michele Misseri è uscito di prigione nel febbraio 2024 e continua a ripetere che è stato lui, da solo. Sabrina e Cosima continuano a dirsi innocenti. La sentenza però è definitiva.</p>
+    <p class="beat">Tre persone sotto lo stesso tetto, tre versioni. E in mezzo una ragazza che era entrata in quella casa perché era la casa di famiglia.</p>
+  </div>
+  <div class="warn">⚠️ <b>Cautela:</b> la vittima era minorenne. Nessuna foto di Sarah, nessun dettaglio sulla dinamica del delitto, nessuna immagine riconoscibile della casa reale.</div>
+  <div class="fonti"><b>Fonti:</b> LaPresse (2017 e cronologia 2023); Il Foglio; Sky TG24; Unione Sarda; L'Adige; Panorama. Dettagli e link in CASI-NOIR.md, scheda 4.</div>
+</section>
+
+</body>
+</html>
