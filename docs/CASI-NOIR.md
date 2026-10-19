@@ -19,17 +19,21 @@ Compilato il 19 ottobre 2026. Prima tranche: **10 casi** (6 Italia, 4 Europa).
 
 ### 1. Pietro Maso — Montecchia di Crosara (VR), 1991
 - **Fatti:** il 17 aprile 1991 Pietro Maso (19 anni) uccide con tre amici i genitori, Antonio Maso e Mariarosa Tessari, per ottenere l'eredità.
-- **Esito giudiziario:** condannato a 30 anni e 2 mesi, pena confermata in Cassazione. I complici Cavazza e Carbognin hanno avuto 26 anni; Burato, minorenne, 13 anni.
-- **Oggi:** è uscito nel 2013 dopo circa 22 anni di carcere, grazie a indulto e liberazione anticipata.
-- ⚠️ DA VERIFICARE: l'anno della Cassazione. Le fonti indicano sia il 1992 sia il 1994.
+- **Esito giudiziario:** il 29 febbraio 1992 la Corte d'Assise di Verona lo condanna a 30 anni e 2 mesi, riconoscendogli la seminfermità mentale. La Corte d'Appello di Venezia conferma, e la Cassazione rende definitiva la condanna nel gennaio 1994. I complici Cavazza e Carbognin hanno avuto 26 anni; Burato, minorenne, 13 anni.
+- **Oggi:** è uscito il 15 aprile 2013 dopo circa 22 anni di carcere, grazie a indulto e liberazione anticipata.
+- ✅ Verificato il 19/10/2026: il «1992» che avevo trovato prima era la data del primo grado, non quella della Cassazione. Il mese (gennaio 1994) lo riporta però una sola fonte (Leggo).
 - **Aggancio noir:** il figlio "per bene" del paese che organizza la festa dopo il delitto. Il movente sono i soldi.
-- **Fonti:** [Affaritaliani](https://www.affaritaliani.it/cronache/la-scheda-dall-omicidio-al-carcere150413.html) · [LaPresse](https://www.lapresse.it/cronaca/2024/09/02/da-erika-e-omar-a-pietro-maso-quando-i-figli-uccidono-i-genitori/) · [Fanpage](https://www.fanpage.it/da-pietro-maso-a-erika-e-omar-quei-figli-che-uccidono-i-genitori/) · [Libero](https://www.liberoquotidiano.it/news/italia/21016779/pietro-maso-e-libero--uscito-dal-carcere-dopo--22-anni--nel--91-massacro-i-genitori/)
+- **Fonti:** [Leggo (2026)](https://www.leggo.it/schede/20_aprile_2026_pietro_maso_strage_famiglia_eredita_genitori_sorelle_moglie_figli_oggi_dove_vive-il_processo_e_le_sentenze-5-9482921.html) · [Affaritaliani](https://www.affaritaliani.it/cronache/la-scheda-dall-omicidio-al-carcere150413.html) · [LaPresse](https://www.lapresse.it/cronaca/2024/09/02/da-erika-e-omar-a-pietro-maso-quando-i-figli-uccidono-i-genitori/) · [Fanpage](https://www.fanpage.it/da-pietro-maso-a-erika-e-omar-quei-figli-che-uccidono-i-genitori/) · [Libero](https://www.liberoquotidiano.it/news/italia/21016779/pietro-maso-e-libero--uscito-dal-carcere-dopo--22-anni--nel--91-massacro-i-genitori/)
 
 ### 2. Doretta Graneris — Vercelli, 1975
 - **Fatti:** la notte del 13 novembre 1975 Doretta Graneris (19 anni) e il fidanzato Guido Badini (21) uccidono a colpi di pistola cinque familiari di lei: i genitori, i nonni materni e il fratello di 13 anni. Il movente accertato è l'eredità.
-- **Esito giudiziario:** ergastolo per entrambi. Il complice Antonio D'Elia ha avuto una pena ridotta per seminfermità mentale.
+- **Esito giudiziario:** ergastolo per entrambi, confermato in Cassazione (lo riportano più fonti). Il complice Antonio D'Elia ha avuto una pena ridotta per seminfermità mentale.
 - **Oggi:** nel 1992 Doretta Graneris ottiene la semilibertà, tra molte polemiche.
-- ⚠️ DA VERIFICARE: anno e corte della sentenza (le fonti dicono 1978, ma non concordano); pena di D'Elia (22 o 25 anni).
+- ⚠️ ANCORA DA VERIFICARE (controllato il 19/10/2026 senza esito):
+  - **Anno e corte della sentenza:** online non c'è conferma; una fonte dice solo che il processo iniziò nel 1978.
+  - **Pena di D'Elia:** le fonti danno 22, 24 o 25 anni.
+  - **Dove cercare:** archivio storico de *La Stampa*, che richiede una consultazione manuale.
+  - **Fino ad allora:** in video dire solo «condannati all'ergastolo», senza anno e senza la pena di D'Elia.
 - ⚠️ Badini nel 2025 è stato arrestato per un nuovo fatto ancora sotto processo: **non citarlo nel racconto** (presunzione d'innocenza).
 - **Aggancio noir:** la giovane coppia che "fa i conti" con la famiglia nella villa di provincia.
 - **Fonti:** [Il Sussidiario](https://www.ilsussidiario.net/news/caso-graneris-doretta-e-guido-coppia-killer-uccisero-famiglia-di-lei-per-leredita/2280482/) · [Fanpage](https://www.fanpage.it/milano/chi-e-guido-badini-arrestato-per-lagguato-armato-a-un-imprenditore-50-anni-fa-stermino-la-famiglia-della-fidanzata/) · [Archivio900](https://www.archivio900.it/it/documenti/doc.aspx?id=608) · [l'Unità, 21/11/1975 (PDF d'epoca)](https://archivio.unita.news/assets/main/1975/11/21/page_005.pdf)
@@ -45,9 +49,9 @@ Compilato il 19 ottobre 2026. Prima tranche: **10 casi** (6 Italia, 4 Europa).
 - **Fatti:** il 26 agosto 2010 ad Avetrana (TA) scompare Sarah Scazzi, 15 anni. Viene uccisa in casa degli zii.
 - **Esito giudiziario:** la Cassazione, il 21 febbraio 2017, rende definitivo l'ergastolo per la cugina Sabrina Misseri e per la zia Cosima Serrano. Lo zio Michele Misseri è condannato a 8 anni per soppressione di cadavere.
 - **Oggi:** Michele Misseri è uscito nel febbraio 2024 e continua a dirsi l'unico colpevole. Le due donne si dichiarano innocenti.
-- ⚠️ DA VERIFICARE: la data della scomparsa sulla sentenza.
+- ✅ Verificato il 19/10/2026: scomparsa il 26 agosto 2010, corpo ritrovato in un pozzo il 6 ottobre 2010 (LaPresse, Sky TG24).
 - **Aggancio noir:** una famiglia che si accusa a vicenda davanti alle telecamere, mentre l'Italia guarda in diretta.
-- **Fonti:** [LaPresse](https://www.lapresse.it/cronaca/2017/02/21/avetrana-cassazione-conferma-lergastolo-per-sabrina-e-cosima/) · [Il Foglio](https://www.ilfoglio.it/societa/2017/02/21/news/sarah-scazzi-ergastoli-definitivi-per-sabrina-misseri-e-cosima-serrano--239964) · [Sky TG24](https://tg24.sky.it/cronaca/2017/02/20/sarah-scazzi-cassazione-omicidio-le-tappe-del-processo)
+- **Fonti:** [LaPresse (cronologia)](https://www.lapresse.it/cronaca/2023/03/22/delitto-avetrana-dalla-scomparsa-di-sarah-scazzi-alle-condanne-dei-misseri/) · [LaPresse](https://www.lapresse.it/cronaca/2017/02/21/avetrana-cassazione-conferma-lergastolo-per-sabrina-e-cosima/) · [Il Foglio](https://www.ilfoglio.it/societa/2017/02/21/news/sarah-scazzi-ergastoli-definitivi-per-sabrina-misseri-e-cosima-serrano--239964) · [Sky TG24](https://tg24.sky.it/cronaca/2017/02/20/sarah-scazzi-cassazione-omicidio-le-tappe-del-processo)
 
 ### 5. Loris Stival — Santa Croce Camerina (RG), 2014
 - **Fatti:** il 29 novembre 2014 viene strangolato il piccolo Loris, 8 anni. Il corpo è ritrovato in un canalone.
