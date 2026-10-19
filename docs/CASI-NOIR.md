@@ -71,11 +71,15 @@ Compilato il 19 ottobre 2026. **16 casi** (10 Italia, 6 Europa).
 ## EUROPA
 
 ### 7. Francia — Jean-Claude Romand, 1993
-- **Fatti:** nel gennaio 1993 a Prévessin-Moëns (Ain) Romand uccide la moglie, i due figli e i genitori, poi dà fuoco alla casa. Per circa 18 anni aveva finto di essere un medico dell'OMS.
+- **Fatti:** tra il 9 e il 10 gennaio 1993 Romand uccide la moglie e i due figli (7 e 5 anni) nella casa di Prévessin-Moëns (Ain). Poi uccide i genitori nella loro casa di Clairvaux-les-Lacs (Jura). Nella notte tra il 10 e l'11 gennaio dà fuoco alla propria casa e ingerisce dei sonniferi; i vigili del fuoco lo salvano.
+- **La doppia vita:** non è mai stato medico. Per circa 18 anni (alcune fonti dicono «oltre quindici») si è presentato come medico e ricercatore all'OMS di Ginevra, che non l'ha mai assunto. Era incalzato da creditori che avevano scoperto l'inganno.
+- ✅ Verificato il 19/10/2026 (Le Temps, Europe 1, Wikipedia EN). Le fonti differiscono di un giorno sulla sequenza 9/10 gennaio: in video dire «tra il 9 e l'11 gennaio 1993».
+- ⚠️ Una sola fonte (Wikipedia EN) riporta che la sera del 10 gennaio ha aggredito anche l'ex amante, poi lasciata andare. Non usarlo senza una seconda fonte.
 - **Esito giudiziario:** nel 1996 è condannato all'ergastolo, con 22 anni di periodo di sicurezza.
-- **Oggi:** a febbraio 2019 il giudice di Châteauroux nega la libertà condizionale; nel 2019 la corte di Bourges la concede in appello, con braccialetto elettronico per due anni.
+- **Esito, dettagli:** processo iniziato il 25 giugno 1996 e condanna il 6 luglio 1996 (Wikipedia EN).
+- **Oggi:** a febbraio 2019 il giudice di Châteauroux nega la libertà condizionale; la corte di Bourges la concede in appello. Esce il 28 giugno 2019 con braccialetto elettronico per due anni e va a vivere in un'abbazia (Notre-Dame de Fontgombault). Dal 2022 è libero senza braccialetto.
 - **Aggancio noir:** la menzogna perfetta che dura vent'anni. Ne è nato anche il libro *L'Avversario* di Emmanuel Carrère.
-- **Fonti:** [Slate.fr](https://www.slate.fr/story/170148/justice-jean-claude-romand-demande-remise-en-liberte) · [Tendance Ouest](https://www.tendanceouest.com/actualite-319719-vingt-six-ans-apres-ses-crimes-la-justice-libere-le-faux-docteur-romand) · [macommune.info](https://www.macommune.info/affaire-du-faux-medecin-liberte-conditionnelle-accordee-en-appel-pour-jean-claude-romand/)
+- **Fonti:** [Le Temps](https://www.letemps.ch/monde/jeanclaude-romand-parcours-faux-docteur-infanticide-pays-gex) · [Europe 1](https://www.europe1.fr/societe/laffaire-jean-claude-romand-cinq-meurtres-et-quinze-ans-de-mensonges-3898354) · [Wikipedia EN](https://en.wikipedia.org/wiki/Jean-Claude_Romand) · [RTBF (Carrère)](https://www.rtbf.be/article/l-adversaire-d-emmanuel-carrere-une-rencontre-inconditionnelle-avec-jean-claude-romand-10208015) · [Slate.fr](https://www.slate.fr/story/170148/justice-jean-claude-romand-demande-remise-en-liberte) · [Tendance Ouest](https://www.tendanceouest.com/actualite-319719-vingt-six-ans-apres-ses-crimes-la-justice-libere-le-faux-docteur-romand) · [macommune.info](https://www.macommune.info/affaire-du-faux-medecin-liberte-conditionnelle-accordee-en-appel-pour-jean-claude-romand/)
 
 ### 8. Regno Unito — Jeremy Bamber, White House Farm, 1985
 - **Fatti:** nella notte tra il 6 e il 7 agosto 1985, a Tolleshunt D'Arcy (Essex), vengono uccisi i genitori adottivi, la sorella Sheila Caffell e i suoi due figli gemelli.
@@ -166,16 +170,16 @@ Compilato il 19 ottobre 2026. **16 casi** (10 Italia, 6 Europa).
 ### Traccia — Puntata 1: «Il falso dottore» (Jean-Claude Romand)
 Durata indicativa: 10–12 minuti. **Voce: Corinne, in prima persona**, nel casale. Solo fatti con fonte (schede 7 e sopra).
 
-1. **Apertura a freddo (30")** — Gennaio 1993, una casa in fiamme a Prévessin-Moëns, vicino al confine svizzero. Corinne: *«Questa è la storia di un uomo che per anni ha recitato una parte. E io, di parti, me ne intendo.»*
+1. **Apertura a freddo (30")** — Notte tra il 10 e l'11 gennaio 1993: una casa in fiamme a Prévessin-Moëns, vicino a Ginevra. Corinne: *«Questa è la storia di un uomo che per anni ha recitato una parte. E io, di parti, me ne intendo.»*
 2. **L'uomo perfetto (2')** — Un medico, un marito, un padre di due figli, e i suoi genitori accanto. Così lo vedevano tutti.
-3. **La crepa (2')** — Non era un medico. Ogni mattina usciva di casa come se andasse al lavoro. ⚠️ Prima di registrare, verificare sulle fonti la durata della finzione e il ruolo dichiarato all'OMS.
-4. **La notte (2')** — Uccide la moglie, i due figli e i genitori, poi dà fuoco alla casa. **Niente dettagli cruenti:** solo i fatti accertati.
-5. **Il processo (1'30")** — 1996: ergastolo con 22 anni di periodo di sicurezza.
-6. **La libertà (1'30")** — Febbraio 2019: Châteauroux gli nega la libertà condizionale. Nel 2019 la corte di Bourges gliela concede in appello, con braccialetto elettronico per due anni e il divieto di entrare in tre regioni.
+3. **La crepa (2')** — Non era un medico. Per circa diciotto anni ha raccontato a tutti di essere un ricercatore dell'OMS a Ginevra, che non l'ha mai assunto. Poi arrivano i creditori, che hanno scoperto l'inganno.
+4. **I due giorni (2')** — Tra il 9 e il 10 gennaio uccide la moglie e i figli, poi i genitori in un altro paese, nel Giura. Nella notte dà fuoco alla casa e prende dei sonniferi, ma i vigili del fuoco lo salvano. **Niente dettagli cruenti:** solo i fatti accertati.
+5. **Il processo (1'30")** — Luglio 1996: ergastolo con 22 anni di periodo di sicurezza.
+6. **La libertà (1'30")** — Febbraio 2019: Châteauroux gli nega la libertà condizionale. La corte di Bourges gliela concede in appello: il 28 giugno 2019 esce e va a vivere in un'abbazia, con braccialetto elettronico e il divieto di entrare in tre regioni.
 7. **Chiusura (1')** — La riflessione personale di Corinne sulla menzogna e sull'apparenza, **scritta da lei**, non da noi.
 
 **Da fare prima di registrare:**
-- Verificare la data esatta dei delitti e la durata della doppia vita sulle fonti francesi (es. archivio di *Le Monde*).
+- ✅ Date e durata della doppia vita verificate il 19/10/2026 (vedi scheda 7). Resta da confermare l'aggressione all'ex amante, per ora esclusa dal testo.
 - Per citare il libro di Carrère serve solo il titolo. Estratti letti in video richiedono i diritti.
 - Niente foto delle vittime né della casa da Google: solo immagini di repertorio con licenza, oppure ricostruzioni con disegni o ambienti senza volti.
 - Validare il testo con Corinne (regola 5 del CLAUDE.md).
