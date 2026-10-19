@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Storie di famiglia nel buio 2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+@page{size:A4;margin:16mm 18mm 15mm 20mm}
+@page:first{margin:0}
+:root{--ink:#1b1714;--muted:#6f655b;--ember:#9c4a1c;--paper:#ffffff;--rule:#d9cfc1;--box:#f1ebe0;
+--display:"Cormorant Garamond",Georgia,serif;--body:"Source Serif 4",Georgia,serif;--mono:"IBM Plex Mono",Menlo,monospace}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:10pt;line-height:1.48}
+.cover{height:297mm;width:210mm;position:relative;background:#000 url(strada.jpg) center/cover;page-break-after:always;color:#f3ede4}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.1) 35%,rgba(0,0,0,.85) 80%)}
+.cover .in{position:absolute;left:22mm;right:22mm;bottom:30mm;z-index:2}
+.kicker{font-family:var(--mono);font-size:8.5pt;letter-spacing:.32em;text-transform:uppercase;color:#e0a46c}
+.cover h1{font-family:var(--display);font-weight:600;font-size:46pt;line-height:1;margin:6mm 0 4mm}
+.cover p{font-family:var(--display);font-style:italic;font-size:15pt;margin:0;max-width:130mm}
+.cover .meta{font-family:var(--mono);font-size:7.5pt;letter-spacing:.12em;color:#bdb3a6;margin-top:10mm}
+h2{font-family:var(--display);font-weight:600;font-size:28pt;line-height:1.05;margin:0 0 2mm;text-wrap:balance}
+h3{font-family:var(--mono);font-weight:500;font-size:8pt;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);margin:7mm 0 2.5mm}
+.story{page-break-before:always}
+.num{font-family:var(--mono);font-size:8pt;letter-spacing:.3em;color:var(--muted);text-transform:uppercase}
+.where{font-family:var(--display);font-style:italic;font-size:13pt;color:var(--muted);margin-bottom:6mm}
+.scheda{background:var(--box);border-left:2.5pt solid var(--ember);padding:4mm 5mm;font-size:9.2pt;line-height:1.5;break-inside:avoid}
+.scheda dl{display:grid;grid-template-columns:28mm 1fr;gap:1.5mm 4mm;margin:0}
+.scheda dt{font-family:var(--mono);font-size:7.5pt;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:.6mm}
+.scheda dd{margin:0}
+.voce p{margin:0 0 3mm;text-align:left;hyphens:auto}
+.voce p.beat{font-family:var(--display);font-size:13.5pt;font-style:italic;line-height:1.35;margin:4mm 0}
+.regia{font-family:var(--mono);font-size:7.6pt;line-height:1.45;color:var(--muted);margin:2.5mm 0 2mm;padding-left:3mm;border-left:1pt solid var(--rule)}
+.sec{font-family:var(--mono);font-size:7.5pt;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);margin:6mm 0 2mm;border-top:.6pt solid var(--rule);padding-top:2.5mm}
+.warn{font-size:8.8pt;background:#fbefe2;border:.6pt solid #e6c7a6;padding:3mm 4mm;margin-top:5mm;break-inside:avoid}
+.fonti{font-size:8pt;color:var(--muted);margin-top:4mm;line-height:1.45;word-break:break-word}
+.fonti a{color:var(--muted)}
+.intro p{margin:0 0 3mm;max-width:150mm}
+.intro ul{margin:0 0 3mm;padding-left:5mm}
+.intro li{margin-bottom:1.5mm}
+.toc{margin-top:6mm;border-top:.6pt solid var(--rule)}
+.toc div{display:flex;gap:4mm;padding:2.2mm 0;border-bottom:.6pt solid var(--rule);font-size:10pt}
+.toc b{font-family:var(--mono);font-weight:500;font-size:8pt;color:var(--ember);width:8mm;padding-top:.8mm}
+.toc span{flex:1}.toc em{color:var(--muted);font-size:9pt}
+</style>
+</head>
+<body>
+<section class="cover">
+  <div class="in">
+    <div class="kicker">Parlane con Corinne Cléry</div>
+    <h1>Storie di famiglia<br>nel buio · 2</h1>
+    <p>Cinque casi veri, più duri. Da leggere insieme a Corinne prima di decidere se raccontarli.</p>
+    <div class="meta">Raccolta n. 2 · Bozza di lavoro del 19 ottobre 2026 · Uso interno · Testi da approvare con Corinne</div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="num">Prima di leggere</div>
+  <h2>Perché questa raccolta è diversa</h2>
+  <p>Le regole sono le stesse della Raccolta 1: solo fatti accertati, solo esiti giudiziari definitivi, nessun dettaglio cruento, note di regia in grigio, testi da far propri a Corinne.</p>
+  <p>Ma questi cinque casi toccano temi che nella prima raccolta avevamo lasciato fuori apposta:</p>
+  <ul>
+    <li><b>Figli contro genitori</b> (Bamber, Carretta). Corinne ha una vicenda familiare privata delicata: va deciso con lei se e come raccontarli, per evitare paragoni.</li>
+    <li><b>Bambini come vittime</b> (Lissi, Lhermitte). Il racconto non entra mai nella stanza: si ferma sulla soglia.</li>
+    <li><b>Una vittima che vive ancora</b> (Fritzl). La figlia e i nipoti hanno una nuova identità protetta: non vanno mai nominati né mostrati.</li>
+    <li><b>Un caso senza condanna</b> (Carretta). L'autore è stato prosciolto perché incapace di intendere e di volere: il testo lo dice chiaramente.</li>
+  </ul>
+  <p>Ogni storia ha in fondo un riquadro <b>«Da decidere con Corinne»</b>.</p>
+  <div class="toc">
+    <div><b>06</b><span>Due verità sulla fattoria</span><em>Inghilterra, 1985</em></div>
+    <div><b>07</b><span>Il camper vuoto</span><em>Parma, 1989</em></div>
+    <div><b>08</b><span>Sotto la casa</span><em>Austria, 2008</em></div>
+    <div><b>09</b><span>Una sera di giugno</span><em>Lombardia, 2014</em></div>
+    <div><b>10</b><span>La casa di Nivelles</span><em>Belgio, 2007</em></div>
+  </div>
+</section>
+
+<!-- 06 BAMBER -->
+<section class="story">
+  <div class="num">Storia 06</div>
+  <h2>Due verità sulla fattoria</h2>
+  <div class="where">White House Farm, Tolleshunt D'Arcy, Essex · agosto 1985</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Jeremy Bamber, figlio adottivo. Le vittime: i genitori adottivi, la sorella Sheila Caffell e i suoi due gemelli.</dd>
+    <dt>Cosa</dt><dd>Strage nella notte tra il 6 e il 7 agosto 1985 nella fattoria di famiglia.</dd>
+    <dt>Sentenza</dt><dd>Condannato il 28 ottobre 1986, Crown Court di Chelmsford, verdetto di maggioranza 10 a 2. Court of Appeal conferma nel dicembre 2002. Dal 2008 «whole life order»: non uscirà mai.</dd>
+    <dt>Oggi</dt><dd>Si dichiara innocente: sostiene che sia stata la sorella, malata di schizofrenia. I ricorsi successivi sono stati respinti.</dd>
+  </dl></div>
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · una grande fattoria inglese all'alba, campi piatti, nebbia d'agosto.]</div>
+    <p>Ci sono storie con un colpevole e un innocente. E poi ci sono storie con due versioni, così diverse che non possono essere vere tutte e due. Questa è una di quelle.</p>
+    <p class="beat">Una fattoria nell'Essex, in Inghilterra. La notte tra il 6 e il 7 agosto 1985. Cinque persone uccise.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Nella casa ci sono i due proprietari, marito e moglie. C'è la figlia adottiva, Sheila. E ci sono i due bambini di Sheila, due gemelli. Di quella famiglia resta solo il figlio adottivo, Jeremy Bamber.</p>
+    <div class="regia">[Ricostruzione · un corridoio di campagna, una finestra con la luce accesa.]</div>
+    <p>La prima versione è quella che racconta lui. Sheila soffriva di schizofrenia. Quella notte avrebbe preso un'arma, ucciso tutti, e poi rivolto l'arma contro di sé. Una tragedia della malattia, chiusa dentro una casa.</p>
+    <p>La seconda versione è quella dell'accusa. Secondo l'accusa è stato Jeremy, e il movente è l'eredità: la fattoria, la terra, i soldi.</p>
+    <div class="regia">[Ricostruzione · un'aula inglese, banchi di legno scuro.]</div>
+    <p>Il 28 ottobre 1986 la giuria decide. Non all'unanimità: dieci contro due. Jeremy Bamber è colpevole. Nel 2002, dopo una revisione, la Corte d'Appello conferma. Dal 2008 la sua pena è un ergastolo senza fine: non uscirà mai.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Lui, da allora, non ha mai smesso di dirsi innocente. Ha presentato ricorsi, uno dopo l'altro. Sono stati tutti respinti.</p>
+    <p class="beat">Due versioni. Una sola è stata creduta. Ma pensate a quella notte, a quella fattoria: in ogni caso, chi c'era dentro non c'è più per raccontarla.</p>
+  </div>
+  <div class="warn">⚠️ <b>Da decidere con Corinne:</b> è un caso di figlio (adottivo) accusato di aver ucciso i genitori. Valutare con lei se inserirlo nel format.</div>
+  <div class="fonti"><b>Fonti:</b> Wikipedia EN «White House Farm murders» e «Jeremy Bamber»; Crime+Investigation; National Archives, sentenza High Court 2020; Daily Gazette. Dettagli e link in CASI-NOIR.md, scheda 8.</div>
+</section>
+
+<!-- 07 CARRETTA -->
+<section class="story">
+  <div class="num">Storia 07</div>
+  <h2>Il camper vuoto</h2>
+  <div class="where">Parma · agosto 1989</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>La famiglia Carretta: padre, madre e due figli. Ferdinando è uno dei figli.</dd>
+    <dt>Cosa</dt><dd>Nell'agosto 1989 la famiglia sparisce. Per quasi dieci anni si crede a una fuga all'estero. Nel 1998 Ferdinando, rintracciato a Londra, confessa in TV a <i>Chi l'ha visto?</i> di aver ucciso il padre, la madre e il fratello. Corpi e arma mai ritrovati.</dd>
+    <dt>Esito</dt><dd><b>Nessuna condanna.</b> Nel 1999 viene prosciolto perché totalmente incapace di intendere e di volere al momento dei fatti, e internato in ospedale psichiatrico giudiziario.</dd>
+    <dt>Oggi</dt><dd>Uscito nel 2015 sotto sorveglianza, è morto a Forlì a fine maggio 2023.</dd>
+  </dl></div>
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · un parcheggio di periferia, un camper fermo, i vetri appannati.]</div>
+    <p>Un camper parcheggiato a Milano. Vuoto, senza tracce. Un mezzo fermo, che qualcuno ha lasciato lì e non è mai tornato a prendere.</p>
+    <p class="beat">Per anni, è uno dei pochi segni rimasti della famiglia Carretta.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Agosto 1989. Una famiglia di Parma, padre, madre e due figli, sparisce nel nulla. Le ipotesi arrivano presto, e sono quelle che a tutti sembrano logiche: soldi, fondi neri, una fuga all'estero. Una famiglia che ha deciso di ricominciare da un'altra parte.</p>
+    <p>È una storia comoda, perché non ha bisogno di colpevoli. E resta in piedi per quasi dieci anni.</p>
+    <div class="regia">[Ricostruzione · una strada di Londra di notte, luci blu di un'auto della polizia.]</div>
+    <p>Poi, nel 1998, a Londra, la polizia ferma un uomo per un normale controllo stradale. È Ferdinando Carretta, uno dei due figli. Vivo. Da solo.</p>
+    <p>E qui succede una cosa che non era mai successa. Prima ancora di parlare con un magistrato, Ferdinando parla davanti a una telecamera. Ai giornalisti di <i>Chi l'ha visto?</i> racconta che i suoi genitori e suo fratello non sono mai partiti. Che li ha uccisi lui, nell'estate del 1989.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Il padre, la madre e il fratello non sono mai stati ritrovati. Nemmeno l'arma. Tutto quello che sappiamo di quella notte viene dalla sua voce.</p>
+    <p>Nel 1999 i giudici stabiliscono che, quando ha agito, Ferdinando era totalmente incapace di intendere e di volere. Non viene condannato: viene prosciolto e internato in un ospedale psichiatrico giudiziario. Esce nel 2015, sotto sorveglianza. Muore a Forlì nel 2023.</p>
+    <p class="beat">Per nove anni abbiamo creduto a una famiglia in fuga. Era la storia più facile da credere. E proprio per questo nessuno l'ha messa in dubbio.</p>
+  </div>
+  <div class="warn">⚠️ <b>Da decidere con Corinne:</b> figlio contro i genitori, come Bamber. <b>In video va detto chiaramente:</b> Carretta non è stato condannato, è stato riconosciuto non imputabile.</div>
+  <div class="fonti"><b>Fonti:</b> Il Post (2015 e 2023); Open; Unione Sarda; Il Giornale; Il Fatto Quotidiano. Dettagli e link in CASI-NOIR.md, scheda 14.</div>
+</section>
+
+<!-- 08 FRITZL -->
+<section class="story">
+  <div class="num">Storia 08</div>
+  <h2>Sotto la casa</h2>
+  <div class="where">Amstetten, Austria · aprile 2008</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Josef Fritzl («Josef F.» nella stampa austriaca). La vittima principale: una delle sue figlie, che oggi vive con un'identità protetta.</dd>
+    <dt>Cosa</dt><dd>Dal 1984 tiene la figlia prigioniera in un locale insonorizzato sotto la casa di famiglia, per 24 anni. Dalle violenze nascono sette figli; uno muore poco dopo la nascita, senza cure. Il caso emerge nell'aprile 2008.</dd>
+    <dt>Sentenza</dt><dd>19 marzo 2009, corte d'assise di St. Pölten: colpevole di tutti i capi d'accusa, compreso l'omicidio per omissione del neonato. Ergastolo con internamento. Sentenza accettata, quindi definitiva.</dd>
+    <dt>Oggi</dt><dd>Da maggio 2024 in regime carcerario ordinario. La richiesta di liberazione condizionale è stata respinta dal tribunale di Krems.</dd>
+  </dl></div>
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · una casa qualunque in una cittadina austriaca, facciata ordinata, tende alle finestre. Solo l'esterno.]</div>
+    <p>Una casa come tante, in una cittadina austriaca. Le finestre, il giardino, le tende. Chi ci passa davanti non ha motivo di guardarla due volte.</p>
+    <p class="beat">Il problema non è quello che si vede. È quello che c'è sotto.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Questa è la storia che ho esitato di più a raccontarvi. Non perché sia la più violenta, ma perché una delle persone che l'hanno vissuta è ancora viva. Ha diritto al silenzio. Per questo non sentirete mai il suo nome.</p>
+    <div class="regia">[Ricostruzione · una scala che scende verso il buio, una porta pesante. Nessun interno.]</div>
+    <p>Nel 1984 un padre, Josef Fritzl, chiude una delle sue figlie in un locale sotto la casa di famiglia, insonorizzato. Sopra, la vita continua. Sotto, lei ci resterà per ventiquattro anni.</p>
+    <p>In quei ventiquattro anni nascono sette bambini, figli delle violenze del padre. Uno di loro muore poco dopo la nascita, perché nessuno lo cura.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Ventiquattro anni. Pensate a quante volte qualcuno avrà suonato a quella porta, avrà preso un caffè in quella cucina. Pensate a quanti passi sono stati fatti sopra quella stanza.</p>
+    <div class="regia">[Ricostruzione · un'aula austriaca, luce fredda.]</div>
+    <p>Il caso viene fuori nell'aprile 2008. Il 19 marzo 2009 la corte di St. Pölten lo dichiara colpevole di tutto, all'unanimità. Anche della morte di quel neonato, lasciato senza cure: per la legge è omicidio. Ergastolo. Lui accetta la sentenza. Più di recente, il tribunale ha respinto la sua richiesta di uscire.</p>
+    <p class="beat">Si dice che le case custodiscano i segreti di famiglia. Questa li ha seppelliti, letteralmente, sotto i propri piedi.</p>
+  </div>
+  <div class="warn">⚠️ <b>Regole fisse:</b> non nominare mai la figlia né i nipoti; nessuna immagine della casa reale; nessuna ricostruzione dell'interno. <b>Da decidere con Corinne:</b> se il tema (violenza sessuale in famiglia) è adatto al format.</div>
+  <div class="fonti"><b>Fonti:</b> Der Standard; Vienna.at; Tiroler Tageszeitung; Salzburg24; Berliner Zeitung; t-online. Dettagli e link in CASI-NOIR.md, scheda 15.</div>
+</section>
+
+<!-- 09 LISSI -->
+<section class="story">
+  <div class="num">Storia 09</div>
+  <h2>Una sera di giugno</h2>
+  <div class="where">Motta Visconti, Milano · giugno 2014</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Carlo Lissi. Le vittime: la moglie, Maria Cristina Omes, e i due figli di 5 anni e 20 mesi.</dd>
+    <dt>Cosa</dt><dd>Il 14 giugno 2014 li uccide in casa. Confessa lo stesso giorno: dice di essere «innamorato di un'altra».</dd>
+    <dt>Sentenza</dt><dd>Ergastolo in primo grado, 18 gennaio 2017. Rinuncia all'appello con una lettera ai giudici: la condanna diventa definitiva.</dd>
+  </dl></div>
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · una villetta di paese in Lombardia, sera d'estate, un'altalena ferma in giardino.]</div>
+    <p>Un paese nella campagna intorno a Milano. Giugno, le sere lunghe. Una famiglia giovane: un uomo, una donna, due bambini piccoli.</p>
+    <p class="beat">Il 14 giugno 2014, quella casa smette di essere una casa.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>Carlo Lissi uccide la moglie, Maria Cristina, e i loro due figli: uno di cinque anni, l'altro di venti mesi. Non vi dirò come. Non serve, e non è giusto verso di loro.</p>
+    <p>Vi dirò invece cosa dice lui, quello stesso giorno, quando confessa. Dice di essere innamorato di un'altra.</p>
+    <div class="regia">[Corinne in camera, primo piano. Pausa lunga.]</div>
+    <p>Io ho fatto tanti film d'amore. Ho detto tante battute sull'amore che fa perdere la testa. Ma nessuna storia d'amore, nessuna, ha mai avuto bisogno di una cosa del genere per cominciare.</p>
+    <div class="regia">[Ricostruzione · un tribunale lombardo, una lettera su un tavolo, la grafia illeggibile.]</div>
+    <p>Il 18 gennaio 2017 viene condannato all'ergastolo. Poi fa una cosa rara: rinuncia all'appello. Scrive ai giudici una lettera. Dice che merita il carcere a vita, e si scusa per avergli fatto perdere tempo. La condanna diventa definitiva.</p>
+    <p class="beat">Ci sono storie in cui il colpevole nega tutto. Questa è il contrario: lui ha ammesso tutto. Ed è proprio questo che la rende così difficile da capire.</p>
+  </div>
+  <div class="warn">⚠️ <b>Da decidere con Corinne:</b> vittime bambini. Nessuna immagine dei bambini, della casa reale o del paese riconoscibile. <b>Da verificare:</b> il passaggio in giudicato per rinuncia all'appello (riportato da ANSA e Il Sussidiario).</div>
+  <div class="fonti"><b>Fonti:</b> ANSA (27/01/2017); The Local Italy (16/06/2014); Il Sussidiario. Dettagli e link in CASI-NOIR.md, scheda 13.</div>
+</section>
+
+<!-- 10 LHERMITTE -->
+<section class="story">
+  <div class="num">Storia 10</div>
+  <h2>La casa di Nivelles</h2>
+  <div class="where">Nivelles, Belgio · febbraio 2007</div>
+  <div class="scheda"><dl>
+    <dt>Chi</dt><dd>Geneviève Lhermitte, madre di cinque figli dai 3 ai 14 anni.</dd>
+    <dt>Cosa</dt><dd>Il 28 febbraio 2007, mentre il marito è assente, uccide in casa i suoi cinque figli.</dd>
+    <dt>Sentenza</dt><dd>Ergastolo nel 2008.</dd>
+    <dt>Oggi</dt><dd>Nel 2019 viene trasferita in un ospedale psichiatrico. Il 28 febbraio 2023, sedici anni esatti dopo, muore per eutanasia, chiesta per sofferenza psichica. Il caso apre un dibattito in tutto il Belgio.</dd>
+  </dl></div>
+  <div class="sec">Testo per Corinne</div>
+  <div class="voce">
+    <div class="regia">[Ricostruzione · una cittadina belga in inverno, una via residenziale, case di mattoni. Solo esterni, lontani.]</div>
+    <p>Nivelles è una cittadina del Belgio, a sud di Bruxelles. Qui vive una famiglia con cinque figli, dal più piccolo di tre anni al più grande di quattordici.</p>
+    <p class="beat">Il 28 febbraio 2007 il padre non è in casa. Quando la giornata finisce, i cinque figli non ci sono più.</p>
+    <div class="regia">[Corinne in camera.]</div>
+    <p>È stata la madre, Geneviève Lhermitte. Non vi racconterò quello che è successo in quelle stanze, e vi chiedo di non immaginarlo. Questa storia non si racconta dal punto di vista del delitto. Si racconta da quello che c'è stato dopo.</p>
+    <div class="regia">[Ricostruzione · un corridoio d'ospedale, luce bianca, una finestra.]</div>
+    <p>Nel 2008 viene condannata all'ergastolo. Nel 2019 viene trasferita in un ospedale psichiatrico. E qui la storia prende una strada che nessuno si aspettava.</p>
+    <p>In Belgio la legge permette di chiedere l'eutanasia anche per una sofferenza psichica che non si può curare. Succede raramente. Lei la chiede. E il 28 febbraio 2023, sedici anni esatti dopo quel giorno, muore così.</p>
+    <div class="regia">[Corinne in camera, primo piano.]</div>
+    <p>Il Belgio si è diviso. C'è chi ha detto: la legge è uguale per tutti, anche per lei. E c'è chi ha sentito, in quella data, qualcosa di insopportabile.</p>
+    <p class="beat">Io non ho una risposta. Vi lascio solo la domanda che si è fatta un Paese intero: dove finisce la pena, e dove comincia la pietà?</p>
+  </div>
+  <div class="warn">⚠️ <b>Da decidere con Corinne:</b> è il caso più duro dell'elenco (cinque bambini). Se si racconta, il centro deve restare il dibattito sull'eutanasia, non il delitto. Nessuna immagine dei bambini né della casa reale.</div>
+  <div class="fonti"><b>Fonti:</b> Wikipedia EN «Geneviève Lhermitte»; DH.be (02/03/2023 e 03/03/2023); Malay Mail / AFP; Rivista di Psichiatria. Dettagli e link in CASI-NOIR.md, scheda 10.</div>
+</section>
+
+</body>
+</html>
