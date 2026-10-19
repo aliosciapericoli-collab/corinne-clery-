@@ -1,0 +1,282 @@
+<title>Prova regia Il falso dottore</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: un solo schermo cinematografico 2.39:1 dentro un 16:9, controlli sotto. Look unico scuro, scelto apposta. */
+:root{
+  color-scheme:dark;
+  --bg:#0a0908; --panel:#151311; --ink:#ece6dc; --muted:#968d81; --ember:#d98b4a; --line:#2c2823;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif)}
+.wrap{max-width:1100px;margin:0 auto;padding-block:16px 28px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-weight:500;font-size:clamp(20px,3vw,28px);margin:4px 0 2px;text-wrap:balance}
+.sub{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 14px;letter-spacing:.02em}
+
+.screen{position:relative;width:100%;max-width:100%;aspect-ratio:16/9;background:#000;overflow:hidden;border-radius:4px}
+.shot{position:absolute;inset:0;opacity:0;transition:opacity 2.4s ease}
+.shot.on{opacity:1}
+.shot img{position:absolute;inset:-4%;width:108%;height:108%;object-fit:cover;filter:contrast(1.08) saturate(.82) brightness(.92);transform-origin:var(--ox,50%) var(--oy,50%)}
+.shot.on img{animation:push var(--dur,14s) linear forwards}
+@keyframes push{from{transform:scale(var(--s0,1)) translate(0,0)}to{transform:scale(var(--s1,1.12)) translate(var(--tx,0),var(--ty,0))}}
+
+/* bande, grana, vignetta */
+.bars::before,.bars::after{content:"";position:absolute;left:0;right:0;height:12.8%;background:#000;z-index:30}
+.bars::before{top:0}.bars::after{bottom:0}
+#grain{position:absolute;inset:0;z-index:25;opacity:.13;mix-blend-mode:overlay;pointer-events:none;width:100%;height:100%}
+.vig{position:absolute;inset:0;z-index:24;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.65) 100%)}
+
+/* effetti */
+.fx{position:absolute;inset:0;pointer-events:none}
+.firelight{background:radial-gradient(ellipse at 52% 48%,rgba(255,120,40,.45),transparent 55%);mix-blend-mode:screen;animation:flick 1.7s infinite}
+@keyframes flick{0%,100%{opacity:.55}20%{opacity:.85}35%{opacity:.5}55%{opacity:.95}75%{opacity:.6}}
+.hearth{background:radial-gradient(ellipse at 22% 60%,rgba(255,140,60,.35),transparent 45%);mix-blend-mode:screen;animation:flick 2.3s infinite}
+.lamp{background:radial-gradient(ellipse at 52% 8%,rgba(255,220,160,.25),transparent 50%);mix-blend-mode:screen;animation:lampf 6s infinite}
+@keyframes lampf{0%,91%,100%{opacity:1}92%{opacity:.4}93%{opacity:1}95%{opacity:.6}96%{opacity:1}}
+.fog{background:linear-gradient(90deg,transparent,rgba(200,215,230,.18),transparent);width:200%;animation:fog 26s linear infinite}
+@keyframes fog{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+canvas.snow{position:absolute;inset:0;width:100%;height:100%}
+
+.caption{position:absolute;left:6%;top:17%;z-index:28;font-family:var(--mono);font-size:clamp(9px,1.25vw,13px);letter-spacing:.18em;text-transform:uppercase;color:rgba(236,230,220,.85);white-space:nowrap;overflow:hidden;width:0}
+.shot.on .caption{animation:type 2.6s steps(38) 1.4s forwards}
+@keyframes type{to{width:var(--w,30ch)}}
+.slate{position:absolute;right:6%;top:17%;z-index:28;font-family:var(--mono);font-size:clamp(8px,1vw,11px);letter-spacing:.14em;color:rgba(217,139,74,.9);border:1px solid rgba(217,139,74,.6);padding:3px 7px;text-transform:uppercase}
+.counter{position:absolute;left:6%;bottom:30%;z-index:28;font-family:var(--mono);color:rgba(236,230,220,.9);font-size:clamp(11px,1.5vw,15px);letter-spacing:.2em;opacity:0;transition:opacity 1s}
+.counter b{font-family:var(--serif);font-variant-numeric:lining-nums tabular-nums;font-size:clamp(28px,5vw,58px);font-weight:500;letter-spacing:0;display:block}
+.shot.on .counter{opacity:1}
+
+.title{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#000}
+.title .k{font-family:var(--mono);font-size:clamp(9px,1.3vw,13px);letter-spacing:.5em;color:var(--ember);opacity:0}
+.title .t{font-size:clamp(30px,6.5vw,76px);font-style:italic;font-weight:500;opacity:0;margin-top:.2em}
+.shot.on .title .k{animation:fin 2s .5s forwards}.shot.on .title .t{animation:fin 2.6s 1.4s forwards}
+@keyframes fin{from{opacity:0;filter:blur(6px)}to{opacity:1;filter:none}}
+
+.subs{position:absolute;left:8%;right:8%;bottom:15%;z-index:35;text-align:center;font-size:clamp(14px,2.3vw,25px);line-height:1.3;color:#f4efe6;text-shadow:0 1px 3px #000,0 0 12px rgba(0,0,0,.8);transition:opacity .5s}
+.mode{position:absolute;left:max(10px,1.2%);top:2.2%;z-index:40;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:3px 7px;border-radius:2px;background:rgba(0,0,0,.6);color:var(--muted)}
+.mode.cor{color:#1a1006;background:var(--ember)}
+
+.start{position:absolute;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:radial-gradient(ellipse,#1c1612,#000);cursor:pointer;border:0;color:var(--ink);font:inherit;width:100%}
+.start .p{width:72px;height:72px;border-radius:50%;border:1px solid rgba(236,230,220,.6);display:flex;align-items:center;justify-content:center}
+.start .p::after{content:"";border-left:20px solid var(--ink);border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:6px}
+.start span{font-size:clamp(16px,2.4vw,22px);font-style:italic}
+.start small{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em}
+
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0 4px}
+button.c{font-family:var(--mono);font-size:12px;letter-spacing:.06em;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:8px 12px;cursor:pointer}
+button.c:hover{border-color:var(--muted)}
+button:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+label.c{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.tl{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 18px}
+.tl button{font-family:var(--mono);font-size:11px;padding:5px 8px;border-radius:3px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.tl button.cor{border-color:rgba(217,139,74,.5)}
+.tl button.cur{background:var(--ink);color:#111;border-color:var(--ink)}
+.notes{font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;max-width:80ch}
+.notes b{color:var(--ink);font-weight:500}
+@media (prefers-reduced-motion:reduce){.shot.on img,.fog,.firelight,.hearth,.lamp{animation:none}}
+</style>
+
+<div class="wrap">
+  <h1>Il falso dottore · prova di regia 2</h1>
+  <p class="sub">«Parlane con Corinne Cléry» · puntata 1 · primi 2 minuti circa · uso interno</p>
+
+  <div class="screen bars" id="screen">
+    <div class="mode" id="mode">—</div>
+
+    <div class="shot" data-k="fuoco" style="--dur:18s;--s0:1.18;--s1:1.02;--oy:40%">
+      <img src="img/fuoco.jpg" alt="Casa nella neve con le finestre illuminate dal fuoco, di notte">
+      <canvas class="fx snow" data-snow="1"></canvas>
+      <div class="fx firelight"></div>
+      <div class="caption" style="--w:34ch">Gennaio 1993 · Prévessin-Moëns, Ain</div>
+    </div>
+
+    <div class="shot" data-k="casale" style="--dur:20s;--s0:1.02;--s1:1.1;--ox:35%">
+      <img src="img/casale.jpg" alt="Interno di un casale con camino acceso e poltrona vuota">
+      <div class="fx hearth"></div>
+      <div class="slate">qui Corinne in camera</div>
+    </div>
+
+    <div class="shot" data-k="titolo">
+      <div class="title"><div class="k">PARLANE CON CORINNE CLÉRY</div><div class="t">Il falso dottore</div></div>
+    </div>
+
+    <div class="shot" data-k="casale2" style="--dur:16s;--s0:1.12;--s1:1.2;--ox:62%;--oy:55%">
+      <img src="img/casale.jpg" alt="">
+      <div class="fx hearth"></div>
+      <div class="slate">qui Corinne in camera</div>
+    </div>
+
+    <div class="shot" data-k="lago" style="--dur:22s;--s0:1.0;--s1:1.14;--tx:-2%">
+      <img src="img/lago.jpg" alt="Veduta aerea all'alba del lago e delle luci di Ginevra">
+      <div class="fx fog"></div>
+      <div class="caption" style="--w:38ch">Frontiera franco-svizzera · Ginevra</div>
+    </div>
+
+    <div class="shot" data-k="casa" style="--dur:14s;--s0:1.04;--s1:1.16;--oy:45%">
+      <img src="img/casa.jpg" alt="Casa borghese in una mattina d'inverno">
+    </div>
+
+    <div class="shot" data-k="casale3" style="--dur:12s;--s0:1.25;--s1:1.35;--ox:45%;--oy:60%">
+      <img src="img/casale.jpg" alt="">
+      <div class="fx hearth"></div>
+      <div class="slate">qui primo piano di Corinne</div>
+    </div>
+
+    <div class="shot" data-k="camice" style="--dur:14s;--s0:1.0;--s1:1.18;--ox:70%;--oy:40%">
+      <img src="img/camice.jpg" alt="Camice bianco appeso in un corridoio buio, una valigetta a terra">
+      <div class="caption" style="--w:42ch">OMS, Ginevra · nessun dottor Romand</div>
+    </div>
+
+    <div class="shot" data-k="strada" style="--dur:16s;--s0:1.0;--s1:1.22;--oy:45%">
+      <img src="img/strada.jpg" alt="Strada nella nebbia all'alba vista dal parabrezza">
+      <div class="fx fog"></div>
+      <div class="counter" id="counter"><b id="cnt">1</b>anni di finzione</div>
+    </div>
+
+    <div class="shot" data-k="cucina" style="--dur:16s;--s0:1.0;--s1:1.2;--ox:45%;--oy:70%">
+      <img src="img/cucina.jpg" alt="Tavolo di cucina di notte con buste e solleciti sotto una lampada">
+      <div class="fx lamp"></div>
+    </div>
+
+    <div class="shot" data-k="casale4" style="--dur:12s;--s0:1.3;--s1:1.42;--ox:45%;--oy:60%">
+      <img src="img/casale.jpg" alt="">
+      <div class="fx hearth"></div>
+      <div class="slate">qui primo piano di Corinne</div>
+    </div>
+
+    <div class="shot" data-k="fine">
+      <div class="title"><div class="t" style="font-size:clamp(22px,4vw,44px)">continua…</div></div>
+    </div>
+
+    <canvas id="grain"></canvas>
+    <div class="vig"></div>
+    <div class="subs" id="subs"></div>
+
+    <button class="start" id="start" aria-label="Avvia la prova">
+      <div class="p"></div>
+      <span>Avvia la prova</span>
+      <small>audio acceso · circa 2 minuti</small>
+    </button>
+  </div>
+
+  <div class="controls">
+    <button class="c" id="pause">Pausa</button>
+    <button class="c" id="restart">Ricomincia</button>
+    <label class="c"><input type="checkbox" id="music" checked> Sottofondo</label>
+    <label class="c"><input type="checkbox" id="subon" checked> Sottotitoli</label>
+  </div>
+  <div class="tl" id="tl"></div>
+
+  <div class="notes">
+    <p><b>Immagini:</b> generate apposta (Canva AI), nessuna foto reale, nessun volto. Movimento di camera lento, grana, bande cinema.</p>
+    <p><b>Voce:</b> voce sintetica neurale italiana, solo come guida per i tempi e le correzioni. <b>Non è e non imita Corinne</b>: nel montaggio finale parla lei.</p>
+    <p><b>Riquadri «qui Corinne in camera»:</b> segnaposto per le riprese reali nel casale. Il testo è una bozza da approvare con lei.</p>
+  </div>
+</div>
+
+<script>
+const SCENES=[
+ {k:'fuoco',  m:'rec', label:'La casa',        a:[1,2]},
+ {k:'casale', m:'cor', label:'Corinne',        a:[3,4,5,6]},
+ {k:'titolo', m:'gfx', label:'Titolo',         a:[], hold:5200},
+ {k:'casale2',m:'cor', label:'Corinne · il paese', a:[7]},
+ {k:'lago',   m:'rec', label:'Il confine',     a:[8,9,10]},
+ {k:'casa',   m:'rec', label:'L’apparenza', a:[11]},
+ {k:'casale3',m:'cor', label:'Corinne · primo piano', a:[12]},
+ {k:'camice', m:'rec', label:'Il camice',      a:[13]},
+ {k:'strada', m:'rec', label:'Diciotto anni',  a:[14,15], counter:true},
+ {k:'cucina', m:'rec', label:'I creditori',    a:[16,17]},
+ {k:'casale4',m:'cor', label:'Corinne · chiusura', a:[18]},
+ {k:'fine',   m:'gfx', label:'Continua',       a:[], hold:4000}
+];
+const TEXT={
+1:"Gennaio 1993. Una notte d'inverno, a pochi chilometri da Ginevra, dalla parte francese del confine.",
+2:"Una casa sta bruciando.",
+3:"Dentro c'è un uomo che per anni ha recitato una parte. Ogni giorno, con tutti, senza mai sbagliare una battuta.",
+4:"Io ho passato la vita a recitare. Ma quando si spengono le luci del set, il personaggio resta lì.",
+5:"Lui invece non ha mai smesso.",
+6:"Questa è la storia di Jean-Claude Romand.",
+7:"Prévessin-Moëns è un paese tranquillo del dipartimento dell'Ain. Molte famiglie lavorano a Ginevra, dall'altra parte della frontiera.",
+8:"Jean-Claude Romand è uno di loro, o almeno così crede chi lo conosce.",
+9:"Un medico, un ricercatore dell'Organizzazione Mondiale della Sanità.",
+10:"Una moglie, due bambini piccoli. I genitori che vivono nel Giura, non lontano.",
+11:"È il genere di uomo di cui si dice: «Che fortuna, quella famiglia».",
+12:"Ma nessuno, in tutti quegli anni, ha mai visto Jean-Claude Romand lavorare.",
+13:"Jean-Claude Romand non è mai stato medico. E l'OMS non l'ha mai assunto.",
+14:"Per circa diciotto anni, ogni mattina, è uscito di casa come chi va in ufficio.",
+15:"Ogni sera è tornato con il racconto di una giornata che non era mai esistita.",
+16:"Ma una bugia così costa. Costa anche denaro.",
+17:"Alla fine arrivano i creditori. E alcuni di loro hanno scoperto la verità.",
+18:"La recita sta per finire. E lui decide come."
+};
+const $=s=>document.querySelector(s);
+const shots={}; document.querySelectorAll('.shot').forEach(s=>shots[s.dataset.k]=s);
+const subs=$('#subs'), mode=$('#mode');
+const voice=new Audio(); voice.preload='auto';
+const pre={}; for(const n in TEXT){ const a=new Audio('audio/'+String(n).padStart(2,'0')+'.mp3'); a.preload='auto'; pre[n]=a; }
+let idx=-1, li=0, running=false, timer=null, cntTimer=null;
+
+// timeline
+SCENES.forEach((s,i)=>{const b=document.createElement('button');b.textContent=(i+1)+' · '+s.label;if(s.m==='cor')b.className='cor';b.onclick=()=>{begin();go(i)};$('#tl').appendChild(b)});
+
+// grana
+(function(){const c=$('#grain'),x=c.getContext('2d');c.width=320;c.height=180;const id=x.createImageData(320,180);
+ function f(){for(let i=0;i<id.data.length;i+=4){const v=Math.random()*255;id.data[i]=id.data[i+1]=id.data[i+2]=v;id.data[i+3]=255}x.putImageData(id,0,0);setTimeout(()=>requestAnimationFrame(f),60)}f()})();
+
+// neve
+document.querySelectorAll('canvas[data-snow]').forEach(c=>{const x=c.getContext('2d');let W,H,P=[];
+ function rs(){W=c.width=c.clientWidth||960;H=c.height=c.clientHeight||540;P=Array.from({length:140},()=>({x:Math.random()*W,y:Math.random()*H,r:.5+Math.random()*1.8,v:.3+Math.random()*1.1,d:Math.random()*6}))}
+ rs();addEventListener('resize',rs);
+ (function t(){x.clearRect(0,0,W,H);x.fillStyle='rgba(255,255,255,.75)';for(const p of P){p.y+=p.v;p.x+=Math.sin((p.y+p.d*40)/50)*.4;if(p.y>H){p.y=-4;p.x=Math.random()*W}x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()}requestAnimationFrame(t)})()});
+
+// sottofondo: drone grave generato nel browser
+let ac=null, master=null;
+function music(on){
+  if(!on){ if(master) master.gain.setTargetAtTime(0,ac.currentTime,.8); return; }
+  if(!ac){ ac=new (window.AudioContext||window.webkitAudioContext)(); master=ac.createGain(); master.gain.value=0; master.connect(ac.destination);
+    const lp=ac.createBiquadFilter(); lp.type='lowpass'; lp.frequency.value=380; lp.connect(master);
+    [[55,.22],[82.4,.12],[110.3,.06]].forEach(([f,g])=>{const o=ac.createOscillator();o.type='sawtooth';o.frequency.value=f;const gg=ac.createGain();gg.gain.value=g;
+      const l=ac.createOscillator();l.frequency.value=.05+Math.random()*.08;const lg=ac.createGain();lg.gain.value=1.5;l.connect(lg);lg.connect(o.detune);l.start();o.connect(gg);gg.connect(lp);o.start()});
+    const len=ac.sampleRate*2,b=ac.createBuffer(1,len,ac.sampleRate),d=b.getChannelData(0);let last=0;for(let i=0;i<len;i++){last=(last+.02*(Math.random()*2-1))/1.02;d[i]=last*3}
+    const n=ac.createBufferSource();n.buffer=b;n.loop=true;const ng=ac.createGain();ng.gain.value=.25;n.connect(ng);ng.connect(lp);n.start();
+  }
+  ac.resume(); master.gain.setTargetAtTime(.16,ac.currentTime,1.5);
+}
+
+function begin(){ $('#start').hidden=true; running=true; music($('#music').checked); }
+function stop(){ running=false; clearTimeout(timer); clearInterval(cntTimer); voice.pause(); }
+
+function go(i){
+  stop(); running=true;
+  if(i>=SCENES.length){ running=false; mode.textContent='fine prova'; mode.className='mode'; return; }
+  idx=i; li=0; const s=SCENES[i];
+  Object.values(shots).forEach(el=>el.classList.remove('on'));
+  const el=shots[s.k]; void el.offsetWidth; el.classList.add('on');
+  mode.textContent = s.m==='cor' ? 'Corinne in camera' : s.m==='rec' ? 'Ricostruzione · voce fuori campo' : 'Grafica';
+  mode.className = 'mode'+(s.m==='cor'?' cor':'');
+  document.querySelectorAll('#tl button').forEach((b,k)=>b.classList.toggle('cur',k===i));
+  subs.textContent='';
+  if(s.counter){ let n=1; $('#cnt').textContent=n; cntTimer=setInterval(()=>{ if(n<18){n++; $('#cnt').textContent=n;} },650); }
+  timer=setTimeout(next, s.m==='rec'?1900:1200);
+}
+
+function next(){
+  if(!running) return;
+  const s=SCENES[idx];
+  if(li>=s.a.length){ timer=setTimeout(()=>go(idx+1), s.hold||1300); return; }
+  const n=s.a[li++]; subs.textContent=$('#subon').checked?TEXT[n]:'';
+  voice.src=pre[n].src; voice.currentTime=0;
+  let done=false; const after=()=>{ if(done) return; done=true; clearTimeout(timer); subs.style.opacity=0; timer=setTimeout(()=>{subs.style.opacity=1; next()},700); };
+  voice.onended=after; voice.onerror=()=>{ timer=setTimeout(after, Math.max(2500, TEXT[n].split(' ').length*380)); };
+  voice.play().catch(()=>voice.onerror());
+  timer=setTimeout(after, 20000);
+}
+
+$('#start').onclick=()=>{ begin(); go(0); };
+$('#pause').onclick=()=>{ if(running){ stop(); $('#pause').textContent='Riprendi'; if(master) music(false);} else { $('#pause').textContent='Pausa'; begin(); li=Math.max(0,li-1); running=true; next(); } };
+$('#restart').onclick=()=>{ $('#pause').textContent='Pausa'; begin(); go(0); };
+$('#music').onchange=e=>{ if(running||!$('#start').hidden) music(e.target.checked); };
+</script>
