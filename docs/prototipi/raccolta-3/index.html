@@ -1,0 +1,186 @@
+<title>Storie dal buio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: schermo cinema in alto, scelta della storia e controlli sotto. Look unico scuro, scelto apposta. */
+:root{color-scheme:dark;--bg:#0a0908;--panel:#151311;--ink:#ece6dc;--muted:#968d81;--ember:#d98b4a;--key:#c8402f;--line:#2c2823;
+--serif:"Cormorant Garamond",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif)}
+.wrap{max-width:1100px;margin:0 auto;padding-block:16px 28px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-weight:500;font-size:clamp(22px,3.4vw,32px);margin:4px 0 2px;text-wrap:balance}
+.sub{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 14px}
+.eps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;margin:0 0 12px}
+.ep{text-align:left;background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:4px;padding:10px 12px;cursor:pointer;font:inherit;min-width:0}
+.ep b{display:block;font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.14em;color:var(--ember)}
+.ep span{display:block;font-size:17px;line-height:1.15;margin-top:3px}
+.ep em{display:block;font-family:var(--mono);font-style:normal;font-size:10px;color:var(--muted);margin-top:4px}
+.ep.cur{border-color:var(--ember);background:#1f1915}
+.screen{position:relative;width:100%;max-width:100%;aspect-ratio:16/9;background:#000;overflow:hidden;border-radius:4px}
+.shot{position:absolute;inset:0;opacity:0;transition:opacity 2.2s ease}
+.shot.on{opacity:1}
+.shot img{position:absolute;inset:-4%;width:108%;height:108%;object-fit:cover;filter:contrast(1.08) saturate(.85) brightness(.92)}
+.shot.on img{animation:push var(--dur,15s) linear forwards}
+.shot.key.on img{animation:pushkey 18s ease-in forwards}
+@keyframes push{from{transform:scale(var(--s0,1.02)) translate(var(--tx0,0),0)}to{transform:scale(var(--s1,1.14)) translate(var(--tx1,0),0)}}
+@keyframes pushkey{from{transform:scale(1.02)}to{transform:scale(1.32)}}
+.bars::before,.bars::after{content:"";position:absolute;left:0;right:0;height:12.8%;background:#000;z-index:30}
+.bars::before{top:0}.bars::after{bottom:0}
+#grain{position:absolute;inset:0;z-index:25;opacity:.13;mix-blend-mode:overlay;pointer-events:none;width:100%;height:100%}
+.vig{position:absolute;inset:0;z-index:24;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.68) 100%)}
+.fx{position:absolute;inset:0;pointer-events:none}
+.hearth{background:radial-gradient(ellipse at 22% 62%,rgba(255,140,60,.35),transparent 45%);mix-blend-mode:screen;animation:flick 2.3s infinite}
+.candle{background:radial-gradient(ellipse at 82% 40%,rgba(255,170,80,.4),transparent 40%);mix-blend-mode:screen;animation:flick 1.6s infinite}
+@keyframes flick{0%,100%{opacity:.55}20%{opacity:.85}35%{opacity:.5}55%{opacity:.95}75%{opacity:.6}}
+.lamp{background:radial-gradient(ellipse at 70% 30%,rgba(255,220,160,.25),transparent 50%);mix-blend-mode:screen;animation:lampf 7s infinite}
+@keyframes lampf{0%,90%,100%{opacity:1}91%{opacity:.35}92%{opacity:1}94%{opacity:.55}95%{opacity:1}}
+.fog{background:linear-gradient(90deg,transparent,rgba(200,215,230,.2),transparent);width:200%;animation:fog 24s linear infinite}
+@keyframes fog{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.heat{backdrop-filter:blur(.4px);animation:heat 3s ease-in-out infinite alternate;background:linear-gradient(0deg,rgba(255,200,120,.08),transparent 60%)}
+@keyframes heat{from{opacity:.4}to{opacity:1}}
+.beacon::after{content:"";position:absolute;left:41.5%;top:21%;width:3%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,60,40,.95),rgba(255,60,40,0) 70%);animation:beacon 1.8s infinite}
+@keyframes beacon{0%,60%,100%{opacity:0}10%,40%{opacity:1}}
+.dust{background:radial-gradient(ellipse at 20% 30%,rgba(255,240,210,.12),transparent 40%);animation:flick 9s infinite}
+canvas.rain,canvas.snow{position:absolute;inset:0;width:100%;height:100%}
+.caption{position:absolute;left:6%;top:17%;z-index:28;font-family:var(--mono);font-size:clamp(9px,1.25vw,13px);letter-spacing:.18em;text-transform:uppercase;color:rgba(236,230,220,.88);white-space:nowrap;overflow:hidden;width:0}
+.shot.on .caption{animation:type 2.4s steps(36) 1.2s forwards}
+@keyframes type{to{width:38ch}}
+.keytag{position:absolute;right:6%;top:17%;z-index:28;font-family:var(--mono);font-size:clamp(8px,1vw,11px);letter-spacing:.16em;color:#fff;background:var(--key);padding:3px 8px;text-transform:uppercase;opacity:0}
+.shot.on .keytag{animation:fin 1s .6s forwards}
+.slate{position:absolute;right:6%;top:17%;z-index:28;font-family:var(--mono);font-size:clamp(8px,1vw,11px);letter-spacing:.14em;color:rgba(217,139,74,.9);border:1px solid rgba(217,139,74,.6);padding:3px 7px;text-transform:uppercase}
+.title{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#000;padding:0 8%}
+.title .k{font-family:var(--mono);font-size:clamp(9px,1.3vw,13px);letter-spacing:.45em;color:var(--ember);opacity:0}
+.title .t{font-size:clamp(28px,6vw,70px);font-style:italic;font-weight:500;opacity:0;margin-top:.2em}
+.title .w{font-family:var(--mono);font-size:clamp(9px,1.2vw,12px);letter-spacing:.2em;color:var(--muted);opacity:0;margin-top:1em;text-transform:uppercase}
+.shot.on .title .k{animation:fin 2s .4s forwards}.shot.on .title .t{animation:fin 2.4s 1.2s forwards}.shot.on .title .w{animation:fin 2s 2.4s forwards}
+@keyframes fin{from{opacity:0;filter:blur(6px)}to{opacity:1;filter:none}}
+.subs{position:absolute;left:8%;right:8%;bottom:15%;z-index:35;text-align:center;font-size:clamp(14px,2.3vw,25px);line-height:1.3;color:#f4efe6;text-shadow:0 1px 3px #000,0 0 12px rgba(0,0,0,.8);transition:opacity .5s}
+.mode{position:absolute;left:max(10px,1.2%);top:2.2%;z-index:40;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:3px 7px;border-radius:2px;background:rgba(0,0,0,.6);color:var(--muted)}
+.mode.cor{color:#1a1006;background:var(--ember)}.mode.key{color:#fff;background:var(--key)}
+.start{position:absolute;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:radial-gradient(ellipse,#1c1612,#000);cursor:pointer;border:0;color:var(--ink);font:inherit;width:100%}
+.start .p{width:72px;height:72px;border-radius:50%;border:1px solid rgba(236,230,220,.6);display:flex;align-items:center;justify-content:center}
+.start .p::after{content:"";border-left:20px solid var(--ink);border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:6px}
+.start span{font-size:clamp(16px,2.4vw,22px);font-style:italic}
+.start small{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0 4px}
+button.c{font-family:var(--mono);font-size:12px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:8px 12px;cursor:pointer}
+button:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+label.c{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.tl{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 18px}
+.tl button{font-family:var(--mono);font-size:11px;padding:5px 8px;border-radius:3px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.tl button.cor{border-color:rgba(217,139,74,.5)}.tl button.key{border-color:var(--key);color:#e9b0a6}
+.tl button.cur{background:var(--ink);color:#111;border-color:var(--ink)}
+.notes{font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;max-width:80ch}
+.notes b{color:var(--ink);font-weight:500}
+@media (prefers-reduced-motion:reduce){.shot.on img,.fog,.hearth,.lamp,.candle{animation:none}}
+</style>
+<div class="wrap">
+  <h1>Storie dal buio · Raccolta 3</h1>
+  <p class="sub">«Parlane con Corinne Cléry» · cinque casi veri e poco conosciuti · sequenze cinematografiche delle scene decisive · uso interno</p>
+  <div class="eps" id="eps"></div>
+  <div class="screen bars" id="screen">
+    <div class="mode" id="mode">—</div>
+    <div id="shots"></div>
+    <canvas id="grain"></canvas><div class="vig"></div>
+    <div class="subs" id="subs"></div>
+    <button class="start" id="start" aria-label="Avvia la storia"><div class="p"></div><span id="startT">Scegli una storia e premi play</span><small>audio acceso</small></button>
+  </div>
+  <div class="controls">
+    <button class="c" id="pause">Pausa</button>
+    <button class="c" id="restart">Ricomincia la storia</button>
+    <label class="c"><input type="checkbox" id="music" checked> Sottofondo</label>
+    <label class="c"><input type="checkbox" id="subon" checked> Sottotitoli</label>
+  </div>
+  <div class="tl" id="tl"></div>
+  <div class="notes">
+    <p><b>Scene in rosso</b> = la scena decisiva della storia, con movimento di camera più lento e stretto.</p>
+    <p><b>Immagini:</b> generate apposta (Canva AI); nessuna foto reale, nessun volto di persone coinvolte. <b>Voce:</b> sintetica, solo guida per i tempi; non imita Corinne. <b>«Qui Corinne in camera»</b> = riprese reali nel casale.</p>
+    <p>Fatti e fonti di ogni storia sono nel PDF «Storie dal buio · Raccolta 3».</p>
+  </div>
+</div>
+<script>
+const DATA=[{"id": "nigrisoli", "num": "11", "title": "Il delitto del curaro", "where": "Bologna · marzo 1963", "scheda": [["Chi", "Il dottor Carlo Nigrisoli, medico, e la moglie Ombretta Galeffi."], ["Cosa", "Il 14 marzo 1963 Ombretta muore nella casa di cura di famiglia, in vicolo Malgrado. Per il marito è un suicidio. L'autopsia trova un derivato del curaro."], ["Sentenza", "Ergastolo dalla Corte d'Assise di Bologna il 15 febbraio 1965, dopo 44 udienze. In appello 24 anni. Definitiva in Cassazione nel 1969."], ["Poi", "Semilibertà nel 1979, fuori dal carcere nel 1988. Muore a Bologna l'11 ottobre 2006, a 80 anni."]], "perche": "Nel 1965 ne parlava tutta Italia; oggi è quasi dimenticato fuori da Bologna.", "fonti": "Wikipedia IT «Caso Nigrisoli»; Biblioteca Salaborsa, cronologia di Bologna; storieperdute.it; Il Resto del Carlino (archivio).", "warn": "", "scenes": [{"img": "n1", "m": "rec", "cap": "Bologna · marzo 1963", "lines": ["Bologna, marzo 1963. Sotto i portici l'aria è ancora fredda.", "In vicolo Malgrado c'è una casa di cura privata. La clinica di una famiglia di medici: i Nigrisoli. Al piano di sopra, una finestra resta accesa tutta la notte."]}, {"img": "casale", "m": "cor", "lines": ["Il 14 marzo, in quella casa, muore una donna. Si chiama Ombretta, ed è la moglie del dottor Carlo Nigrisoli.", "Il marito ha già una spiegazione. Ombretta si è tolta la vita. Lui racconta di essersi svegliato per il suo respiro affannoso, di aver provato a salvarla con un cardiotonico. Non ce l'ha fatta."]}, {"img": "n2", "m": "rec", "key": true, "cap": "La scena decisiva", "lines": ["Sul comodino ci sono due siringhe. Una è vuota.", "L'altra è stata lavata. In fretta. Ma non abbastanza: dentro restano tracce di un farmaco.", "È un derivato del curaro. Quello che in sala operatoria si usa per paralizzare i muscoli. E sul corpo di Ombretta c'è il segno di una sola iniezione.", "Ditemi voi: una donna che decide di morire, poi lava la siringa?"]}, {"img": "casale", "m": "cor", "lines": ["Quella notte nella stanza arriva anche il padre di Carlo, il professor Pietro Nigrisoli. Vede la nuora morire.", "I testimoni raccontano di una lite. Il padre accusa il figlio di quella morte. È da lì che la storia del suicidio comincia a incrinarsi.", "E poi, nel passato di Carlo, c'è un nome: Iris. Una ragazza di ventun anni, con cui aveva avuto una breve storia nel 1960."]}, {"img": "n3", "m": "rec", "cap": "Corte d'Assise · 1965", "lines": ["Il processo dura quarantaquattro udienze. Il 15 febbraio 1965 la Corte d'Assise di Bologna lo condanna all'ergastolo.", "In appello la pena scende a ventiquattro anni. Nel 1969 la Cassazione la rende definitiva. Esce dal carcere nel 1988. Muore a Bologna nel 2006."]}, {"img": "casale", "m": "cor", "lines": ["Un medico conosce le dosi. Sa cosa salva e cosa uccide.", "Forse è per questo che, in questa storia, la cosa più inquietante non è il veleno. È la mano che lo conosceva così bene."]}]}, {"id": "gatti", "num": "12", "title": "Il nipote del piano di sopra", "where": "Brescia · estate 2005", "scheda": [["Chi", "Aldo Donegani e Luisa De Leo, pensionati senza figli. Il nipote Guglielmo Gatti, che abitava al piano di sopra della stessa villetta."], ["Cosa", "Spariscono il 30–31 luglio 2005. Il 1° agosto la scomparsa viene denunciata da due nipoti, tra cui Gatti. Il 17 agosto i resti vengono trovati in Val Paisco."], ["Sentenza", "Ergastolo: Corte d'Assise di Brescia 16 maggio 2007, appello 20 giugno 2008, Cassazione 12 febbraio 2009."], ["Poi", "Gatti, sempre dichiaratosi innocente, è morto in carcere nel giugno 2023. La notizia è emersa solo nel febbraio 2026."]], "perche": "Avvenire lo ha chiamato «l'assassino dimenticato»: la sua morte è passata inosservata per quasi tre anni.", "fonti": "Wikipedia EN «Murders of Aldo Donegani and Luisa De Leo»; Avvenire; AGI; Il Giorno; L'Adige.", "warn": "Nessun dettaglio sul modo in cui i corpi sono stati occultati. La data della morte in carcere (15 giugno 2023) viene da Avvenire: confermare con una seconda fonte prima di registrare.", "scenes": [{"img": "g1", "m": "rec", "cap": "Brescia · luglio 2005", "lines": ["Brescia, estate 2005. Una villetta su due piani.", "Al piano terra vivono due pensionati, Aldo Donegani e Luisa De Leo. Non hanno figli. Al piano di sopra vive un loro nipote, Guglielmo Gatti. Una casa di famiglia, in tutti i sensi."]}, {"img": "casale", "m": "cor", "lines": ["L'ultima volta che qualcuno li vede è il fine settimana del 30 e 31 luglio.", "Il 1° agosto un altro nipote, un carabiniere, va a trovarli. Non risponde nessuno. Insieme a lui, a chiamare i vigili del fuoco e poi a denunciare la scomparsa, c'è proprio Guglielmo. Il nipote del piano di sopra."]}, {"img": "g2", "m": "rec", "key": true, "cap": "La scena decisiva · 1° agosto", "lines": ["Ma quello stesso 1° agosto, molto più a nord, sulla strada che sale verso il Passo del Vivione, un uomo di Corteno Golgi incrocia un'auto che quasi lo sfiora.", "Al volante c'è un uomo pallido, sudato, senza fiato. Suo figlio, quattordici anni, lo riconosce: è il nipote dei due anziani scomparsi.", "Il padre lo segnala ai carabinieri."]}, {"img": "g3", "m": "rec", "cap": "Val Paisco · 17 agosto", "lines": ["Il 17 agosto, nei boschi della Val Paisco, vengono trovati i resti dei coniugi. Quel giorno stesso Guglielmo Gatti viene arrestato.", "Nel garage di casa le tracce di sangue riaffiorano con il luminol. E nel suo appartamento c'è lo scontrino della spesa che lo zio aveva fatto il 30 luglio."]}, {"img": "casale", "m": "cor", "lines": ["Ergastolo nel 2007. Confermato in appello e, nel febbraio 2009, in Cassazione. Un movente vero non è mai stato trovato. I giudici parlano di rancore, di invidia per la vita degli zii. Lui si è sempre detto innocente.", "E poi c'è l'ultima scena, la più silenziosa. Guglielmo Gatti è morto in carcere nel giugno 2023. Nessuno lo ha saputo per quasi tre anni.", "L'uomo che aveva denunciato la scomparsa dei suoi parenti è scomparso a sua volta. E nessuno lo ha cercato."]}]}, {"id": "wycherley", "num": "13", "title": "I vivi per finta", "where": "Mansfield, Inghilterra · 1998–2013", "scheda": [["Chi", "William e Patricia Wycherley, 85 e 63 anni. La figlia Susan e il marito Christopher Edwards."], ["Cosa", "A inizio maggio 1998 i coniugi vengono uccisi e sepolti nel giardino di casa. Per 15 anni la figlia e il genero fingono che siano vivi, incassandone pensioni e risparmi."], ["Sentenza", "Nottingham Crown Court, giugno 2014: ergastolo con minimo 25 anni per entrambi. La Court of Appeal respinge il ricorso di Susan sulla pena nel 2015."], ["Nota", "Dal caso è nata la miniserie «Landscapers» (Sky, 2021–2022)."]], "perche": "In Italia è arrivato solo attraverso una miniserie; la cronaca vera è quasi sconosciuta.", "fonti": "Wikipedia EN «Murders of William and Patricia Wycherley»; ITV News (20/06/2014); Chad (Mansfield); Sky TG24 (sulla miniserie).", "warn": "", "scenes": [{"img": "w1", "m": "rec", "cap": "Mansfield · maggio 1998", "lines": ["Mansfield, nel centro dell'Inghilterra. Maggio 1998. Una casetta con il giardino sul retro.", "Un uomo scava una buca grande. Poi ci pianta sopra degli arbusti. Un vicino lo vede, e non ci trova niente di strano. È solo qualcuno che si occupa del giardino."]}, {"img": "casale", "m": "cor", "lines": ["In quella buca ci sono William e Patricia Wycherley. Ottantacinque e sessantatré anni.", "Li hanno uccisi la figlia, Susan, e suo marito, Christopher Edwards. E da quel momento comincia una delle recite più lunghe che io abbia mai sentito raccontare."]}, {"img": "w2", "m": "rec", "key": true, "cap": "Quindici anni di finzione", "lines": ["Per quindici anni, i Wycherley restano vivi. Sulla carta.", "A Natale arrivano biglietti che raccontano di lunghi viaggi. Le lettere ricevono risposta. La pensione viene incassata. Nel 2005 la casa viene perfino venduta, con firme false.", "E con quei soldi, Susan e Christopher comprano cimeli di Hollywood. Lei, per lui, arriva a falsificare lettere firmate da un attore francese: Gérard Depardieu."]}, {"img": "casale", "m": "cor", "lines": ["Poi, alla fine del 2012, arriva una lettera dall'ufficio delle pensioni. Vogliono incontrare William, per valutare di cosa ha bisogno. William, ormai, avrebbe quasi cento anni.", "Ecco. Una finzione può reggere a tutto. Tranne che a un appuntamento."]}, {"img": "w3", "m": "rec", "cap": "St Pancras · ottobre 2013", "lines": ["Susan e Christopher scappano in Francia, a Lille. Ci restano circa un anno. I soldi finiscono.", "Allora Christopher telefona alla matrigna per chiederle denaro, e le racconta tutto. È lei ad andare alla polizia. Nell'ottobre 2013 i corpi vengono trovati in giardino. Tre settimane dopo, i due tornano con l'Eurostar e si consegnano alla stazione di St Pancras."]}, {"img": "casale", "m": "cor", "lines": ["Giugno 2014: ergastolo, con un minimo di venticinque anni.", "Quindici anni di lettere, di firme, di Natali inventati. E alla fine, a tradirli, non è stato un investigatore. È stata una telefonata in famiglia."]}]}, {"id": "oreilly", "num": "14", "title": "La lettera nella bara", "where": "The Naul, Contea di Dublino · ottobre 2004", "scheda": [["Chi", "Rachel O'Reilly, 30 anni, madre di due figli. Il marito Joe O'Reilly."], ["Cosa", "Il 4 ottobre 2004 Rachel viene trovata uccisa in casa. Il marito dice di essere stato al lavoro, a Dublino. I dati del suo cellulare lo smentiscono."], ["Sentenza", "Central Criminal Court, luglio 2007: ergastolo, giuria all'unanimità. Appello respinto il 6 marzo 2009; ulteriori istanze respinte nel 2012 e nel 2015."], ["Oggi", "Ha sempre negato."]], "perche": "Celebre in Irlanda, praticamente mai raccontato in Italia.", "fonti": "RTÉ (06/03/2009 e 16/07/2007); The Irish Times (processo, giugno 2007); TheJournal.ie.", "warn": "La frase «è nell'acqua» è una testimonianza resa al processo: va sempre presentata come tale.", "scenes": [{"img": "o1", "m": "rec", "cap": "The Naul · 4 ottobre 2004", "lines": ["Irlanda. La campagna a nord di Dublino. Campi piatti, nebbia bassa.", "Il 4 ottobre 2004, in una casa a The Naul, viene trovata morta Rachel O'Reilly. Trent'anni, madre di due bambini. È stata uccisa in casa sua."]}, {"img": "casale", "m": "cor", "lines": ["Il marito, Joe, ha una risposta per tutto.", "Quella mattina, dice, era a Dublino, al deposito degli autobus dove lavorava. Lontano da casa. Lontano da lei."]}, {"img": "o2", "m": "rec", "key": true, "cap": "La scena decisiva", "lines": ["Ma c'è un testimone che non dorme mai, e non dimentica. Il telefono.", "I dati del suo cellulare raccontano un'altra mattina. Non quella del deposito. Quel giorno, il telefono di Joe O'Reilly si trova più a nord. Dalle parti di casa.", "L'alibi si sbriciola. Un'antenna alla volta."]}, {"img": "casale", "m": "cor", "lines": ["E poi ci sono le parole. Al processo, un amico di famiglia racconta cosa gli ha detto Joe il giorno del funerale.", "Non so perché cerchino nei campi. È nell'acqua. Parlava dell'arma. Che allora nessuno aveva ancora trovato."]}, {"img": "o3", "m": "rec", "cap": "Marzo 2005", "lines": ["Nel marzo 2005 il corpo di Rachel viene riesumato. Nella bara c'è una lunga lettera. L'ha scritta Joe, l'8 ottobre 2004.", "Comincia così. Questa è la lettera più difficile che io abbia mai scritto, per ragioni che conosciamo solo noi. Rachel, perdonami."]}, {"img": "casale", "m": "cor", "lines": ["Luglio 2007. La giuria lo condanna all'unanimità all'ergastolo. I suoi ricorsi vengono respinti, uno dopo l'altro. Lui ha sempre negato.", "Ma quella lettera resta lì, sotto terra, a farci una domanda. Perdonare. Che cosa?"]}]}, {"id": "troadec", "num": "15", "title": "L'oro che non c'era", "where": "Orvault, vicino a Nantes · febbraio 2017", "scheda": [["Chi", "Pascal e Brigitte Troadec e i figli Sébastien e Charlotte. Hubert Caouissin, compagno della sorella di Pascal, Lydie."], ["Cosa", "Nella notte tra il 16 e il 17 febbraio 2017 la famiglia sparisce. All'inizio si sospetta il figlio. Il 5 marzo il DNA porta al cognato, che confessa."], ["Sentenza", "Corte d'assise della Loira Atlantica, 7 luglio 2021: 30 anni a Caouissin, con responsabilità attenuata. 3 anni (1 sospeso) a Lydie Troadec per occultamento. Nessun appello penale."], ["Movente", "Un presunto tesoro d'oro mai trovato. Gli psichiatri parlano di delirio paranoico."]], "perche": "In Italia se ne è parlato pochi giorni nel 2017, poi più nulla: il processo del 2021 non è mai arrivato.", "fonti": "Wikipedia EN «Troadec family murders» (cita Le Monde, Libération, 20 Minutes); The Local France (08/07/2021); vl-media.fr; Il Messaggero e Il Giornale (2017).", "warn": "Nessun dettaglio su ciò che è stato fatto ai corpi.", "scenes": [{"img": "t1", "m": "rec", "cap": "Orvault · febbraio 2017", "lines": ["Orvault, alle porte di Nantes. Febbraio 2017. Una casa come tante, in una via tranquilla.", "Ci vive una famiglia di quattro persone. Pascal e Brigitte Troadec, e i loro figli, Sébastien e Charlotte. Nella notte tra il 16 e il 17 febbraio spariscono tutti e quattro."]}, {"img": "casale", "m": "cor", "lines": ["Una sorella di Brigitte si preoccupa per quel silenzio e avvisa la polizia. In casa ci sono tracce di sangue. Mancano i telefoni, i computer. Perfino gli spazzolini.", "E manca l'auto del figlio, Sébastien. Così la Francia comincia a guardare lui. Il figlio scomparso diventa il sospettato."]}, {"img": "t2", "m": "rec", "cap": "La notte del 16 febbraio", "lines": ["Ma la verità ha la forma di uno strumento da medico.", "Quella sera, secondo la ricostruzione, qualcuno si avvicina alla casa e appoggia uno stetoscopio alle finestre. Ascolta. Aspetta. Poi entra dal garage."]}, {"img": "casale", "m": "cor", "key": true, "cap": "La scena decisiva", "lines": ["Il 5 marzo arriva la svolta. Il DNA di un uomo viene trovato in casa, su un bicchiere d'acqua, e nell'auto di Sébastien.", "È Hubert Caouissin. Il cognato. Il compagno della sorella di Pascal. Un uomo che giurava di non vedere quella famiglia da anni. Lo stesso giorno confessa."]}, {"img": "t3", "m": "rec", "cap": "Il movente", "lines": ["Il movente? L'oro. Caouissin era convinto che Pascal si fosse tenuto un tesoro di lingotti e monete, trovato nel 2006 a Brest e appartenuto al padre.", "Gli investigatori non hanno mai trovato nessun oro. Gli psichiatri hanno parlato di un delirio paranoico."]}, {"img": "casale", "m": "cor", "lines": ["Luglio 2021. Trent'anni di carcere per Hubert Caouissin. Tre anni alla sua compagna, Lydie, per aver aiutato a nascondere tutto.", "Quattro persone uccise per un tesoro che, con ogni probabilità, non è mai esistito. A volte l'avidità non ha nemmeno bisogno dell'oro. Le basta crederci."]}]}];
+const FX={"n1": "rain", "n2": "lamp", "n3": "dust", "g1": "", "g2": "heat", "g3": "fog", "w1": "rain", "w2": "lamp", "w3": "", "o1": "fog", "o2": "beacon", "o3": "dust", "t1": "rain", "t2": "rain", "t3": "candle", "casale": "hearth"};
+const $=s=>document.querySelector(s);
+let story=0, idx=-1, li=0, running=false, timer=null, scenes=[];
+const voice=new Audio();
+function build(){
+  const box=$('#shots'); box.innerHTML='';
+  const s=DATA[story];
+  scenes=[{t:'title'}].concat(s.scenes.map((sc,i)=>Object.assign({i},sc))).concat([{t:'end'}]);
+  scenes.forEach((sc,k)=>{
+    const el=document.createElement('div'); el.className='shot'+(sc.key?' key':''); el.dataset.k=k;
+    if(sc.t==='title'){ el.innerHTML='<div class="title"><div class="k">Storie dal buio · '+s.num+'</div><div class="t">'+s.title+'</div><div class="w">'+s.where+'</div></div>'; }
+    else if(sc.t==='end'){ el.innerHTML='<div class="title"><div class="t" style="font-size:clamp(20px,3.6vw,40px)">fine</div></div>'; }
+    else {
+      const fx=FX[sc.img]||'';
+      const v=['--s0:1.02;--s1:1.14','--s0:1.16;--s1:1.03','--s0:1.04;--s1:1.16;--tx1:-2%','--s0:1.1;--s1:1.18;--tx0:-2%;--tx1:1%'][k%4];
+      el.style.cssText=v+(sc.m==='cor'?';--dur:16s':'');
+      let h='<img src="img/'+sc.img+'.jpg" alt="">';
+      if(fx==='rain'||fx==='snow') h+='<canvas class="'+fx+'" data-p="'+fx+'"></canvas>';
+      else if(fx) h+='<div class="fx '+fx+'"></div>';
+      if(sc.m==='cor') h+='<div class="slate">qui Corinne in camera</div>';
+      else if(sc.key) h+='<div class="keytag">scena decisiva</div>';
+      if(sc.cap) h+='<div class="caption">'+sc.cap+'</div>';
+      el.innerHTML=h;
+    }
+    box.appendChild(el);
+  });
+  document.querySelectorAll('canvas[data-p]').forEach(particles);
+  const tl=$('#tl'); tl.innerHTML='';
+  scenes.forEach((sc,k)=>{ const b=document.createElement('button');
+    b.textContent=sc.t==='title'?'Titolo':sc.t==='end'?'Fine':(sc.m==='cor'?'Corinne':(sc.cap||'Ricostruzione'));
+    b.className=sc.key?'key':(sc.m==='cor'?'cor':''); b.onclick=()=>{begin();go(k)}; tl.appendChild(b); });
+  document.querySelectorAll('.ep').forEach((e,k)=>e.classList.toggle('cur',k===story));
+  $('#startT').textContent=s.title;
+}
+DATA.forEach((s,k)=>{const b=document.createElement('button');b.className='ep';b.innerHTML='<b>'+s.num+'</b><span>'+s.title+'</span><em>'+s.where+'</em>';b.onclick=()=>{stop();story=k;idx=-1;build();$('#start').hidden=false;subs.textContent='';};$('#eps').appendChild(b)});
+const subs=$('#subs'), mode=$('#mode');
+(function(){const c=$('#grain'),x=c.getContext('2d');c.width=320;c.height=180;const id=x.createImageData(320,180);
+ function f(){for(let i=0;i<id.data.length;i+=4){const v=Math.random()*255;id.data[i]=id.data[i+1]=id.data[i+2]=v;id.data[i+3]=255}x.putImageData(id,0,0);setTimeout(()=>requestAnimationFrame(f),60)}f()})();
+function particles(c){const x=c.getContext('2d');let W,H,P=[];const rain=c.dataset.p==='rain';
+ function rs(){W=c.width=c.clientWidth||960;H=c.height=c.clientHeight||540;P=Array.from({length:rain?220:140},()=>({x:Math.random()*W,y:Math.random()*H,v:rain?8+Math.random()*6:.4+Math.random(),l:rain?10+Math.random()*14:0,r:.5+Math.random()*1.6}))}
+ rs();addEventListener('resize',rs);
+ (function t(){if(!c.isConnected)return;x.clearRect(0,0,W,H);x.strokeStyle='rgba(200,215,235,.28)';x.fillStyle='rgba(255,255,255,.7)';x.lineWidth=1;
+  for(const p of P){p.y+=p.v;p.x+=rain?-1.2:Math.sin(p.y/50)*.4;if(p.y>H){p.y=-20;p.x=Math.random()*W}
+   if(rain){x.beginPath();x.moveTo(p.x,p.y);x.lineTo(p.x-1.6,p.y+p.l);x.stroke()}else{x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()}}
+  requestAnimationFrame(t)})()}
+let ac=null,master=null;
+function music(on){ if(!on){ if(master) master.gain.setTargetAtTime(0,ac.currentTime,.8); return; }
+ if(!ac){ ac=new (window.AudioContext||window.webkitAudioContext)(); master=ac.createGain(); master.gain.value=0; master.connect(ac.destination);
+  const lp=ac.createBiquadFilter(); lp.type='lowpass'; lp.frequency.value=380; lp.connect(master);
+  [[55,.22],[82.4,.12],[110.3,.06]].forEach(([f,g])=>{const o=ac.createOscillator();o.type='sawtooth';o.frequency.value=f;const gg=ac.createGain();gg.gain.value=g;const l=ac.createOscillator();l.frequency.value=.05+Math.random()*.08;const lg=ac.createGain();lg.gain.value=1.5;l.connect(lg);lg.connect(o.detune);l.start();o.connect(gg);gg.connect(lp);o.start()});
+  const len=ac.sampleRate*2,b=ac.createBuffer(1,len,ac.sampleRate),d=b.getChannelData(0);let last=0;for(let i=0;i<len;i++){last=(last+.02*(Math.random()*2-1))/1.02;d[i]=last*3}
+  const n=ac.createBufferSource();n.buffer=b;n.loop=true;const ng=ac.createGain();ng.gain.value=.25;n.connect(ng);ng.connect(lp);n.start(); }
+ ac.resume(); master.gain.setTargetAtTime(.16,ac.currentTime,1.5); }
+function begin(){ $('#start').hidden=true; running=true; music($('#music').checked); }
+function stop(){ running=false; clearTimeout(timer); voice.pause(); }
+function go(k){
+  stop(); running=true;
+  if(k>=scenes.length){ running=false; mode.textContent='fine'; mode.className='mode'; return; }
+  idx=k; li=0; const sc=scenes[k];
+  document.querySelectorAll('.shot').forEach(e=>e.classList.remove('on'));
+  const el=document.querySelector('.shot[data-k="'+k+'"]'); void el.offsetWidth; el.classList.add('on');
+  if(sc.t){ mode.textContent='Grafica'; mode.className='mode'; }
+  else if(sc.m==='cor'){ mode.textContent='Corinne in camera'; mode.className='mode cor'; }
+  else { mode.textContent=sc.key?'Scena decisiva · voce fuori campo':'Ricostruzione · voce fuori campo'; mode.className='mode'+(sc.key?' key':''); }
+  document.querySelectorAll('#tl button').forEach((b,j)=>b.classList.toggle('cur',j===k));
+  subs.textContent='';
+  timer=setTimeout(next, sc.t==='title'?5500:sc.t==='end'?3000:(sc.m==='cor'?1200:2000));
+}
+function next(){
+  if(!running) return;
+  const sc=scenes[idx];
+  if(sc.t||li>=sc.lines.length){ timer=setTimeout(()=>go(idx+1), sc.t?200:1400); return; }
+  const j=li++; const text=sc.lines[j]; subs.textContent=$('#subon').checked?text:'';
+  voice.src='audio/'+DATA[story].id+'_'+sc.i+'_'+j+'.mp3';
+  let done=false; const after=()=>{ if(done) return; done=true; clearTimeout(timer); subs.style.opacity=0; timer=setTimeout(()=>{subs.style.opacity=1; next()}, sc.key?1100:700); };
+  voice.onended=after; voice.onerror=()=>{ timer=setTimeout(after, Math.max(2500,text.split(' ').length*380)); };
+  voice.play().catch(()=>voice.onerror()); timer=setTimeout(after,25000);
+}
+$('#start').onclick=()=>{ begin(); go(0); };
+$('#pause').onclick=()=>{ if(running){ stop(); $('#pause').textContent='Riprendi'; if(master) music(false);} else { $('#pause').textContent='Pausa'; begin(); li=Math.max(0,li-1); running=true; next(); } };
+$('#restart').onclick=()=>{ $('#pause').textContent='Pausa'; begin(); go(0); };
+$('#music').onchange=e=>{ if(running) music(e.target.checked); };
+build();
+</script>
