@@ -150,6 +150,38 @@ Compilato il 19 ottobre 2026. **16 casi** (10 Italia, 6 Europa).
 
 ---
 
+## PRIME PUNTATE — proposta (19/10/2026)
+
+### Criterio di scelta
+- **Evitati i casi «figli contro genitori»** (Maso, Graneris, Neumair, Carretta): Corinne ha un contenzioso aperto con il figlio (dossier sez. 5), e il paragone sarebbe immediato.
+- **Evitati gli infanticidi** (Cogne, Stival, Bretón, Lhermitte, Lissi) come prime puntate: sono troppo duri per lanciare il format.
+- **Scelti tre casi di coppia e di doppia vita**, con un forte meccanismo noir e una sentenza definitiva:
+
+| # | Caso | Perché |
+|---|---|---|
+| 1 | **Jean-Claude Romand** (Francia) | Corinne è nata a Parigi: può raccontare la Francia «da dentro». C'è anche il libro di Carrère. La menzogna come motore. |
+| 2 | **Melania Rea** (Italia) | La doppia vita, la caserma, la telefonata anonima mai spiegata. Italiano e molto noto. |
+| 3 | **Maria Baumer** (Germania) | Il fidanzato in lacrime in TV mentre sa dove è sepolta. Poco noto in Italia, quindi un effetto scoperta. |
+
+### Traccia — Puntata 1: «Il falso dottore» (Jean-Claude Romand)
+Durata indicativa: 10–12 minuti. **Voce: Corinne, in prima persona**, nel casale. Solo fatti con fonte (schede 7 e sopra).
+
+1. **Apertura a freddo (30")** — Gennaio 1993, una casa in fiamme a Prévessin-Moëns, vicino al confine svizzero. Corinne: *«Questa è la storia di un uomo che per anni ha recitato una parte. E io, di parti, me ne intendo.»*
+2. **L'uomo perfetto (2')** — Un medico, un marito, un padre di due figli, e i suoi genitori accanto. Così lo vedevano tutti.
+3. **La crepa (2')** — Non era un medico. Ogni mattina usciva di casa come se andasse al lavoro. ⚠️ Prima di registrare, verificare sulle fonti la durata della finzione e il ruolo dichiarato all'OMS.
+4. **La notte (2')** — Uccide la moglie, i due figli e i genitori, poi dà fuoco alla casa. **Niente dettagli cruenti:** solo i fatti accertati.
+5. **Il processo (1'30")** — 1996: ergastolo con 22 anni di periodo di sicurezza.
+6. **La libertà (1'30")** — Febbraio 2019: Châteauroux gli nega la libertà condizionale. Nel 2019 la corte di Bourges gliela concede in appello, con braccialetto elettronico per due anni e il divieto di entrare in tre regioni.
+7. **Chiusura (1')** — La riflessione personale di Corinne sulla menzogna e sull'apparenza, **scritta da lei**, non da noi.
+
+**Da fare prima di registrare:**
+- Verificare la data esatta dei delitti e la durata della doppia vita sulle fonti francesi (es. archivio di *Le Monde*).
+- Per citare il libro di Carrère serve solo il titolo. Estratti letti in video richiedono i diritti.
+- Niente foto delle vittime né della casa da Google: solo immagini di repertorio con licenza, oppure ricostruzioni con disegni o ambienti senza volti.
+- Validare il testo con Corinne (regola 5 del CLAUDE.md).
+
+---
+
 ## Esclusi apposta (e perché)
 - **Solingen (Germania, 2020, madre che uccide cinque figli):** ergastolo nel 2021 dal Landgericht di Wuppertal ([beck-aktuell](https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/solinger-kindermorde-mutter-zu-lebenslanger-haft-verurteilt-2021-11-04)), ma non ho trovato conferma che la sentenza sia definitiva. Lo terrei in attesa.
 - **Monika Weimar/Böttcher (Germania, 1986):** a marzo 2026 è stata depositata una richiesta di revisione che indica un altro possibile autore, e il tribunale non ha ancora deciso. Il caso è di nuovo aperto, quindi è escluso. Fonti: [beck-aktuell](https://www.beck-aktuell.de/heute-im-recht/rechtsgeschehen/fall-weimar-wiederaufnahme-antrag-mord-kinder-2026-03-30), [hessenschau](https://www.hessenschau.de/panorama/mordfall-weimar-anwalt-will-verfahren-um-monika-boettcher-neu-aufrollen-v1,boettcher-weimar-morde-100.html).
