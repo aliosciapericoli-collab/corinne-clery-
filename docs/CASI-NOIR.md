@@ -1,7 +1,7 @@
 # Casi noir — delitti in famiglia (Italia ed Europa)
 
 Materiale di ricerca per i racconti video del format **"Parlane con Corinne Cléry"**.
-Compilato il 19 ottobre 2026. **15 casi** in due tranche (10 Italia, 5 Europa).
+Compilato il 19 ottobre 2026. **16 casi** (10 Italia, 6 Europa).
 
 ## Regole di questa raccolta
 
@@ -140,9 +140,18 @@ Compilato il 19 ottobre 2026. **15 casi** in due tranche (10 Italia, 5 Europa).
 - **Aggancio noir:** la casa normale sopra e la prigione sotto.
 - **Fonti:** [Der Standard](https://derstandard.at/1268700747244/Vor-einem-Jahr-wurde-Josef-F-verurteilt) · [Vienna.at](https://www.vienna.at/josef-f-wegen-mordes-lebenslang-in-anstalt-eingewiesen/2963360) · [Tiroler Tageszeitung](https://www.tt.com/artikel/30852911/mit-tochter-sieben-kinder-gezeugt-inzestfall-amstetten-flog-vor-15-jahren-auf) · [Salzburg24](https://www.salzburg24.at/news/oesterreich/inzestfall-von-amstetten-gericht-weist-antrag-auf-bedingte-entlassung-von-josef-fritzl-ab-art-305152)
 
+### 16. Germania — Maria Baumer, Regensburg, 2012
+- **Nota:** l'autore non è un familiare di sangue ma il **fidanzato**: la coppia doveva sposarsi.
+- **Fatti:** il 26 maggio 2012 il fidanzato, Christian F., denuncia la scomparsa di Maria Baumer (26 anni). Racconta che è uscita dalla loro casa di Regensburg «per prendersi una pausa». L'8 settembre 2013 dei cercatori di funghi trovano i resti in un bosco vicino a Bernhardswald, e il DNA li identifica.
+- **Esito giudiziario:** il 6 ottobre 2020 il Landgericht di Regensburg lo condanna all'ergastolo per omicidio, per perfidia e motivi abietti, con la «particolare gravità della colpa». Secondo il tribunale le aveva somministrato un mix di lorazepam e tramadolo «per essere libero per una nuova relazione». La Corte federale (BGH) respinge il ricorso a giugno 2021 e la sentenza diventa definitiva.
+- **Oggi:** lui ha ammesso di aver seppellito il corpo e di aver simulato la scomparsa, ma nega di averla uccisa. È stato un processo solo indiziario.
+- **Aggancio noir:** il fidanzato in lacrime in TV che chiede aiuto per ritrovarla, mentre sa dove è sepolta.
+- **Fonti:** [beck-aktuell (sentenza 2020)](https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/mordfall-maria-baumer-damaliger-verlobter-zu-lebenslanger-haftstrafe-verurteilt-2020-10-07) · [OTV (definitiva)](https://www.otv.de/regensburg-urteil-im-mordfall-maria-baumer-rechtskraeftig-497330/) · [Wikipedia DE](https://de.wikipedia.org/wiki/Mordfall_Maria_Baumer) · [news.de (Aktenzeichen XY)](https://www.news.de/panorama/855811192/mordfall-maria-baumer-unter-traenen-bei-aktenzeichen-xy-ungeloest-rudi-cerne-stellt-verbrechen-vor-verlobter-christian-f-in-u-haft/1/)
+
 ---
 
 ## Esclusi apposta (e perché)
+- **Solingen (Germania, 2020, madre che uccide cinque figli):** ergastolo nel 2021 dal Landgericht di Wuppertal ([beck-aktuell](https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/solinger-kindermorde-mutter-zu-lebenslanger-haft-verurteilt-2021-11-04)), ma non ho trovato conferma che la sentenza sia definitiva. Lo terrei in attesa.
 - **Monika Weimar/Böttcher (Germania, 1986):** a marzo 2026 è stata depositata una richiesta di revisione che indica un altro possibile autore, e il tribunale non ha ancora deciso. Il caso è di nuovo aperto, quindi è escluso. Fonti: [beck-aktuell](https://www.beck-aktuell.de/heute-im-recht/rechtsgeschehen/fall-weimar-wiederaufnahme-antrag-mord-kinder-2026-03-30), [hessenschau](https://www.hessenschau.de/panorama/mordfall-weimar-anwalt-will-verfahren-um-monika-boettcher-neu-aufrollen-v1,boettcher-weimar-morde-100.html).
 - **Novi Ligure (Erika e Omar, 2001):** gli autori erano minorenni (Carta di Treviso).
 - **Garlasco:** le indagini sono state riaperte nel 2025, quindi il caso non è chiuso.
@@ -152,4 +161,4 @@ Compilato il 19 ottobre 2026. **15 casi** in due tranche (10 Italia, 5 Europa).
 
 ## Prossimi passi possibili
 - Controllare i punti ⚠️ sugli archivi (sentenze, archivio storico de *La Stampa* e del *Corriere*).
-- Terza tranche: per la Germania serve un caso chiuso in via definitiva (Weimar è escluso).
+- Solingen: verificare se la sentenza è definitiva (ricerca sul sito del BGH).
