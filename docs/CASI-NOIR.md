@@ -1,7 +1,7 @@
 # Casi noir — delitti in famiglia (Italia ed Europa)
 
 Materiale di ricerca per i racconti video del format **"Parlane con Corinne Cléry"**.
-Compilato il 19 ottobre 2026. Prima tranche: **10 casi** (6 Italia, 4 Europa).
+Compilato il 19 ottobre 2026. **15 casi** in due tranche (10 Italia, 5 Europa).
 
 ## Regole di questa raccolta
 
@@ -100,7 +100,50 @@ Compilato il 19 ottobre 2026. Prima tranche: **10 casi** (6 Italia, 4 Europa).
 
 ---
 
+## SECONDA TRANCHE (compilata il 19/10/2026)
+
+### 11. Elena Ceste — provincia di Asti, 2014
+- **Fatti:** Elena Ceste scompare nel gennaio 2014. Il corpo viene ritrovato nove mesi dopo, a circa un chilometro da casa, durante la pulizia del rio Mersa.
+- **Esito giudiziario:** il marito, Michele Buoninconti, è condannato a 30 anni per omicidio e occultamento di cadavere: GUP di Asti a novembre 2015, poi Corte d'Assise d'Appello di Torino nel 2017. La Cassazione rende definitiva la condanna il 17 maggio 2018.
+- **Oggi:** si dichiara innocente. La difesa sostiene che la donna sia morta di freddo dopo essersi allontanata da sola.
+- **Aggancio noir:** il marito che guida le ricerche della moglie scomparsa.
+- **Fonti:** [Fanpage (appello)](https://www.fanpage.it/processo-elena-ceste-il-marito-michele-buoninconti-condannato-a-30-anni-anche-in-appello/) · [Fanpage (richiesta di revisione)](https://www.fanpage.it/attualita/caso-ceste-il-marito-chiede-la-revisione-del-processo-elena-morta-di-freddo/) · [Donna Glamour](https://www.donnaglamour.it/chi-e-elena-ceste/curiosita/)
+- ⚠️ La difesa ha parlato di una possibile richiesta di revisione: prima del video controllare che non sia stata accolta.
+
+### 12. Benno Neumair — Bolzano, 2021
+- **Fatti:** il 4 gennaio 2021 Benno Neumair uccide i genitori, Peter Neumair e Laura Perselli, e getta i corpi nell'Adige.
+- **Esito giudiziario:** ergastolo in primo grado a novembre 2022, confermato in appello a ottobre 2023. La Cassazione lo rende definitivo il 12 settembre 2024, riconoscendolo pienamente capace di intendere e di volere.
+- **Oggi:** è detenuto a Montorio (Verona). Da novembre 2025 segue un percorso di giustizia riparativa e insegna scacchi in carcere.
+- **Aggancio noir:** il figlio che vive in casa con i genitori, il fiume e la sorella che diventa parte civile.
+- **Fonti:** [LaPresse](https://www.lapresse.it/cronaca/2024/09/12/benno-neumair-la-cassazione-conferma-lergastolo/) · [Open](https://www.open.online/2024/09/12/bolzano-benno-neumair-cassazione-ergastolo-omicidio-genitori/) · [Quotidiano.net](https://www.quotidiano.net/cronaca/ammazzo-i-genitori-e-getto-i-corpi-nel-fiume-ergastolo-definitivo-889c28b5) · [AGI (2025)](https://www.agi.it/cronaca/news/2025-11-11/benno-neumair-insegna-scacchi-incontra-zie-34124159/)
+
+### 13. Carlo Lissi — Motta Visconti (MI), 2014
+- **Fatti:** il 14 giugno 2014 Carlo Lissi uccide a coltellate la moglie, Maria Cristina Omes, e i due figli di 5 anni e 20 mesi. Confessa lo stesso giorno, dicendo di essere «innamorato di un'altra».
+- **Esito giudiziario:** ergastolo in primo grado il 18 gennaio 2017. Lissi rinuncia all'appello con una lettera ai giudici («merito il carcere a vita»), così la condanna diventa definitiva.
+- ⚠️ Il passaggio in giudicato per rinuncia all'appello è riportato da ANSA e Il Sussidiario: conviene confermarlo sul fascicolo.
+- **Aggancio noir:** la normalità ostentata subito dopo il delitto.
+- **Fonti:** [ANSA](https://www.ansa.it/english/news/general_news/2017/01/27/lissi-says-he-wont-appeal-life-term_d8ab02a8-c841-4aa3-ad79-633a4f43092f.html) · [The Local Italy](https://www.thelocal.it/20140616/milan-man-killed-family-over-unrequited-love) · [Il Sussidiario](https://www.ilsussidiario.net/?p=1379574)
+
+### 14. Ferdinando Carretta — Parma, 1989
+- **Fatti:** nell'agosto 1989 la famiglia Carretta sparisce da Parma. Per quasi dieci anni si crede che sia fuggita all'estero con dei fondi neri. Nel 1998 Ferdinando viene rintracciato a Londra durante un controllo stradale e confessa in diretta a *Chi l'ha visto?* di aver ucciso il padre, la madre e il fratello. I corpi e l'arma non sono mai stati ritrovati.
+- **Esito giudiziario:** **non è una condanna.** Nel 1999 viene prosciolto perché giudicato totalmente incapace di intendere e di volere al momento dei fatti, e internato in ospedale psichiatrico giudiziario.
+- **Oggi:** esce nel 2015 sotto sorveglianza e muore a Forlì a fine maggio 2023, a 61 anni.
+- ⚠️ Nel racconto va detto chiaramente che non è stato condannato: è stato riconosciuto autore, ma non imputabile.
+- **Aggancio noir:** la famiglia «in fuga» che in realtà non è mai partita, e la confessione in TV.
+- **Fonti:** [Il Post](https://www.ilpost.it/2015/05/11/ferdinando-carretta/) · [Il Post (morte, 2023)](https://www.ilpost.it/2023/06/01/morto-ferdinando-carretta-al-centro-di-un-caso-di-cronaca-molto-famoso-tra-gli-anni-ottanta-e-novanta/) · [Open](https://www.open.online/2023/06/01/chi-era-ferdinando-carretta-strage-famiglia-1989/) · [Unione Sarda](https://www.unionesarda.it/news/italia/morto-ferdinando-carretta-nel-1989-stermino-la-famiglia-e-lo-tenne-nascosto-per-nove-anni-d27toq1d)
+
+### 15. Austria — Josef Fritzl, Amstetten, 2008
+- **Fatti:** nel 1984 Fritzl rinchiude la figlia in un bunker sotto la casa di famiglia e la tiene prigioniera per 24 anni. Dagli abusi nascono sette figli; uno muore poco dopo la nascita senza cure. Il caso viene scoperto ad aprile 2008.
+- **Esito giudiziario:** il 19 marzo 2009 la corte d'assise di St. Pölten lo dichiara colpevole all'unanimità di tutti i capi d'accusa. Tra questi c'è l'omicidio per omissione, cioè la morte del neonato lasciato senza cure. La pena è l'ergastolo, con internamento in un istituto per autori di reato con disturbi psichici. Fritzl accetta la sentenza, che diventa definitiva.
+- **Oggi:** a maggio 2024 passa al regime carcerario ordinario. La richiesta di liberazione condizionale è stata respinta dal tribunale di Krems.
+- ⚠️ **Non nominare la figlia né i nipoti**: vivono con una nuova identità protetta. La stampa austriaca stessa scrive «Josef F.».
+- **Aggancio noir:** la casa normale sopra e la prigione sotto.
+- **Fonti:** [Der Standard](https://derstandard.at/1268700747244/Vor-einem-Jahr-wurde-Josef-F-verurteilt) · [Vienna.at](https://www.vienna.at/josef-f-wegen-mordes-lebenslang-in-anstalt-eingewiesen/2963360) · [Tiroler Tageszeitung](https://www.tt.com/artikel/30852911/mit-tochter-sieben-kinder-gezeugt-inzestfall-amstetten-flog-vor-15-jahren-auf) · [Salzburg24](https://www.salzburg24.at/news/oesterreich/inzestfall-von-amstetten-gericht-weist-antrag-auf-bedingte-entlassung-von-josef-fritzl-ab-art-305152)
+
+---
+
 ## Esclusi apposta (e perché)
+- **Monika Weimar/Böttcher (Germania, 1986):** a marzo 2026 è stata depositata una richiesta di revisione che indica un altro possibile autore, e il tribunale non ha ancora deciso. Il caso è di nuovo aperto, quindi è escluso. Fonti: [beck-aktuell](https://www.beck-aktuell.de/heute-im-recht/rechtsgeschehen/fall-weimar-wiederaufnahme-antrag-mord-kinder-2026-03-30), [hessenschau](https://www.hessenschau.de/panorama/mordfall-weimar-anwalt-will-verfahren-um-monika-boettcher-neu-aufrollen-v1,boettcher-weimar-morde-100.html).
 - **Novi Ligure (Erika e Omar, 2001):** gli autori erano minorenni (Carta di Treviso).
 - **Garlasco:** le indagini sono state riaperte nel 2025, quindi il caso non è chiuso.
 - **Erba:** non è un delitto in famiglia, e c'è stata una richiesta di revisione.
@@ -109,4 +152,4 @@ Compilato il 19 ottobre 2026. Prima tranche: **10 casi** (6 Italia, 4 Europa).
 
 ## Prossimi passi possibili
 - Controllare i punti ⚠️ sugli archivi (sentenze, archivio storico de *La Stampa* e del *Corriere*).
-- Seconda tranche: altri casi italiani (es. Elena Ceste, Ferdinando Carretta) e Germania/Austria.
+- Terza tranche: per la Germania serve un caso chiuso in via definitiva (Weimar è escluso).
