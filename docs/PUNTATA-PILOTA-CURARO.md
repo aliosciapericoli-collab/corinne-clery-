@@ -88,7 +88,7 @@ Dentro restano tracce di un farmaco.
 
 L'autopsia lo trova anche nel corpo di Ombretta. È un derivato del curaro: un farmaco che in sala operatoria serve a paralizzare i muscoli.
 
-> ▶ **INSERTO 06 — L'autopsia** (9 s) · scritta: «UN DERIVATO DEL CURARO» · Luce al neon che sfarfalla, ronzio freddo.
+> ▶ **INSERTO 06 — L'autopsia** (9 s) · versione lunga (21 s) · laboratorio, provette, microscopio, ago, nero con elettrocardiogramma piatto.
 
 Ha provocato un cedimento del cuore e un edema ai polmoni. E sul corpo c'è il segno di una sola iniezione.
 
@@ -112,7 +112,7 @@ La città si divide in innocentisti e colpevolisti, come non succedeva dai tempi
 
 Dopo quarantaquattro udienze, il 15 febbraio 1965, arriva la sentenza. Ergastolo.
 
-> ▶ **INSERTO 08 — La sentenza** (8 s) · scritta: «15 FEBBRAIO 1965 · ERGASTOLO» · Il colpo sonoro cade sulla parola «ergastolo».
+> ▶ **INSERTO 08 — La sentenza** (8 s) · versione lunga (22 s) · giornali, aula, gabbia, carcere, tre colpi di martelletto e «ERGASTOLO».
 
 In appello la pena scende a ventiquattro anni. Nel 1969 la Cassazione la rende definitiva.
 
