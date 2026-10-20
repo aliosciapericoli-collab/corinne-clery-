@@ -2,7 +2,7 @@
 
 **«Parlane con Corinne Cléry»** · bozza del 20/10/2026 · testo da far riscrivere e approvare a Corinne.
 
-Come funziona: Corinne racconta **in camera**, nel casale. Nei punti segnati con ▶ **INSERTO** il montaggio stacca su un video di 8–10 secondi, poi torna su di lei (oppure la sua voce continua sopra l'inserto, a scelta del regista).
+Come funziona: Corinne racconta **in camera**, nel casale. Nei punti segnati con ▶ **INSERTO** il montaggio stacca su un video da 8 a 20 secondi, poi torna su di lei (oppure la sua voce continua sopra l'inserto, a scelta del regista).
 
 Gli inserti sono **senza voce narrante**: hanno solo suono d'ambiente e una scritta breve. Sono in `docs/prototipi/puntata-pilota/inserti/` (1920×1080, MP4).
 
