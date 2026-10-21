@@ -1,0 +1,108 @@
+{
+ "title": "Il nipote del piano di sopra",
+ "where": "Brescia · estate 2005",
+ "pron": [
+  [
+   "Donegani",
+   "Do-ne-GÀ-ni"
+  ],
+  [
+   "De Leo",
+   "De LÈ-o"
+  ],
+  [
+   "Corteno Golgi",
+   "Cor-TÈ-no GÒL-gi"
+  ],
+  [
+   "Vivione",
+   "Vi-vi-Ó-ne"
+  ],
+  [
+   "Val Paisco",
+   "Val Pa-Ì-sco"
+  ]
+ ],
+ "blocks": [
+  {
+   "t": "cam",
+   "text": "[Saluto e presentazione: con parole tue]"
+  },
+  {
+   "t": "vo",
+   "text": "Brescia, estate 2005. Una villetta su due piani."
+  },
+  {
+   "t": "ins",
+   "n": "01",
+   "title": "La villetta di notte",
+   "sec": 8
+  },
+  {
+   "t": "vo",
+   "text": "Al piano terra vivono due pensionati, Aldo Donegani e Luisa De Leo. Non hanno figli. Al piano di sopra vive un loro nipote, Guglielmo Gatti. Una casa di famiglia, in tutti i sensi."
+  },
+  {
+   "t": "cam",
+   "text": "L'ultima volta che qualcuno li vede è il fine settimana del 30 e 31 luglio."
+  },
+  {
+   "t": "cam",
+   "text": "Il 1° agosto un altro nipote, un carabiniere, va a trovarli. Non risponde nessuno. Insieme a lui, a chiamare i vigili del fuoco e poi a denunciare la scomparsa, c'è proprio Guglielmo. Il nipote del piano di sopra."
+  },
+  {
+   "t": "vo",
+   "text": "Ma quello stesso 1° agosto, molto più a nord, sulla strada che sale verso il Passo del Vivione, un uomo di Corteno Golgi incrocia un'auto che quasi lo sfiora."
+  },
+  {
+   "t": "ins",
+   "n": "02",
+   "title": "La strada del Vivione · scena decisiva",
+   "sec": 20
+  },
+  {
+   "t": "vo",
+   "text": "Al volante c'è un uomo pallido, sudato, senza fiato. Suo figlio, quattordici anni, lo riconosce: è il nipote dei due anziani scomparsi."
+  },
+  {
+   "t": "vo",
+   "text": "Il padre lo segnala ai carabinieri."
+  },
+  {
+   "t": "vo",
+   "text": "Il 17 agosto, nei boschi della Val Paisco, vengono trovati i resti dei coniugi. Quel giorno stesso Guglielmo Gatti viene arrestato."
+  },
+  {
+   "t": "ins",
+   "n": "03",
+   "title": "I boschi della Val Paisco",
+   "sec": 10
+  },
+  {
+   "t": "vo",
+   "text": "Nel garage di casa le tracce di sangue riaffiorano con il luminol. E nel suo appartamento c'è lo scontrino della spesa che lo zio aveva fatto il 30 luglio."
+  },
+  {
+   "t": "cam",
+   "text": "Ergastolo nel 2007. Confermato in appello e, nel febbraio 2009, in Cassazione. Un movente vero non è mai stato trovato. I giudici parlano di rancore, di invidia per la vita degli zii. Lui si è sempre detto innocente."
+  },
+  {
+   "t": "cam",
+   "text": "E poi c'è l'ultima scena, la più silenziosa. Guglielmo Gatti è morto in carcere nel giugno 2023. Nessuno lo ha saputo per quasi tre anni."
+  },
+  {
+   "t": "ins",
+   "n": "04",
+   "title": "Il corridoio del carcere",
+   "sec": 8
+  },
+  {
+   "t": "cam",
+   "text": "L'uomo che aveva denunciato la scomparsa dei suoi parenti è scomparso a sua volta. E nessuno lo ha cercato."
+  },
+  {
+   "t": "cam",
+   "text": "[Chiusura: con parole tue]"
+  }
+ ]
+}
