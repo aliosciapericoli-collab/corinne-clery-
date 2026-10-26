@@ -1,66 +1,192 @@
 <!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Archivio storie · Parlane con Corinne Cléry</title>
 <style>
-:root{--bg:#0b0b0b;--card:#151515;--line:#2b2b2b;--fg:#f2ede4;--mut:#9a948a;--gold:#c9a063;--ok:#3f8f5a;--part:#b07a2a;--no:#3a3a3a}
+:root{--bg:#0b0b0b;--card:#151515;--line:#2b2b2b;--fg:#f2ede4;--mut:#9a948a;--gold:#c9a063;--ok:#3f8f5a;--part:#b07a2a;--no:#3a3a3a;--red:#a3221a}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Georgia,"Times New Roman",serif}
 header{padding:28px 16px 10px;text-align:center}
 header .k{letter-spacing:.32em;color:var(--gold);font-size:13px;font-family:system-ui,sans-serif}
 header h1{margin:.3em 0 .1em;font-size:30px;font-weight:400}
 header .u{color:var(--mut);font:13px system-ui,sans-serif}
-nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px 16px 4px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
-nav button{font:600 14px system-ui,sans-serif;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:20px;padding:8px 14px;cursor:pointer}
+#chi{font:13px system-ui,sans-serif;color:var(--mut);margin-top:6px}#chi a{color:var(--gold);cursor:pointer;text-decoration:underline}
+nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px 16px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav button,.btn{font:600 14px system-ui,sans-serif;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:20px;padding:8px 14px;cursor:pointer}
 nav button.on{background:var(--gold);color:#111;border-color:var(--gold)}
+nav a{font:600 14px system-ui;color:var(--gold);padding:8px 6px}
 main{max-width:980px;margin:0 auto;padding:16px}
-h2{font-weight:400;font-size:20px;color:var(--gold);margin:26px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px}
+#banner{display:none;font:14px system-ui,sans-serif;background:#3a2a10;border:1px solid var(--part);color:#f0d9a8;padding:10px 14px;border-radius:8px;margin-bottom:12px}
+h2{font-weight:400;font-size:20px;color:var(--gold);margin:26px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 14px}
 .card .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font:13px system-ui,sans-serif;color:var(--mut)}
 .card .ruolo{color:var(--gold);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .card h3{margin:.35em 0 .25em;font-size:23px;font-weight:400}
-.card p{margin:.3em 0;line-height:1.5;color:#ddd6ca}
-.card .note{font:14px system-ui,sans-serif;color:#d9b77d;margin-top:8px}
+.card p{margin:.3em 0;line-height:1.5;color:#ddd6ca;white-space:pre-line}
+.card .note{font:14px system-ui,sans-serif;color:#d9b77d;margin-top:8px;white-space:pre-line}
 .steps{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 4px}
 .st{font:12px system-ui,sans-serif;padding:5px 9px;border-radius:6px;background:var(--no);color:#aaa}
 .st.ok{background:var(--ok);color:#fff}.st.part{background:var(--part);color:#fff}
-.st b{font-weight:700}
-.files{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+.files,.azioni{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .files a{font:600 13px system-ui,sans-serif;color:#111;background:var(--gold);text-decoration:none;padding:7px 11px;border-radius:6px}
+.azioni .btn{border-radius:8px;font-size:13px;padding:7px 11px}
+.btn.reg{background:var(--red);border-color:var(--red);color:#fff}
+.btn.reg.fatto{background:var(--ok);border-color:var(--ok)}
+.media{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.media .tit{font:600 12px system-ui,sans-serif;letter-spacing:.12em;color:var(--mut);text-transform:uppercase;margin-bottom:8px}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.mi{background:#0e0e0e;border:1px solid var(--line);border-radius:8px;overflow:hidden;font:12px system-ui,sans-serif}
+.mi video,.mi img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#000}
+.mi .r{display:flex;justify-content:space-between;gap:6px;padding:6px 8px;align-items:center}
+.mi .r a{color:var(--fg);word-break:break-all}.mi .x{color:#e88;cursor:pointer;border:0;background:none;font-size:14px}
+.prog{font:12px system-ui,sans-serif;color:var(--gold);margin-top:6px}
 .scartata{opacity:.6}
 .tl{position:relative;margin-left:10px;border-left:2px solid var(--line);padding-left:18px}
 .tl .ev{position:relative;margin:0 0 18px}
 .tl .ev::before{content:"";position:absolute;left:-26px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
 .tl .ev.candidate::before{background:#777}.tl .ev.scartate::before{background:#444}
 .tl .d{font:700 13px system-ui,sans-serif;color:var(--gold);letter-spacing:.05em}
-.tl .t{font-size:19px;margin:.15em 0}
-.tl .l{font:13px system-ui,sans-serif;color:var(--mut)}
+.tl .t{font-size:19px;margin:.15em 0}.tl .l{font:13px system-ui,sans-serif;color:var(--mut)}
 .diario div{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font:15px/1.5 system-ui,sans-serif}
 .diario b{color:var(--gold);min-width:48px}
+.dadd{display:flex;gap:8px;margin:10px 0 16px}.dadd input{flex:1}
 .leg{font:12px system-ui,sans-serif;color:var(--mut);margin:6px 0 0}
-.hide{display:none}
+.hide{display:none!important}
+input,textarea,select{width:100%;font:15px system-ui,sans-serif;background:#0e0e0e;color:var(--fg);border:1px solid #3a3a3a;border-radius:6px;padding:8px}
+textarea{min-height:80px}
+dialog{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:12px;width:min(720px,94vw);max-height:90vh;padding:0}
+dialog::backdrop{background:rgba(0,0,0,.7)}
+dialog form{padding:18px}
+dialog h3{margin:0 0 12px;font-weight:400;font-size:22px}
+.f{margin-bottom:10px}.f label{display:block;font:600 12px system-ui,sans-serif;color:var(--mut);margin-bottom:4px;letter-spacing:.05em}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.g4{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.bar{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;margin-top:14px;position:sticky;bottom:0;background:var(--card);padding-top:10px}
+.btn.gold{background:var(--gold);color:#111;border-color:var(--gold)}.btn.del{color:#f99;border-color:#633}
+.edit-only{}body.ro .edit-only{display:none!important}
 </style></head><body>
-<header><div class="k">PARLANE CON CORINNE CLÉRY</div><h1>Archivio delle storie</h1><div class="u" id="upd"></div></header>
-<nav><button data-v="stato" class="on">Situazione</button><button data-v="crono">Cronologia</button><button data-v="diario">Diario di lavoro</button><a href="../" style="font:600 14px system-ui;color:var(--gold);padding:8px 6px">↩ Gobbo</a></nav>
+<header><div class="k">PARLANE CON CORINNE CLÉRY</div><h1>Archivio delle storie</h1><div class="u" id="upd"></div><div id="chi" class="edit-only"></div></header>
+<nav><button data-v="stato" class="on">Situazione</button><button data-v="crono">Cronologia</button><button data-v="diario">Diario di lavoro</button><a href="../">↩ Gobbo</a></nav>
 <main>
+<div id="banner"></div>
 <section id="stato"></section>
 <section id="crono" class="hide"><h2>Le storie in ordine di tempo</h2><p class="leg">● oro = in lavorazione · ● grigio = candidata · ● scuro = scartata</p><div class="tl" id="tl"></div></section>
-<section id="diario" class="hide"><h2>Cosa è stato fatto, giorno per giorno</h2><div class="diario" id="dl"></div></section>
+<section id="diario" class="hide"><h2>Cosa è stato fatto, giorno per giorno</h2><div class="dadd edit-only"><input id="dtxt" placeholder="Aggiungi una nota al diario…"><button class="btn gold" id="dbtn">Aggiungi</button></div><div class="diario" id="dl"></div></section>
 </main>
+
+<dialog id="dlg"><form method="dialog" id="frm">
+<h3 id="ftit">Modifica storia</h3>
+<div class="f"><label>Titolo</label><input name="titolo" required></div>
+<div class="g2"><div class="f"><label>Numero puntata (vuoto = nessuno)</label><input name="puntata" type="number" min="0"></div>
+<div class="f"><label>Gruppo</label><select name="gruppo"><option value="lavorazione">In lavorazione</option><option value="candidate">Candidata</option><option value="scartate">Scartata</option></select></div></div>
+<div class="f"><label>Etichetta (es. «Puntata 1», «Raccolta 3»)</label><input name="ruolo"></div>
+<div class="g2"><div class="f"><label>Luogo</label><input name="luogo"></div><div class="f"><label>Data dei fatti (per la cronologia)</label><input name="data" type="date"></div></div>
+<div class="f"><label>Data come si legge (es. «estate 2005»)</label><input name="data_txt"></div>
+<div class="f"><label>Sintesi</label><textarea name="sintesi"></textarea></div>
+<div class="f"><label>Note</label><textarea name="note"></textarea></div>
+<div class="f"><label>Avanzamento (scrivi la data, es. 26/10 · per gli inserti «4/7» · vuoto = da fare)</label><div class="g4" id="fpassi"></div></div>
+<div class="f"><label>PDF e link (uno per riga: nome | indirizzo)</label><textarea name="file"></textarea></div>
+<div class="bar"><button type="button" class="btn del" id="fdel">Elimina storia</button><span><button type="button" class="btn" id="fann">Annulla</button> <button type="submit" class="btn gold">Salva</button></span></div>
+</form></dialog>
+
 <script>
-const NOMI={ricerca:"Ricerca",testo:"Testo",pdf:"PDF Corinne",gobbo:"Gobbo",inserti:"Inserti video",girata:"Girata",montata:"Montata"};
+const NOMI={ricerca:"Ricerca",testo:"Testo",pdf:"PDF Corinne",gobbo:"Gobbo",inserti:"Inserti video",girata:"Registrata",montata:"Montata"};
 const GR={lavorazione:"In lavorazione",candidate:"Candidate (pronte da sviluppare)",scartate:"Scartate"};
-const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function stepCls(k,v){ if(!v) return ''; if(k==='inserti'){ const m=String(v).match(/^(\d+)\/(\d+)$/); if(m) return +m[1]>=+m[2]?'ok':(+m[1]>0?'part':''); return v==='0'?'':'part'; } return 'ok'; }
-function card(s,leg){
-  const st=s.gruppo==='scartate'?'':`<div class="steps">${leg.map(k=>{const v=(s.passi||{})[k]||'';return `<span class="st ${stepCls(k,v)}">${NOMI[k]}${v?' · <b>'+esc(v)+'</b>':''}</span>`}).join('')}</div>`;
-  const f=(s.file||[]).length?`<div class="files">${s.file.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">⬇ ${esc(x.nome)}</a>`).join('')}</div>`:'';
-  return `<div class="card ${s.gruppo==='scartate'?'scartata':''}"><div class="top"><span class="ruolo">${esc(s.ruolo)}</span><span>${esc(s.luogo)} · ${esc(s.data_txt)}</span></div><h3>${esc(s.titolo)}</h3><p>${esc(s.sintesi)}</p>${st}${s.note?`<div class="note">${esc(s.note)}</div>`:''}${f}</div>`;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=id=>document.getElementById(id);
+let D=null, EDIT=false, cur=null;
+const oggi=()=>{const d=new Date();return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')};
+const chi=()=>{try{return localStorage.getItem('archivio-chi')||''}catch(e){return ''}};
+function setChi(){const n=prompt('Come ti chiami? (comparirà nel diario)',chi()||'');if(n!==null){try{localStorage.setItem('archivio-chi',n.trim())}catch(e){}render()}}
+function diario(t){D.diario.unshift([oggi(),t+(chi()?' — '+chi():'')])}
+
+async function carica(){
+  try{const r=await fetch('/api/archivio',{cache:'no-store'});if(!r.ok)throw 0;D=await r.json();EDIT=true}
+  catch(e){const r=await fetch('archivio.json?t='+Date.now(),{cache:'no-store'});D=await r.json();EDIT=false;
+    $('banner').style.display='block';$('banner').textContent='Sola lettura: il salvataggio non è ancora attivo su questo server.'}
+  document.body.classList.toggle('ro',!EDIT);render();
 }
-fetch('archivio.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
-  document.getElementById('upd').textContent='Aggiornato al '+d.aggiornato;
+async function salva(){
+  const oggiIso=new Date();D.aggiornato=oggiIso.toLocaleDateString('it-IT');
+  const r=await fetch('/api/archivio',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(D)});
+  if(!r.ok){alert('Salvataggio non riuscito. Ricarica la pagina e riprova.');return false}
+  render();return true;
+}
+function stepCls(k,v){if(!v)return '';if(k==='inserti'){const m=String(v).match(/^(\d+)\s*\/\s*(\d+)$/);if(m)return +m[1]>=+m[2]&&+m[2]>0?'ok':(+m[1]>0?'part':'');return v==='0'?'':'part'}return 'ok'}
+function mediaHtml(s){
+  const m=s.media||[];
+  const item=x=>{const u=esc(x.url),ext=(x.url.split('.').pop()||'').toLowerCase();
+    const anteprima=['mp4','webm','mov','m4v'].includes(ext)?`<video src="${u}" controls preload="metadata" playsinline></video>`:['jpg','jpeg','png','gif','webp'].includes(ext)?`<a href="${u}" target="_blank"><img src="${u}" loading="lazy" alt=""></a>`:'';
+    return `<div class="mi">${anteprima}<div class="r"><a href="${u}" target="_blank" download>${esc(x.nome)}</a>${EDIT?`<button class="x" title="Elimina" data-del="${esc(s.id)}" data-url="${u}">✕</button>`:''}</div></div>`};
+  return `<div class="media"><div class="tit">Animazioni e materiali (${m.length})</div>${m.length?`<div class="mgrid">${m.map(item).join('')}</div>`:''}
+  ${EDIT?`<div class="azioni"><label class="btn">＋ Allega animazioni<input type="file" multiple class="hide" data-up="${esc(s.id)}"></label></div><div class="prog" id="prog-${esc(s.id)}"></div>`:''}</div>`;
+}
+function card(s){
+  const p=s.passi||{};
+  const st=s.gruppo==='scartate'?'':`<div class="steps">${(D.legenda||Object.keys(NOMI)).map(k=>{const v=p[k]||'';return `<span class="st ${stepCls(k,v)}">${NOMI[k]||k}${v?' · <b>'+esc(v)+'</b>':''}</span>`}).join('')}</div>`;
+  const f=(s.file||[]).length?`<div class="files">${s.file.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">⬇ ${esc(x.nome)}</a>`).join('')}</div>`:'';
+  const reg=p.girata;
+  const az=EDIT?`<div class="azioni"><button class="btn reg ${reg?'fatto':''}" data-reg="${esc(s.id)}">${reg?'✓ Registrata il '+esc(reg):'🎬 Registrata'}</button><button class="btn" data-edit="${esc(s.id)}">✏️ Modifica</button></div>`:'';
+  const ruolo=(s.puntata?'Puntata '+s.puntata+(s.ruolo&&!/^puntata\s*\d+$/i.test(s.ruolo)?' · '+s.ruolo:''):s.ruolo)||'';
+  return `<div class="card ${s.gruppo==='scartate'?'scartata':''}" id="c-${esc(s.id)}"><div class="top"><span class="ruolo">${esc(ruolo)}</span><span>${esc(s.luogo)}${s.data_txt?' · '+esc(s.data_txt):''}</span></div><h3>${esc(s.titolo)}</h3>${s.sintesi?`<p>${esc(s.sintesi)}</p>`:''}${st}${s.note?`<div class="note">${esc(s.note)}</div>`:''}${f}${s.gruppo!=='scartate'?mediaHtml(s):''}${az}</div>`;
+}
+function ordina(a,b){const pa=+a.puntata||999,pb=+b.puntata||999;return pa-pb||String(a.data).localeCompare(String(b.data))}
+function render(){
+  $('upd').textContent='Aggiornato al '+(D.aggiornato||'');
+  $('chi').innerHTML=chi()?`Stai modificando come <b>${esc(chi())}</b> · <a id="cambia">cambia</a>`:`<a id="cambia">Scrivi il tuo nome</a> per firmare le modifiche`;
   let h='';
-  for(const g of Object.keys(GR)){ const l=d.storie.filter(s=>s.gruppo===g); if(l.length) h+=`<h2>${GR[g]}</h2>`+l.map(s=>card(s,d.legenda)).join(''); }
-  document.getElementById('stato').innerHTML=h;
-  document.getElementById('tl').innerHTML=[...d.storie].sort((a,b)=>a.data.localeCompare(b.data)).map(s=>`<div class="ev ${s.gruppo}"><div class="d">${esc(s.data_txt)}</div><div class="t">${esc(s.titolo)}</div><div class="l">${esc(s.luogo)} · ${esc(s.ruolo)}</div></div>`).join('');
-  document.getElementById('dl').innerHTML=d.diario.map(([a,b])=>`<div><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('');
-}).catch(()=>{document.getElementById('stato').innerHTML='<p>Impossibile caricare l\'archivio. Ricarica la pagina.</p>'});
-document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('on',x===b));['stato','crono','diario'].forEach(id=>document.getElementById(id).classList.toggle('hide',id!==b.dataset.v));});
+  for(const g of Object.keys(GR)){const l=D.storie.filter(s=>s.gruppo===g).sort(ordina);
+    h+=`<h2><span>${GR[g]}</span>${EDIT&&g!=='scartate'?`<button class="btn edit-only" data-new="${g}">＋ Nuova storia</button>`:''}</h2>`+l.map(card).join('')}
+  $('stato').innerHTML=h;
+  $('tl').innerHTML=[...D.storie].sort((a,b)=>String(a.data).localeCompare(String(b.data))).map(s=>`<div class="ev ${esc(s.gruppo)}"><div class="d">${esc(s.data_txt||s.data)}</div><div class="t">${esc(s.titolo)}</div><div class="l">${esc(s.luogo)} · ${esc(s.puntata?'Puntata '+s.puntata:s.ruolo)}</div></div>`).join('');
+  $('dl').innerHTML=D.diario.map(([a,b])=>`<div><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('');
+  const c=$('cambia');if(c)c.onclick=setChi;
+}
+// ---------- modifica ----------
+function apri(s,nuova){
+  cur={s,nuova};const F=$('frm');
+  $('ftit').textContent=nuova?'Nuova storia':'Modifica storia';
+  for(const k of ['titolo','puntata','gruppo','ruolo','luogo','data','data_txt','sintesi','note'])F.elements[k].value=s[k]??'';
+  F.elements.file.value=(s.file||[]).map(x=>x.nome+' | '+x.url).join('\n');
+  $('fpassi').innerHTML=Object.keys(NOMI).map(k=>`<div><label style="font:12px system-ui;color:#9a948a">${NOMI[k]}</label><input data-passo="${k}" value="${esc((s.passi||{})[k]||'')}"></div>`).join('');
+  $('fdel').classList.toggle('hide',!!nuova);$('dlg').showModal();
+}
+$('fann').onclick=()=>$('dlg').close();
+$('frm').onsubmit=async ev=>{
+  ev.preventDefault();const F=$('frm'),s=cur.s;
+  for(const k of ['titolo','gruppo','ruolo','luogo','data','data_txt','sintesi','note'])s[k]=F.elements[k].value.trim();
+  s.puntata=F.elements.puntata.value?+F.elements.puntata.value:'';
+  s.passi=s.passi||{};document.querySelectorAll('[data-passo]').forEach(i=>s.passi[i.dataset.passo]=i.value.trim());
+  s.file=F.elements.file.value.split('\n').map(r=>r.split('|')).filter(r=>r.length>=2&&r[1].trim()).map(r=>({nome:r[0].trim(),url:r.slice(1).join('|').trim()}));
+  if(cur.nuova){D.storie.push(s);diario('Nuova storia: «'+s.titolo+'»')}else diario('Modificata: «'+s.titolo+'»');
+  if(await salva())$('dlg').close();
+};
+$('fdel').onclick=async()=>{const s=cur.s;if(!confirm('Eliminare «'+s.titolo+'» dall\'archivio?'))return;
+  D.storie=D.storie.filter(x=>x!==s);diario('Eliminata: «'+s.titolo+'»');if(await salva())$('dlg').close()};
+// ---------- click sulle schede ----------
+$('stato').addEventListener('click',async e=>{
+  const t=e.target.closest('button');if(!t||!EDIT)return;
+  const trova=id=>D.storie.find(x=>x.id===id);
+  if(t.dataset.edit)apri(trova(t.dataset.edit));
+  else if(t.dataset.new){const id='s'+Date.now().toString(36);apri({id,gruppo:t.dataset.new,passi:{},file:[],media:[]},true)}
+  else if(t.dataset.reg){const s=trova(t.dataset.reg);s.passi=s.passi||{};
+    if(s.passi.girata){if(!confirm('Togliere «registrata» a «'+s.titolo+'»?'))return;s.passi.girata='';diario('Tolta la registrazione: «'+s.titolo+'»')}
+    else{s.passi.girata=oggi();diario('🎬 Registrata: «'+s.titolo+'»')}
+    await salva()}
+  else if(t.dataset.del){if(!confirm('Eliminare questo file?'))return;
+    const r=await fetch('/api/media?id='+encodeURIComponent(t.dataset.del)+'&url='+encodeURIComponent(t.dataset.url),{method:'DELETE'});
+    if(r.ok){const s=trova(t.dataset.del);s.media=(s.media||[]).filter(m=>m.url!==t.dataset.url);render()}else alert('Non riuscito')}
+});
+$('stato').addEventListener('change',async e=>{
+  const inp=e.target;if(!inp.dataset.up)return;const id=inp.dataset.up,files=[...inp.files];
+  for(const [i,f] of files.entries()){
+    const pr=$('prog-'+id);
+    const voce=await new Promise(ok=>{const x=new XMLHttpRequest();
+      x.open('POST','/api/upload?id='+encodeURIComponent(id)+'&name='+encodeURIComponent(f.name)+'&da='+encodeURIComponent(chi()));
+      x.upload.onprogress=ev=>{if(pr&&ev.lengthComputable)pr.textContent=`Carico ${i+1}/${files.length} · ${f.name} · ${Math.round(ev.loaded/ev.total*100)}%`};
+      x.onload=()=>ok(x.status===200?JSON.parse(x.responseText):null);x.onerror=()=>ok(null);x.send(f)});
+    if(!voce){alert('Caricamento non riuscito: '+f.name);continue}
+    const s=D.storie.find(x=>x.id===id);(s.media=s.media||[]).push(voce);
+  }
+  diario('Allegati '+files.length+' file a «'+D.storie.find(x=>x.id===id).titolo+'»');await salva();
+});
+$('dbtn').onclick=async()=>{const t=$('dtxt').value.trim();if(!t)return;diario(t);$('dtxt').value='';await salva()};
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('on',x===b));['stato','crono','diario'].forEach(id=>$(id).classList.toggle('hide',id!==b.dataset.v))});
+carica();
 </script></body></html>

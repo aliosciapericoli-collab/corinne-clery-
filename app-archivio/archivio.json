@@ -17,7 +17,7 @@
    "data": "1963-03-14",
    "data_txt": "14 marzo 1963",
    "gruppo": "lavorazione",
-   "ruolo": "Puntata pilota",
+   "ruolo": "Pilota di prova",
    "sintesi": "Il dottor Carlo Nigrisoli, la moglie Ombretta, due siringhe sul comodino e un derivato del curaro. Ergastolo nel 1965.",
    "passi": {
     "ricerca": "19/10",
@@ -38,7 +38,8 @@
      "url": "pdf/Scaletta-pilota-curaro.pdf"
     }
    ],
-   "note": "Inserti video pronti, compresi siringhe, autopsia e sentenza in versione lunga."
+   "note": "Inserti video pronti, compresi siringhe, autopsia e sentenza in versione lunga.",
+   "media": []
   },
   {
    "id": "gatti",
@@ -47,7 +48,7 @@
    "data": "2005-07-30",
    "data_txt": "estate 2005",
    "gruppo": "lavorazione",
-   "ruolo": "Storia 2",
+   "ruolo": "Prima puntata",
    "sintesi": "Due pensionati spariscono. A denunciare la scomparsa c'è il nipote che vive al piano di sopra. Ergastolo, morte in carcere nel 2023 scoperta solo nel 2026.",
    "passi": {
     "ricerca": "21/10",
@@ -64,7 +65,9 @@
      "url": "pdf/Copione-Storia-2-Il-nipote-del-piano-di-sopra.pdf"
     }
    ],
-   "note": "Versione lunga (circa 10 minuti) sul gobbo. Da realizzare gli inserti A (appello in tv), B (garage e luminol) e C (lo scontrino)."
+   "note": "Versione lunga (circa 10 minuti) sul gobbo. Da realizzare gli inserti A (appello in tv), B (garage e luminol) e C (lo scontrino).",
+   "media": [],
+   "puntata": 1
   },
   {
    "id": "oreilly",
@@ -90,7 +93,8 @@
      "url": "pdf/Copione-La-lettera-nella-bara.pdf"
     }
    ],
-   "note": "Testo breve, come era la Storia 2 prima dell'allungamento: da approfondire."
+   "note": "Testo breve, come era la Storia 2 prima dell'allungamento: da approfondire.",
+   "media": []
   },
   {
    "id": "murri",
@@ -116,7 +120,8 @@
      "url": "pdf/Copione-Il-delitto-Murri-La-famiglia-del-professore.pdf"
     }
    ],
-   "note": "Non risulta raccontata da Lucarelli (verificato il 26/10), che nel 2021 aveva detto di volerla fare: ricontrollare prima della messa in onda."
+   "note": "Non risulta raccontata da Lucarelli (verificato il 26/10), che nel 2021 aveva detto di volerla fare: ricontrollare prima della messa in onda.",
+   "media": []
   },
   {
    "id": "fenaroli",
@@ -137,7 +142,8 @@
     "montata": ""
    },
    "file": [],
-   "note": "Verificare che Lucarelli non l'abbia raccontata prima di scriverla."
+   "note": "Verificare che Lucarelli non l'abbia raccontata prima di scriverla.",
+   "media": []
   },
   {
    "id": "romand",
@@ -163,7 +169,8 @@
      "url": "pdf/Storie-di-famiglia-nel-buio-raccolta-1.pdf"
     }
    ],
-   "note": "Caso molto noto in Francia (libro di Carrère)."
+   "note": "Caso molto noto in Francia (libro di Carrère).",
+   "media": []
   },
   {
    "id": "edwards",
@@ -189,7 +196,8 @@
      "url": "pdf/Storie-dal-buio-raccolta-3.pdf"
     }
    ],
-   "note": ""
+   "note": "",
+   "media": []
   },
   {
    "id": "troadec",
@@ -215,7 +223,8 @@
      "url": "pdf/Storie-dal-buio-raccolta-3.pdf"
     }
    ],
-   "note": ""
+   "note": "",
+   "media": []
   },
   {
    "id": "bamber",
@@ -241,7 +250,8 @@
      "url": "pdf/Storie-di-famiglia-nel-buio-raccolta-2.pdf"
     }
    ],
-   "note": "Raccolta 2: casi più duri, da concordare con Corinne."
+   "note": "Raccolta 2: casi più duri, da concordare con Corinne.",
+   "media": []
   },
   {
    "id": "carretta",
@@ -267,7 +277,8 @@
      "url": "pdf/Storie-di-famiglia-nel-buio-raccolta-2.pdf"
     }
    ],
-   "note": ""
+   "note": "",
+   "media": []
   },
   {
    "id": "lhermitte",
@@ -293,7 +304,8 @@
      "url": "pdf/Storie-di-famiglia-nel-buio-raccolta-2.pdf"
     }
    ],
-   "note": "Raccolta 2: da concordare con Corinne."
+   "note": "Raccolta 2: da concordare con Corinne.",
+   "media": []
   },
   {
    "id": "alleghe",
@@ -306,7 +318,8 @@
    "sintesi": "Già raccontata da Carlo Lucarelli in «Blu notte» (2000).",
    "passi": {},
    "file": [],
-   "note": ""
+   "note": "",
+   "media": []
   },
   {
    "id": "casati",
@@ -319,10 +332,15 @@
    "sintesi": "Tornato molto noto con un film del 2026, con dettagli scabrosi e persone viventi coinvolte.",
    "passi": {},
    "file": [],
-   "note": ""
+   "note": "",
+   "media": []
   }
  ],
  "diario": [
+  [
+   "26/10",
+   "Archivio modificabile: pulsanti Modifica, Registrata, Allega animazioni. «Il nipote del piano di sopra» è la prima puntata."
+  ],
   [
    "26/10",
    "Tutti i PDF rifatti a caratteri enormi, una sola versione per storia. Il vecchio copione «3 storie» è sostituito da un PDF per storia."
