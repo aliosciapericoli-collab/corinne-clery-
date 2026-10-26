@@ -198,3 +198,94 @@ Durata indicativa: 10–12 minuti. **Voce: Corinne, in prima persona**, nel casa
 ## Prossimi passi possibili
 - Controllare i punti ⚠️ sugli archivi (sentenze, archivio storico de *La Stampa* e del *Corriere*).
 - Solingen: verificare se la sentenza è definitiva (ricerca sul sito del BGH).
+
+---
+
+## TERZA TRANCHE (compilata il 26/10/2026) — tre storie per la nuova puntata
+
+Criteri: dramma *familiare*, sentenza definitiva, in Italia oggi quasi dimenticato.
+⚠️ indica un punto su cui le fonti non concordano: nel racconto va usata la formula prudente.
+
+### 17. Il delitto Murri — Bologna, 1902 · «La famiglia del professore»
+
+- **Chi.** Linda Murri, figlia del grande clinico Augusto Murri. Il marito, il conte Francesco Bonmartini. Il fratello di Linda, l'avvocato Tullio Murri. Con loro Rosina Bonetti (amante di Tullio), lo studente di medicina Pio Naldi e il medico Carlo Secchi (vecchio amore di Linda).
+- **Cosa.** Matrimonio infelice e separazione nel 1899. Bonmartini minaccia di portare i figli a Padova. Tullio, legato in modo ossessivo alla sorella, decide di eliminarlo. Un primo tentativo fallisce: c'è anche del **curaro** procurato da Secchi. Il conte viene ucciso a coltellate nel suo appartamento di via Mazzini e il corpo viene scoperto giorni dopo.
+- ⚠️ **Date.** Il ritrovamento è datato 28 agosto (Wikipedia) oppure 2 settembre 1902 (Archiginnasio) → nel testo **«fine estate 1902»**.
+- **La scena chiave.** È il padre, Augusto Murri, a consegnare alla giustizia il figlio: porta agli inquirenti la lettera in cui Tullio confessa (11 settembre). Tullio parla di legittima difesa.
+- **Esito.** Processo a Torino dal 21 febbraio al 12 agosto 1905, con diciotto avvocati: è il primo processo italiano con periti psichiatri.
+  - Tullio: 30 anni.
+  - Naldi: 30 anni.
+  - Linda: 10 anni.
+  - Secchi: 10 anni.
+  - Bonetti: 7 anni e mezzo.
+- **Dopo.**
+  - Nel 1906 il re grazia Linda: Augusto Murri aveva curato dal tifo la principessa Mafalda.
+  - Tullio sconta 17 anni, scrive in carcere il libro *Galera* e muore nel 1930, prima del padre.
+  - Nel 2003 la figlia di Tullio sostiene in un libro che l'assassino era un altro: tesi non provata.
+  - Il caso ispira il film *Fatti di gente perbene* (1974).
+- **Perché funziona.** Un padre che deve scegliere tra la giustizia e il figlio. È collegato al Curaro, che cita proprio il delitto Murri: perfetto come puntata «gemella».
+- **Fonti:**
+  - [Wikipedia, Delitto Murri](https://it.wikipedia.org/wiki/Delitto_Murri)
+  - [Biblioteca dell'Archiginnasio, mostra «Coscienza sporca»](https://www.archiginnasio.it/lang/it/gallery/album-coscienza-sporca-immagini-e-documenti)
+  - [Lombardia Beni Culturali, scheda fotografica](https://lombardiabeniculturali.it/fotografie/schede-complete/IMM-3a130-0001134)
+- **Cautela.** Wikipedia segnala poche note puntuali: prima della messa in onda va riscontrata sui libri citati (R. Renzi, *Il processo Murri*; V. Babini, *Il caso Murri*).
+
+### 18. I delitti di Alleghe — Belluno, 1933–1946 · «Il lago che restituisce»
+
+- **Chi.** La famiglia Da Tos, padrona dell'Albergo Centrale e di una macelleria ad Alleghe: il padre Fiore, la madre Elvira, i figli Aldo e Adelina. Il marito di Adelina, Pietro De Biasio.
+- **Cosa.**
+  - **9 maggio 1933:** Emma De Ventura, cameriera dell'albergo, viene trovata con la gola tagliata nella stanza n. 6. Viene archiviato come suicidio.
+  - **4 dicembre 1933:** Carolina Finazzer, sposa da poco di Aldo Da Tos, viene trovata nel lago. Anche questo viene archiviato come suicidio, e la riesumazione lo conferma.
+  - **Novembre 1946:** i coniugi Luigia De Toni e Luigi Del Monego vengono uccisi a colpi di pistola in un vicolo. Si parla di rapina.
+- **La svolta.**
+  - **1952:** il giornalista Sergio Saviane scrive «La Montelepre del Nord». Collega le morti, viene querelato dai Da Tos e condannato per diffamazione.
+  - **1958:** il carabiniere Ezio Cesca indaga sotto copertura, fingendosi operaio. Arrivano gli arresti e le confessioni di Gasperin, Aldo, De Biasio e Adelina.
+  - Per i giudici Carolina viene uccisa perché in viaggio di nozze aveva scoperto l'omicidio di Emma.
+- **Esito.**
+  - **Belluno, 8 giugno 1960:** ergastolo per Aldo e Adelina Da Tos e per Pietro De Biasio; 30 anni a Gasperin. L'omicidio di Emma è prescritto.
+  - **Appello a Venezia, 28 febbraio 1962:** confermato.
+  - **Cassazione, 4 febbraio 1964:** ricorsi respinti.
+  - Gli imputati ritrattano e si dicono innocenti fino alla fine.
+- **Dopo.**
+  - De Biasio muore nel 1969.
+  - Gasperin muore in carcere nel 1974.
+  - Aldo muore in carcere nel 1988; anche Adelina muore nel 1988, da libera.
+  - Alcuni autori, Pietro Ruo e Toni Sirena, contestano le sentenze.
+- **Perché funziona.** Un paese delle Dolomiti, un albergo, una sposa nel lago, un giornalista condannato per aver detto la verità prima del tempo. Tutta la vicenda ruota attorno a una famiglia che si protegge.
+- ⚠️ La data dei delitti Del Monego è 17 o 18 novembre 1946 → nel testo **«una notte di novembre del 1946»**.
+- **Fonti:**
+  - [il Giornale, «Quattro vittime, due testimoni scomodi»](https://www.ilgiornale.it/news/cronache/i-delitti-alleghe-2010339.html)
+  - [Menti Criminali](https://menticriminali.it/i-misteriosi-omicidi-di-alleghe/)
+  - [Il Corriere della Città](https://www.ilcorrieredellacitta.com/inchieste-e-approfondimenti/i-misteri-di-alleghe-la-lunga-scia-di-sangue-e-il-giallo-dei-delitti-del-lago.html)
+  - [Dark Side Italia](https://darksideitalia.it/i-misteri-di-alleghe/)
+  - [Vipiù](https://www.vipiu.it/leggi/cold-case-delitti-di-alleghe-assassini-gigio-gigia-sergio-saviane-brigadiere-ezio-cesca/)
+
+### 19. Il caso Fenaroli (mistero di via Monaci) — Roma, 1958 · «La telefonata delle undici»
+
+- **Chi.** Giovanni Fenaroli, geometra, titolare di un'impresa edile milanese in difficoltà. La moglie Maria Martirano, 47 anni. Raoul Ghiani, 27 anni, operaio elettrotecnico. Carlo Inzolia, presunto intermediario. Egidio Sacchi, ragioniere di Fenaroli.
+- **Cosa.** Maria viene trovata strangolata nella cucina di via Ernesto Monaci 21, a Roma, la mattina dell'11 settembre 1958. Mancano gioielli e denaro e si pensa a una rapina. Il marito quella sera era a Milano, in ufficio.
+- **La scena chiave.** Secondo Sacchi, quella sera Fenaroli telefona alla moglie e le annuncia la visita di «Raoul», che deve ritirare dei documenti. Per l'accusa Ghiani vola da Milano a Roma con un biglietto intestato a «Rossi» e torna in treno, in tempo per timbrare il cartellino. C'è anche una polizza sulla vita da 150 milioni con la firma della moglie falsificata.
+- **Esito.**
+  - **Corte d'Assise di Roma, 11 giugno 1961:** ergastolo per Fenaroli e Ghiani; Inzolia assolto.
+  - **Appello, 27 luglio 1963:** confermato; Inzolia condannato a 13 anni.
+  - La condanna diventa definitiva.
+- **Dopo.**
+  - Fenaroli muore nel 1975 dicendosi innocente.
+  - Ghiani ottiene la grazia dopo oltre vent'anni.
+  - Restano molti dubbi: impronte non sue, la lista dei passeggeri mai allegata, ipotesi di complotto mai provate.
+  - Il caso ispira *Il vedovo* (1959) di Dino Risi, con Alberto Sordi.
+- ⚠️ **Date incerte:**
+  - Cassazione nel 1963 o nel 1966.
+  - Grazia a Ghiani nel 1983 o nel 1984.
+  - Fenaroli muore in carcere oppure al Policlinico di Milano.
+  → nel testo **«la condanna diventa definitiva»**, **«dopo più di vent'anni, la grazia»**, **«muore nel 1975»**.
+- **Fonti:**
+  - [Wikipedia, Mistero di via Monaci](https://it.wikipedia.org/wiki/Mistero_di_via_Monaci)
+  - [Crime-Post](https://www.crime-post.it/index.php/2024/04/26/il-delitto-di-via-monaci-omicidio-su-commissione-o-mistero-italiano/)
+  - [Sherlock Magazine](https://www.sherlockmagazine.it/9587/real-crime-il-delitto-di-via-monaci)
+  - [L'Occidentale](https://loccidentale.it/il-delitto-fenaroli-e-la-pista-mai-seguita-dei-servizi-segreti/)
+- **Cautela.** Non va usato il passato privato della vittima riportato da alcune fonti: non serve al racconto e la espone senza motivo.
+
+### Scartato in questa tranche
+
+- **Delitto Casati Stampa (Roma, 1970).** È tornato molto noto con il film *Gli occhi degli altri* (marzo 2026). Ha dettagli sessuali e intrecci legati a persone viventi: fuori criterio.
