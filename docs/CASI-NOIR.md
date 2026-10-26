@@ -223,6 +223,10 @@ Criteri: dramma *familiare*, sentenza definitiva, in Italia oggi quasi dimentica
   - Tullio sconta 17 anni, scrive in carcere il libro *Galera* e muore nel 1930, prima del padre.
   - Nel 2003 la figlia di Tullio sostiene in un libro che l'assassino era un altro: tesi non provata.
   - Il caso ispira il film *Fatti di gente perbene* (1974).
+- **Controllo Lucarelli (26/10/2026).** Non risulta in *Blu notte* (tutte le stagioni, compresa *Misteri dimenticati* 2026), in *Nero come il sangue* né in *Nero come l'anima*.
+  - In un'intervista del 2021 Lucarelli ha detto di voler raccontare «in futuro» il caso Murri ([il Resto del Carlino](https://www.ilrestodelcarlino.it/bologna/cosa-fare/carlo-lucarelli-ff8e6719)). Va ricontrollato prima della messa in onda.
+  - Esiste un romanzo ispirato al caso, *Coscienza sporca* di Loriano Macchiavelli (1995).
+- **Date riconciliate.** Delitto il 28 agosto 1902, corpo scoperto il 2 settembre ([Archiginnasio](https://www.archiginnasio.it/lang/en/gallery/album-coscienza-sporca-immagini-e-documenti/media-la-tragedia-di-via-mazzini-il-resto-del-carlino)). Altre fonti: [Nellevalli](https://www.nellevalli.it/il-delitto-murri-crimini-e-verita-di-gente-per-bene/), [Psychiatry on line, recensione a V. Babini](https://www.psychiatryonline.it/recensioni-librarie/il-caso-murri-una-storia-italiana/).
 - **Perché funziona.** Un padre che deve scegliere tra la giustizia e il figlio. È collegato al Curaro, che cita proprio il delitto Murri: perfetto come puntata «gemella».
 - **Fonti:**
   - [Wikipedia, Delitto Murri](https://it.wikipedia.org/wiki/Delitto_Murri)
@@ -231,6 +235,8 @@ Criteri: dramma *familiare*, sentenza definitiva, in Italia oggi quasi dimentica
 - **Cautela.** Wikipedia segnala poche note puntuali: prima della messa in onda va riscontrata sui libri citati (R. Renzi, *Il processo Murri*; V. Babini, *Il caso Murri*).
 
 ### 18. I delitti di Alleghe — Belluno, 1933–1946 · «Il lago che restituisce»
+
+> ❌ **SCARTATO (26/10/2026):** già raccontato da Carlo Lucarelli in *Blu notte*, terza stagione, puntata 8 «I misteri di Alleghe» (2000). Fonte: [Wikipedia, Puntate di Blu notte](https://it.wikipedia.org/wiki/Puntate_di_Blu_notte_-_Misteri_italiani).
 
 - **Chi.** La famiglia Da Tos, padrona dell'Albergo Centrale e di una macelleria ad Alleghe: il padre Fiore, la madre Elvira, i figli Aldo e Adelina. Il marito di Adelina, Pietro De Biasio.
 - **Cosa.**
