@@ -1,0 +1,66 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Archivio storie · Parlane con Corinne Cléry</title>
+<style>
+:root{--bg:#0b0b0b;--card:#151515;--line:#2b2b2b;--fg:#f2ede4;--mut:#9a948a;--gold:#c9a063;--ok:#3f8f5a;--part:#b07a2a;--no:#3a3a3a}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Georgia,"Times New Roman",serif}
+header{padding:28px 16px 10px;text-align:center}
+header .k{letter-spacing:.32em;color:var(--gold);font-size:13px;font-family:system-ui,sans-serif}
+header h1{margin:.3em 0 .1em;font-size:30px;font-weight:400}
+header .u{color:var(--mut);font:13px system-ui,sans-serif}
+nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px 16px 4px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav button{font:600 14px system-ui,sans-serif;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:20px;padding:8px 14px;cursor:pointer}
+nav button.on{background:var(--gold);color:#111;border-color:var(--gold)}
+main{max-width:980px;margin:0 auto;padding:16px}
+h2{font-weight:400;font-size:20px;color:var(--gold);margin:26px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 14px}
+.card .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font:13px system-ui,sans-serif;color:var(--mut)}
+.card .ruolo{color:var(--gold);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.card h3{margin:.35em 0 .25em;font-size:23px;font-weight:400}
+.card p{margin:.3em 0;line-height:1.5;color:#ddd6ca}
+.card .note{font:14px system-ui,sans-serif;color:#d9b77d;margin-top:8px}
+.steps{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 4px}
+.st{font:12px system-ui,sans-serif;padding:5px 9px;border-radius:6px;background:var(--no);color:#aaa}
+.st.ok{background:var(--ok);color:#fff}.st.part{background:var(--part);color:#fff}
+.st b{font-weight:700}
+.files{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+.files a{font:600 13px system-ui,sans-serif;color:#111;background:var(--gold);text-decoration:none;padding:7px 11px;border-radius:6px}
+.scartata{opacity:.6}
+.tl{position:relative;margin-left:10px;border-left:2px solid var(--line);padding-left:18px}
+.tl .ev{position:relative;margin:0 0 18px}
+.tl .ev::before{content:"";position:absolute;left:-26px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
+.tl .ev.candidate::before{background:#777}.tl .ev.scartate::before{background:#444}
+.tl .d{font:700 13px system-ui,sans-serif;color:var(--gold);letter-spacing:.05em}
+.tl .t{font-size:19px;margin:.15em 0}
+.tl .l{font:13px system-ui,sans-serif;color:var(--mut)}
+.diario div{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font:15px/1.5 system-ui,sans-serif}
+.diario b{color:var(--gold);min-width:48px}
+.leg{font:12px system-ui,sans-serif;color:var(--mut);margin:6px 0 0}
+.hide{display:none}
+</style></head><body>
+<header><div class="k">PARLANE CON CORINNE CLÉRY</div><h1>Archivio delle storie</h1><div class="u" id="upd"></div></header>
+<nav><button data-v="stato" class="on">Situazione</button><button data-v="crono">Cronologia</button><button data-v="diario">Diario di lavoro</button><a href="../" style="font:600 14px system-ui;color:var(--gold);padding:8px 6px">↩ Gobbo</a></nav>
+<main>
+<section id="stato"></section>
+<section id="crono" class="hide"><h2>Le storie in ordine di tempo</h2><p class="leg">● oro = in lavorazione · ● grigio = candidata · ● scuro = scartata</p><div class="tl" id="tl"></div></section>
+<section id="diario" class="hide"><h2>Cosa è stato fatto, giorno per giorno</h2><div class="diario" id="dl"></div></section>
+</main>
+<script>
+const NOMI={ricerca:"Ricerca",testo:"Testo",pdf:"PDF Corinne",gobbo:"Gobbo",inserti:"Inserti video",girata:"Girata",montata:"Montata"};
+const GR={lavorazione:"In lavorazione",candidate:"Candidate (pronte da sviluppare)",scartate:"Scartate"};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function stepCls(k,v){ if(!v) return ''; if(k==='inserti'){ const m=String(v).match(/^(\d+)\/(\d+)$/); if(m) return +m[1]>=+m[2]?'ok':(+m[1]>0?'part':''); return v==='0'?'':'part'; } return 'ok'; }
+function card(s,leg){
+  const st=s.gruppo==='scartate'?'':`<div class="steps">${leg.map(k=>{const v=(s.passi||{})[k]||'';return `<span class="st ${stepCls(k,v)}">${NOMI[k]}${v?' · <b>'+esc(v)+'</b>':''}</span>`}).join('')}</div>`;
+  const f=(s.file||[]).length?`<div class="files">${s.file.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">⬇ ${esc(x.nome)}</a>`).join('')}</div>`:'';
+  return `<div class="card ${s.gruppo==='scartate'?'scartata':''}"><div class="top"><span class="ruolo">${esc(s.ruolo)}</span><span>${esc(s.luogo)} · ${esc(s.data_txt)}</span></div><h3>${esc(s.titolo)}</h3><p>${esc(s.sintesi)}</p>${st}${s.note?`<div class="note">${esc(s.note)}</div>`:''}${f}</div>`;
+}
+fetch('archivio.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
+  document.getElementById('upd').textContent='Aggiornato al '+d.aggiornato;
+  let h='';
+  for(const g of Object.keys(GR)){ const l=d.storie.filter(s=>s.gruppo===g); if(l.length) h+=`<h2>${GR[g]}</h2>`+l.map(s=>card(s,d.legenda)).join(''); }
+  document.getElementById('stato').innerHTML=h;
+  document.getElementById('tl').innerHTML=[...d.storie].sort((a,b)=>a.data.localeCompare(b.data)).map(s=>`<div class="ev ${s.gruppo}"><div class="d">${esc(s.data_txt)}</div><div class="t">${esc(s.titolo)}</div><div class="l">${esc(s.luogo)} · ${esc(s.ruolo)}</div></div>`).join('');
+  document.getElementById('dl').innerHTML=d.diario.map(([a,b])=>`<div><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('');
+}).catch(()=>{document.getElementById('stato').innerHTML='<p>Impossibile caricare l\'archivio. Ricarica la pagina.</p>'});
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('on',x===b));['stato','crono','diario'].forEach(id=>document.getElementById(id).classList.toggle('hide',id!==b.dataset.v));});
+</script></body></html>

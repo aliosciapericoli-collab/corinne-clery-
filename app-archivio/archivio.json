@@ -1,0 +1,107 @@
+{
+  "aggiornato": "26/10/2026",
+  "legenda": ["ricerca", "testo", "pdf", "gobbo", "inserti", "girata", "montata"],
+  "storie": [
+    {
+      "id": "curaro", "titolo": "Il delitto del curaro", "luogo": "Bologna", "data": "1963-03-14", "data_txt": "14 marzo 1963",
+      "gruppo": "lavorazione", "ruolo": "Puntata pilota",
+      "sintesi": "Il dottor Carlo Nigrisoli, la moglie Ombretta, due siringhe sul comodino e un derivato del curaro. Ergastolo nel 1965.",
+      "passi": {"ricerca": "19/10", "testo": "20/10", "pdf": "20/10", "gobbo": "", "inserti": "8/8", "girata": "", "montata": ""},
+      "file": [{"nome": "Copione (Curaro + Storia 2 + Lettera nella bara)", "url": "pdf/Copione-Corinne-3-storie.pdf"}, {"nome": "Scaletta del pilota", "url": "pdf/Scaletta-pilota-curaro.pdf"}],
+      "note": "Inserti video pronti, compresi siringhe, autopsia e sentenza in versione lunga."
+    },
+    {
+      "id": "gatti", "titolo": "Il nipote del piano di sopra", "luogo": "Brescia", "data": "2005-07-30", "data_txt": "estate 2005",
+      "gruppo": "lavorazione", "ruolo": "Storia 2",
+      "sintesi": "Due pensionati spariscono. A denunciare la scomparsa c'è il nipote che vive al piano di sopra. Ergastolo, morte in carcere nel 2023 scoperta solo nel 2026.",
+      "passi": {"ricerca": "21/10", "testo": "21/10", "pdf": "22/10", "gobbo": "21/10", "inserti": "4/7", "girata": "", "montata": ""},
+      "file": [{"nome": "Copione a caratteri grandi (versione lunga)", "url": "pdf/Copione-Storia-2-Il-nipote-del-piano-di-sopra.pdf"}],
+      "note": "Versione lunga (circa 10 minuti) sul gobbo. Da realizzare gli inserti A (appello in tv), B (garage e luminol) e C (lo scontrino)."
+    },
+    {
+      "id": "oreilly", "titolo": "La lettera nella bara", "luogo": "The Naul, Dublino (Irlanda)", "data": "2004-10-04", "data_txt": "4 ottobre 2004",
+      "gruppo": "lavorazione", "ruolo": "Storia 3",
+      "sintesi": "Rachel O'Reilly viene trovata uccisa in casa. Il marito Joe.",
+      "passi": {"ricerca": "19/10", "testo": "20/10", "pdf": "20/10", "gobbo": "", "inserti": "0", "girata": "", "montata": ""},
+      "file": [{"nome": "Copione (Curaro + Storia 2 + Lettera nella bara)", "url": "pdf/Copione-Corinne-3-storie.pdf"}],
+      "note": "Testo breve, come era la Storia 2 prima dell'allungamento: da approfondire."
+    },
+    {
+      "id": "murri", "titolo": "La famiglia del professore · Il delitto Murri", "luogo": "Bologna", "data": "1902-08-28", "data_txt": "28 agosto 1902",
+      "gruppo": "lavorazione", "ruolo": "Storia 4 · gemella del Curaro",
+      "sintesi": "Il conte Bonmartini viene ucciso dal cognato Tullio Murri. È il padre, il grande clinico Augusto Murri, a denunciare il figlio.",
+      "passi": {"ricerca": "26/10", "testo": "26/10", "pdf": "26/10", "gobbo": "", "inserti": "0/6", "girata": "", "montata": ""},
+      "file": [{"nome": "Copione a caratteri enormi", "url": "pdf/Copione-Il-delitto-Murri-La-famiglia-del-professore.pdf"}],
+      "note": "Non risulta raccontata da Lucarelli (verificato il 26/10), che nel 2021 aveva detto di volerla fare: ricontrollare prima della messa in onda."
+    },
+    {
+      "id": "fenaroli", "titolo": "Il caso Fenaroli · La telefonata delle undici", "luogo": "Roma", "data": "1958-09-10", "data_txt": "10 settembre 1958",
+      "gruppo": "candidate", "ruolo": "Scheda pronta",
+      "sintesi": "Maria Martirano viene strangolata a Roma mentre il marito ha un alibi a Milano. Una telefonata, un volo con un nome falso, una polizza da 150 milioni. Due ergastoli e molti dubbi.",
+      "passi": {"ricerca": "26/10", "testo": "", "pdf": "", "gobbo": "", "inserti": "", "girata": "", "montata": ""},
+      "file": [], "note": "Verificare che Lucarelli non l'abbia raccontata prima di scriverla."
+    },
+    {
+      "id": "romand", "titolo": "Il falso dottore", "luogo": "Prévessin-Moëns (Francia)", "data": "1993-01-09", "data_txt": "gennaio 1993",
+      "gruppo": "candidate", "ruolo": "Raccolta 1 · traccia di puntata",
+      "sintesi": "Jean-Claude Romand finge per diciotto anni di essere medico all'OMS, poi uccide la famiglia.",
+      "passi": {"ricerca": "19/10", "testo": "19/10", "pdf": "19/10", "gobbo": "", "inserti": "", "girata": "", "montata": ""},
+      "file": [{"nome": "Raccolta 1", "url": "pdf/Storie-di-famiglia-nel-buio-raccolta-1.pdf"}], "note": "Caso molto noto in Francia (libro di Carrère)."
+    },
+    {
+      "id": "edwards", "titolo": "I vivi per finta", "luogo": "Mansfield (Inghilterra)", "data": "1998-05-01", "data_txt": "maggio 1998",
+      "gruppo": "candidate", "ruolo": "Raccolta 3",
+      "sintesi": "I coniugi Wycherley uccisi e sepolti in giardino: per quindici anni la figlia e il genero li fanno risultare vivi.",
+      "passi": {"ricerca": "19/10", "testo": "19/10", "pdf": "19/10", "gobbo": "", "inserti": "", "girata": "", "montata": ""},
+      "file": [{"nome": "Raccolta 3", "url": "pdf/Storie-dal-buio-raccolta-3.pdf"}], "note": ""
+    },
+    {
+      "id": "troadec", "titolo": "L'oro che non c'era", "luogo": "Orvault, Nantes (Francia)", "data": "2017-02-16", "data_txt": "febbraio 2017",
+      "gruppo": "candidate", "ruolo": "Raccolta 3",
+      "sintesi": "La famiglia Troadec sparisce in una notte. Dietro c'è un cognato e la leggenda di un tesoro d'oro.",
+      "passi": {"ricerca": "19/10", "testo": "19/10", "pdf": "19/10", "gobbo": "", "inserti": "", "girata": "", "montata": ""},
+      "file": [{"nome": "Raccolta 3", "url": "pdf/Storie-dal-buio-raccolta-3.pdf"}], "note": ""
+    },
+    {
+      "id": "bamber", "titolo": "Due verità sulla fattoria", "luogo": "Essex (Inghilterra)", "data": "1985-08-07", "data_txt": "agosto 1985",
+      "gruppo": "candidate", "ruolo": "Raccolta 2",
+      "sintesi": "White House Farm: cinque morti in una fattoria e un figlio adottivo condannato.",
+      "passi": {"ricerca": "19/10", "testo": "19/10", "pdf": "19/10", "gobbo": "", "inserti": "", "girata": "", "montata": ""},
+      "file": [{"nome": "Raccolta 2", "url": "pdf/Storie-di-famiglia-nel-buio-raccolta-2.pdf"}], "note": "Raccolta 2: casi più duri, da concordare con Corinne."
+    },
+    {
+      "id": "carretta", "titolo": "Il camper vuoto", "luogo": "Parma", "data": "1989-08-04", "data_txt": "agosto 1989",
+      "gruppo": "candidate", "ruolo": "Raccolta 2",
+      "sintesi": "La famiglia Carretta sparisce. Per quasi dieci anni si crede a una fuga.",
+      "passi": {"ricerca": "19/10", "testo": "19/10", "pdf": "19/10", "gobbo": "", "inserti": "", "girata": "", "montata": ""},
+      "file": [{"nome": "Raccolta 2", "url": "pdf/Storie-di-famiglia-nel-buio-raccolta-2.pdf"}], "note": ""
+    },
+    {
+      "id": "lhermitte", "titolo": "La casa di Nivelles", "luogo": "Nivelles (Belgio)", "data": "2007-02-28", "data_txt": "28 febbraio 2007",
+      "gruppo": "candidate", "ruolo": "Raccolta 2",
+      "sintesi": "Una madre e cinque figli, una mattina di febbraio.",
+      "passi": {"ricerca": "19/10", "testo": "19/10", "pdf": "19/10", "gobbo": "", "inserti": "", "girata": "", "montata": ""},
+      "file": [{"nome": "Raccolta 2", "url": "pdf/Storie-di-famiglia-nel-buio-raccolta-2.pdf"}], "note": "Raccolta 2: da concordare con Corinne."
+    },
+    {
+      "id": "alleghe", "titolo": "I delitti di Alleghe", "luogo": "Alleghe (Belluno)", "data": "1933-05-09", "data_txt": "1933–1946",
+      "gruppo": "scartate", "ruolo": "Scartata",
+      "sintesi": "Già raccontata da Carlo Lucarelli in «Blu notte» (2000).", "passi": {}, "file": [], "note": ""
+    },
+    {
+      "id": "casati", "titolo": "Il delitto Casati Stampa", "luogo": "Roma", "data": "1970-08-30", "data_txt": "30 agosto 1970",
+      "gruppo": "scartate", "ruolo": "Scartata",
+      "sintesi": "Tornato molto noto con un film del 2026, con dettagli scabrosi e persone viventi coinvolte.", "passi": {}, "file": [], "note": ""
+    }
+  ],
+  "diario": [
+    ["26/10", "Storia Murri scritta, verificata e impaginata in PDF a caratteri enormi. Scartato Alleghe (già raccontato da Lucarelli)."],
+    ["26/10", "Terza ricerca: Murri, Alleghe, Fenaroli."],
+    ["22/10", "PDF a caratteri grandi della Storia 2."],
+    ["21/10", "Storia 2: ricerca approfondita e versione lunga, pubblicata sul gobbo."],
+    ["21/10", "Storia 2: gobbo e 4 inserti video."],
+    ["20/10", "Pilota «Il delitto del curaro»: 8 inserti video, montaggio di prova, scaletta. Copione delle 3 storie per Corinne."],
+    ["19/10", "Raccolte 1, 2 e 3 in PDF. Prime prove di regia della puntata Romand."],
+    ["19/10", "Ricerca dei casi noir familiari, prima e seconda tranche."]
+  ]
+}
