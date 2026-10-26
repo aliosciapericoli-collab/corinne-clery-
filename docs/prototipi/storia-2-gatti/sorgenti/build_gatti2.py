@@ -114,3 +114,14 @@ if 'B' in sys.argv:
     seq('gB', B, dict(D=2.0, big='IL MATTATOIO', size=64, small='così lo chiameranno i giornali'), aB, nB, 'B-Il-garage-e-il-luminol')
 if 'C' in sys.argv:
     seq('gC', C, None, aC, nC, 'C-Lo-scontrino')
+
+# D · La croce senza nome: vento, una campana lontana
+D_ = [
+    dict(img='gD', D=5.5, z="1.0+0.08*on/{N}", texts=[("MILANO · CIMITERO MAGGIORE", 1.0, 5.3)], sat=0.7),
+    dict(img='gD', D=4.5, crop=(1640, 420, 1600, 900), z="1.0+0.10*on/{N}", texts=[("UNA CROCE. E UN NUMERO.", 0.6, 4.4)], sat=0.7),
+]
+bell = '+'.join(f"0.45*gte(t,{b})*(sin(2*PI*392*(t-{b}))+0.5*sin(2*PI*784*(t-{b}))+0.3*sin(2*PI*1176*(t-{b})))*exp(-0.9*(t-{b}))" for b in (1.2, 6.0))
+aD = lambda T, b: f"0.35*({DRONE})+{bell}"
+nD = lambda T, b: ('pink', "lowpass=f=700,highpass=f=100,volume='0.30*(0.6+0.4*sin(2*PI*0.18*t))':eval=frame")
+if 'D' in sys.argv:
+    seq('gD', D_, None, aD, nD, 'D-La-croce-senza-nome')
