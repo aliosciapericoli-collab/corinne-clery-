@@ -1,0 +1,37 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Regia · Puntata 1 · Il nipote del piano di sopra</title>
+<style>
+:root{--bg:#0b0b0b;--card:#151515;--line:#2b2b2b;--fg:#f2ede4;--mut:#9a948a;--gold:#c9a063}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,sans-serif}
+header{padding:28px 16px 6px;text-align:center}
+header .k{letter-spacing:.3em;color:var(--gold);font-size:12px}
+header h1{font-family:Georgia,serif;font-weight:400;font-size:28px;margin:.3em 0 .1em}
+header p{color:var(--mut);font-size:14px;margin:.3em 0}
+main{max-width:980px;margin:0 auto;padding:16px}
+.box{background:#1d1710;border:1px solid #5a4422;border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.5;color:#e8d6b0;margin-bottom:18px}
+.box a{color:var(--gold)}
+.v{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:16px}
+.v h2{font-family:Georgia,serif;font-weight:400;font-size:20px;margin:2px 0 8px}
+.v h2 b{color:var(--gold);font-weight:400;margin-right:6px}
+.v video{width:100%;aspect-ratio:16/9;background:#000;border-radius:6px;display:block}
+.r{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:13px;color:var(--mut)}
+.btn{display:inline-block;background:var(--gold);color:#111;font-weight:700;text-decoration:none;padding:9px 14px;border-radius:8px;font-size:14px}
+.btn.alt{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+</style></head><body>
+<header><div class="k">PARLANE CON CORINNE CLÉRY · REGIA</div><h1>Puntata 1 · Il nipote del piano di sopra</h1>
+<p>Gli 8 inserti video, nell'ordine del racconto. Premi ▶ per guardarli, «Scarica» per il file master.</p></header>
+<main>
+<div class="box">Ogni inserto entra nel punto segnato in rosso nel copione («▶ INSERTO …»): Corinne fa una pausa, parte il video, poi lei riprende.
+I video non hanno voce: solo suono d'ambiente e una scritta breve. Formato: 1920×1080, 25 fps.<br><br>
+<a class="btn" href="../../pdf/Copione-Storia-2-Il-nipote-del-piano-di-sopra.pdf" target="_blank">📄 Copione (PDF)</a>
+<a class="btn alt" href="../../pacchetti/Puntata-1-Il-nipote-del-piano-di-sopra-INSERTI-MASTER.zip">⬇ Tutto in un file .zip (301 MB, da computer)</a></div>
+<div id="lista"></div>
+</main>
+<script>
+const V=[["1","01","La villetta di notte","01-La-villetta",8],["2","A","L'appello in tv","A-Lappello-in-tv",10],["3","02","La strada del Vivione · scena decisiva","02-Il-Vivione",21],
+["4","03","I boschi","03-I-boschi",10],["5","B","Il garage e il luminol","B-Il-garage-e-il-luminol",15],["6","C","Lo scontrino","C-Lo-scontrino",10],
+["7","04","Il corridoio del carcere","04-Il-carcere",8],["8","D","La croce senza nome","D-La-croce-senza-nome",10]];
+document.getElementById('lista').innerHTML=V.map(([n,c,t,f,d])=>`<div class="v"><h2><b>${n}.</b>Inserto ${c} · ${t}</h2>
+<video src="../../media/gatti/Gatti-Inserto-${f}.mp4" controls preload="metadata" playsinline></video>
+<div class="r"><span>${d} secondi</span><a class="btn" href="master/${n}-Inserto-${f}.mp4" download>⬇ Scarica master</a></div></div>`).join('');
+</script></body></html>
